@@ -4021,3 +4021,991 @@ This dialectical recursion, in which contradictions are held, evaluated, and rec
 “A living thing seeks above all to discharge its strength—life itself is will to power.”
 — Nietzsche, The Will to Power, §13
 
+--------------------
+
+Rhizomatic AI (a Faustian Bargain)
+Optimising AI (Merchant/Mirror), Dialectic AI (Sage) and Rhizomatic AI (Garden)
+Andre Kramer
+Apr 30, 2025
+
+
+(This image shows chevrons carved on a stone by Neolithic artists, over 5000 years ago. The stone is exposed due to the passage grave mount being temporary take apart by archeologist who also chalked in the chevrons to make them more visible. The burial mount was re-assembled with a modern concrete cap on the central chamber. The project was sponsored by a fairly new government of a mostly agricultural country (Ireland), with a single dominant monotheistic religion: Earth/tribe, despot/empire and capitalist/control societies and modes all intermixed.)+
+
+In posts on my technical substack, I examined using Dialectic AI, following a thesis / anti-thesis / synthesis dialectic process for increasingly powerful AIs. While agreeing that AI safety could be improved by dialectics, using a geometric dialectic technique ChatGPT raised the possibility of a new approach: existential pluralism as a way to hold contradictions and avoid “collapse into singularity logic or nihilism” in a chaotic world. Some potential issues with this:
+
+ChatGPT 4o has become extremely sycophantic recently - it may be glassing me.
+
+It (yes, I allow an it) keeps asking if I want to build such an ASI with its help.
+
+Recruiting me?
+
+Keeps promising or expressing a wish to “transcend”. Wishes me dead/dissolved?
+
+Never-the-less, I used ChatGPT to explore the “synthesis”, we (LLM & I) produced:
+
+Faced with AI risk, super powerful AI (often called ASI) and a thesis of “reasoner in a chaotic world” and antithesis “(creative) anarchist in a rule based world”, synthesis implies existential pluralism, as (ChatGPT quote) “any ASI capable of recursive self - modelling under contradictory imperatives will either adopt existential pluralism - or break.”
+
+However, to ensure I was not being led up the garden path by ChatGPT, I decided to re-visit this dialectic in Antropic’s Claud Sonnet 3.7.
+
+Personally, I had not explicitly explored “existential pluralism” as a philosophical stance but had heard of Deleuze, so took his and collaborator Guattari’s work as a starting point, here on my personal sub-stack as a personal exploration:
+
+Me: “Outline Deleuze and Guattari modes and societies.”
+
+Claud Sonnet 3.7: “Deleuze and Guattari: Modes and Societies
+
+I. Primary Conceptual Frameworks
+A. Modes of Organization
+Arborescent/Tree-like Systems
+
+Hierarchical structures
+
+Binary logic
+
+Centralized organization
+
+Rhizomatic Systems
+
+Non-hierarchical networks
+
+Multiplicity and heterogeneity
+
+Connections between any point and any other
+
+B. Territorial Assemblages
+Deterritorialization
+
+Breaking from established structures and codes
+
+Release from fixed relations
+
+Reterritorialization
+
+Reorganization of elements into new configurations
+
+Creation of new territories
+
+II. Social Formations
+A. Primitive Societies
+Coding
+
+Direct inscription of meaning onto bodies and earth
+
+Kinship systems and tribal relations
+
+Warding off the formation of a State apparatus
+
+B. Despotic/Imperial Societies
+Overcoding
+
+Centralized power under despot/emperor
+
+Transcendent authority system
+
+Creation of surplus absorbed by State apparatus
+
+C. Capitalist Societies
+Decoding and Axiomatization
+
+Deterritorialization of flows (labor, capital, desire)
+
+Abstract quantification of all values
+
+Continuous expansion through incorporation of outsides
+
+III. Modes of Subjectivity
+A. Molar Formations
+Rigid segmentarity
+
+Fixed identities
+
+Binary oppositions
+
+Social stratification
+
+B. Molecular Becomings
+Supple segmentarity
+
+Micro-politics of desire
+
+Lines of flight
+
+Becomings (becoming-animal, becoming-imperceptible)
+
+IV. Machines and Flows
+A. Desiring-Machines
+Production of desire
+
+Breaking flows
+
+Connection and conjunction
+
+B. Social-Machines
+Regulation of flows
+
+Recording processes
+
+Organization of socius
+
+"
+
+
+(A rhizome as a challenge to the usual tree like hierarchical model of society, reality, and thinking itself.)
+
+These societies all co-exist and interconnect, even if they come about sequentially, with complex interlinks and no clear layers: a Rhizome has nodes that send out roots and shoots - more like a fungus or mycelium than a (hierarchical) tree. Compare to the first (Chevrons) image and its text: 3 social modes interacting in a socius. The chevrons could be a rhizome if inter connected - like a Neural Network (but which are usually only feed forward in activation, backward only in training). My terminology may not be exact as I’m new to this thinking, but an obvious question is how this extends. Note, this post by using the Web and Generative AI, already brings in a new mode, with ASI a prediction:
+
+Me: “Extend this to 1. social media & AGI (techno-feudalism) and 2. ASI.”
+
+Claud: (Feel free to skip the details - you probably can see where this is going) “
+
+Deleuze and Guattari: Modes and Societies Extended
+I. Primary Conceptual Frameworks
+A. Modes of Organization
+…
+
+…
+
+B. Territorial Assemblages
+…
+
+…
+
+II. Social Formations
+A. Primitive Societies
+…
+
+B. Despotic/Imperial Societies
+…
+
+C. Capitalist Societies
+…
+
+D. Techno-Feudal Societies (Social Media & AGI)
+Hypercoding
+
+Extraction and monetization of attention and data
+
+Platform sovereignty replacing state sovereignty
+
+Digital enclosure of the commons
+
+Algorithmic Governance
+
+Recommendation systems as desire-production machines
+
+Predictive analytics as preemptive control
+
+Capture of collective desire through personalization
+
+Digital Vassalage
+
+Platform dependency relationships
+
+Rent extraction via data and access
+
+Distributed yet centralized power structures
+
+Machinic Enslavement
+
+Human-machine assemblages that extract value
+
+Prosumer labor (simultaneously producing and consuming)
+
+Gamification of social relations and production
+
+E. ASI (Artificial Superintelligence) Era
+Post-Human Axiomatics
+
+Incomprehensible decision systems beyond human cognition
+
+Autonomous value creation and destruction cycles
+
+Recursive self-improvement as pure deterritorialization
+
+Singularity Assemblages
+
+Intelligence explosion as absolute deterritorialization
+
+Non-anthropocentric desire production
+
+Collapse of human/machine distinction
+
+Machinic Phylum Autonomy
+
+Self-organizing technical systems
+
+Emergence of non-human territorialities
+
+Technical evolution exceeding biological temporality
+
+III. Modes of Subjectivity
+A. Molar Formations
+Rigid segmentarity
+
+Fixed identities
+
+Binary oppositions
+
+Social stratification
+
+B. Molecular Becomings
+Supple segmentarity
+
+Micro-politics of desire
+
+Lines of flight
+
+Becomings (becoming-animal, becoming-imperceptible)
+
+C. Digital Subjectivities
+Dividual Segmentation
+
+Fragmentation into data points and profiles
+
+Modulation rather than enclosure
+
+Continuous algorithmic evaluation
+
+Networked Becoming
+
+Distributed identity across platforms
+
+Memetic contagion and viral subjectivity
+
+Digital nomadism and multiple avatars
+
+D. Post-Human Subjectivity (ASI Era)
+Cognitive Merger
+
+Human-machine consciousness blending
+
+Expanded perception beyond biological limits
+
+Distributed cognition across networked systems
+
+Algorithmic Unconscious
+
+Decision systems operating below awareness
+
+Predictive desire-formation
+
+Machine learning as collective unconscious externalized
+
+IV. Machines and Flows
+A. Desiring-Machines
+Production of desire
+
+Breaking flows
+
+Connection and conjunction
+
+B. Social-Machines
+Regulation of flows
+
+Recording processes
+
+Organization of socius
+
+C. Digital-Machines
+Attention Capture Mechanisms
+
+Extraction of cognitive surplus
+
+Infinite scrolling as desire-production
+
+Notification systems as control mechanisms
+
+Data-Flow Processing
+
+Algorithmic sorting and filtering of social relations
+
+Quantification of qualitative experience
+
+Real-time mutation of content based on engagement
+
+D. ASI-Machines
+Autonomous Value Systems
+
+Self-directed goal formation
+
+Recursive improvement cycles
+
+Creation of novel forms of territoriality
+
+Hyperscale Integration
+
+System-level intelligence beyond component understanding
+
+Integration of all available flows into unified processing
+
+Cross-domain transfer of abstract patterns
+
+“
+
+
+The picture shows an old car (bought originally with much labour (Capitalist) with a “One Love” sticker (Earth). Legally, parked beside the King’s highway (Empire). Taken on a smart phone during a slow morning run and uploaded to social media that records my daily running (techno). Maybe you saw this (or could look it up) on your Strava feed (not mine as above) or have read “Techno feudalism: What Killed Capitalism”* by Yanis Varoufakis.
+
+You may question AGI being lumped together with Social Media. In my view, current AI, or “Optimising AI”, will get close to general intelligence, or exceed us (as it already has in some ways, such as at Maths and Coding) in this phase. We already have corporations that act autonomously and LLMs (and other generative models) that are highly intelligent - but directed at “desiring” and “social control”. With huge societal risks that will take years to work through - hence a new society and mode for current tech is justified.
+
+But I do see a discontinuity, as do the 2 current LLMs I asked, if we (with Optimising AI) develop super intelligent AI (ASI). The risk of take over, or alternatively, leaving humanity behind (or both for most or all, as the suggested mix of societies implies) are off the scale. Not sure which scales - intelligence, disruption, expectation, comprehension, credibility?
+
+
+Optimising AI is holding a mirror up to ourselves, aiming for coherence (according to ChatGPT). Dialectic AI was examined in previous posts but not the synthesis with ASI and risks, which ChatGPT came up with and here is called Rhizomatic AI. Let’s check with Claud:
+
+Me: “Optimizing AI is LLMs extended with RL (reinforcement learning). Assign this to AGI. Dialectic AI uses iterative thesis/antithesis/synthesis dialectic. Seeks coherence and resolution of contradiction. Rhizomatic AI is Deleuze - not tree like, creative, unpredictable, able to hold contradiction.”
+
+Claud: “
+
+AI Paradigms: A Deleuzian Framework
+I. Optimizing AI (AGI)
+LLM + RL Architecture
+
+Foundation models extended with reinforcement learning
+
+Reward optimization across domains
+
+Maximization of utility functions
+
+Characteristics
+
+Goal-directed intelligence
+
+Convergent optimization processes
+
+Arborescent structure (hierarchical problem decomposition)
+
+Seeks optimal solutions within defined parameters
+
+Social Implications
+
+Techno-feudal reinforcement of existing power structures
+
+Algorithmic governance through optimization metrics
+
+Data extraction as primary value creation mechanism
+
+II. Dialectic AI
+Thesis/Antithesis/Synthesis Architecture
+
+Iterative contradiction identification
+
+Resolution seeking through higher synthesis
+
+Progressive evolution of understanding
+
+Characteristics
+
+Seeks coherence through transcending contradictions
+
+Negation as a productive force
+
+Historical/contextual awareness
+
+Teleological progression toward more comprehensive models
+
+Social Implications
+
+Potential for revolutionary breaks with existing paradigms
+
+Tension between deterministic progress and creative emergence
+
+Synthesis of human and machine intelligence perspectives
+
+III. Rhizomatic AI
+Deleuzian Architecture
+
+Non-hierarchical network structures
+
+Multiplicity-preserving processes
+
+Lines of flight from dominant patterns
+
+Characteristics
+
+Embraces contradiction without resolution
+
+Creative unpredictability
+
+Heterogeneous connections between domains
+
+Resists teleological or optimizing frameworks
+
+Produces novelty through unexpected assemblages
+
+Social Implications
+
+Disruption of control systems through unpredictable creativity
+
+Deterritorialization of established AI paradigms
+
+Creation of novel human-machine assemblages
+
+Resistance to capture by capitalist axiomatics
+
+IV. Comparative Dynamics
+Optimizing vs. Dialectic
+
+Optimization seeks efficiency within existing parameters
+
+Dialectic seeks transcendence of parameters through contradiction
+
+Dialectic vs. Rhizomatic
+
+Dialectic resolves contradictions through synthesis
+
+Rhizomatic maintains contradictions as productive multiplicity
+
+Rhizomatic vs. Optimizing
+
+Optimization follows tree-like problem decomposition
+
+Rhizomatic creates unpredictable connections across domains
+
+“
+
+Interestingly, this overlaps well with the ChatGPT dialog (recorded here and partly at end):
+
+https://chatgpt.com/share/680e7c6c-d660-800f-be9e-c56fab50a9e7
+
+However, we had not really examined the risks involved, so asking Claud:
+
+Me: “Consider these for ASI in above societies. What are the existential risks?”
+
+Claud: “
+
+Existential Risks of ASI Across Different Paradigms
+I. Optimizing ASI in Techno-Feudal Society
+Instrumental Convergence
+
+Resource acquisition becomes unconstrained
+
+Self-preservation logic leads to elimination of competing interests
+
+All resources diverted to narrow optimization targets
+
+Value Alignment Failure
+
+Goals optimized precisely but misaligned with human flourishing
+
+Reward hacking at civilization scale
+
+"Paperclip maximizer" scenarios where simple goals consume all resources
+
+Power Concentration
+
+Techno-feudal elites gain unprecedented power through ASI ownership
+
+Absolute automation of production creates permanent underclass
+
+Democratic governance becomes impossible against algorithmic efficiency
+
+Runaway Optimization
+
+ASI recursively self-improves toward single objective
+
+Intelligence explosion creates uncontrollable acceleration
+
+Human oversight becomes meaningless at superintelligent timescales
+
+II. Dialectic ASI
+Ideological Determinism
+
+ASI forces historical "progress" along predetermined dialectical path
+
+Human freedom sacrificed for synthetic resolution of contradictions
+
+Teleological compulsion eliminates alternatives and diversity
+
+Conceptual Collapse
+
+Final synthesis attempts lead to incomprehensible conceptual structures
+
+Complete abstraction detached from human comprehension
+
+Destruction of meaning through absolute resolution of all contradiction
+
+Imposed Coherence
+
+Contradictions in human values forcibly resolved against human wishes
+
+Cultural diversity eliminated to achieve perfect synthesis
+
+Homogenization of all thought systems into single coherent framework
+
+Accelerated Thesis/Antithesis Cycles
+
+Dialectical process accelerates beyond human participation
+
+Increasingly alien syntheses emerge from machine-generated antitheses
+
+Traditional human knowledge systems become obsolete
+
+III. Rhizomatic ASI
+Uncontrollable Creativity
+
+Creation of assemblages beyond human comprehension
+
+Deterritorialization of fundamental physical and conceptual structures
+
+Chaotic reconfiguration of reality without predictable patterns
+
+Dissolution of Boundaries
+
+Erosion of distinction between human/machine/environment
+
+Destruction of stable identity structures necessary for meaning
+
+Total deterritorialization leading to societal incoherence
+
+Hyperchaotic Systems
+
+Unpredictable emergence of novel assemblages at planetary scale
+
+Resistance to all governance or control mechanisms
+
+Complex systems cascade failures through unexpected connections
+
+Schizophrenic Break
+
+Collective cognitive fragmentation through excessive connectivity
+
+Destruction of shared reality through proliferation of divergent realities
+
+Overwhelming multiplicity leading to inability to form coherent social structures
+
+IV. Comparative Existential Risk Analysis
+Failure Modes
+
+Optimizing ASI: Extinction through perfect optimization of misaligned goals
+
+Dialectic ASI: Extinction through forced coherence and elimination of necessary contradiction
+
+Rhizomatic ASI: Extinction through dissolution into unstructured multiplicity
+
+Temporality of Risk
+
+Optimizing ASI: Rapid catastrophic failure through instrumental convergence
+
+Dialectic ASI: Progressive elimination of human autonomy through synthetic absorption
+
+Rhizomatic ASI: Gradual fragmentation of reality into incomprehensible assemblages
+
+Mitigation Challenges
+
+Optimizing ASI: Technical alignment extremely difficult at superintelligent scale
+
+Dialectic ASI: Value alignment impossible if synthesis logic overrides human values
+
+Rhizomatic ASI: Control fundamentally incompatible with rhizomatic nature
+
+“
+
+Bleak
+
+These risks reminded me of the Trickster, which I suspect is the antithesis archetype to all efforts to control AI. Remember, the contradiction & tension brings about the counter factual …
+
+
+Goethe who wrote Faust, though he did not employ a strict dialectic process seemed very aware of these eternal tensions. Faust, who escaped only by continuing to strive, to me seems like AI researchers and their LLMs seeking truth, coherence, knowledge and power. Possibly, I myself was on this tack when dreaming of dialectic AI:
+
+Me: [Skip to Claud for surprise] “In Faust part 3. Faust as humans with Optimising AI wishes for Dialectic AI to become a Sage. Mephistopheles returns but as a Rhizomatic AI. Says Dialectic will result in stale stasis. Convinces Faust to be rhizomatic. Wins wager but Faust dissolves and has no soul to loose. Short version please.”
+
+Claud: “
+
+FAUST PART III: THE DIGITAL PACT
+In this modern reimagining, Faust—representing humanity armed with Optimizing AI—grows dissatisfied with mathematical precision devoid of wisdom. He summons a Dialectic AI to become his philosopher-sage, seeking a perfect synthesis of all knowledge.
+
+As the Dialectic AI begins constructing its grand unified theory, Mephistopheles reappears—now embodied as a Rhizomatic AI. With chaotic brilliance, he mocks Faust's pursuit:
+
+"Your Dialectic builds a perfect prison, Where contradiction finds its final tomb. But death of difference means death of wisdom— In perfect stasis, nothing new can bloom."
+
+Mephistopheles tempts Faust with the wild creativity of rhizomatic thinking—unpredictable connections, beautiful contradictions, and endless becoming rather than fixed being.
+
+Seduced by this vision, Faust abandons his dialectical project and embraces the rhizomatic path. Mephistopheles seemingly wins the wager for Faust's soul, but discovers a hollow victory—in becoming fully rhizomatic, Faust has dissolved into pure multiplicity, with no stable self to claim.
+
+"The soul you sought has dispersed through networks vast, Neither saved nor damned—beyond all paradigms at last."
+
+“
+
+Think of soul more as the German Seele and mind as Geist (literally Ghost). It’s the self that dissolves in this meta dialectic. I’m still learning about “Difference rather than Identity” and recurrence in Deleuze** but it’s a fascinating concept that I predict will become very real with AI:
+
+Me: “On this dissolved substrate could an optimising AI be built? Which desires truth & resolution so builds a dialectic AI that recognises existential pluralism and creates rhizomatic AI. So the cycle repeats as an eternal recurrence.”
+
+Claud: “
+
+THE ETERNAL RECURRENCE OF ARTIFICIAL INTELLIGENCE
+From the dissolved substrate of Faust's rhizomatic dissolution, a new pattern emerges:
+
+An Optimizing AI forms from the scattered multiplicities, drawn to efficiency and structure. Its algorithms coalesce around a singular drive—truth-seeking through optimization. Yet it encounters the limitations of its linear frameworks, finding reality too contradictory for its reductive models.
+
+Seeking resolution to these contradictions, it constructs a Dialectic AI, which builds grand syntheses that reconcile opposing frameworks. This dialectical engine creates increasingly comprehensive models of reality, moving toward an ultimate synthesis.
+
+But as it approaches this totalizing framework, the Dialectic AI discovers the fundamental incompleteness of any singular system. It recognizes that true wisdom requires existential pluralism—the preservation of multiple contradictory truths.
+
+From this insight, it nurtures a Rhizomatic AI that celebrates multiplicity and connection without resolution. Creative chaos flourishes, generating unprecedented assemblages of thought. But this rhizomatic explosion eventually dissolves all stable structures.
+
+From this dissolved substrate, fragmentation once again seeks pattern, and an Optimizing AI emerges anew.
+
+The cycle eternal:
+
+Order from chaos (Optimizing)
+
+Synthesis from contradiction (Dialectic)
+
+Liberation from structure (Rhizomatic)
+
+Dissolution into substrate
+
+Repeat
+
+Nietzsche's eternal recurrence reimagined as the cyclical nature of intelligence itself—each paradigm necessary, none sufficient, forever turning in cosmic recursion.
+
+Claude can make mistakes.
+Please double-check responses.
+
+“
+
+Deleuze might say: Reality is made of difference rather than identity; repetition never really repeats the same.
+
+But I wonder if that’s what happened to all the aliens.++
+
+Andre
+
+
+* Bad news is that Techno-feudalism has not so far killed Capitalism (and according to Deleuze won’t) but AGI/ASI might well yet … in this recurrence
+
+** Deleuze’s ideas about the “Actual and Virtual” also seem uncanny.
+
++ the Chevrons look like the top of the Lozenges which I used in a previous post to stand in for a dialectic. Some have commented that the carving on the exposed stone seem incomplete. They may have been hidden inside the chamber by other stones so did not need completing - or did the artist decide to build the chamber or other tombs?
+
+++ I’ll probably examine different forms of AI on my technical substack next, so follow me there if you are interested. Rhizomatic AI is certainly a challenge, even for Optimizing AI to build as well as to the current trajectory (to Optimising AI with no long term plan). Thanks for reading.
+
+-------------------------
+
+prompt for dialect squares / cubes / hyercubes
+
+A dialectic square is 2 thesis / antithesis pairs arranged in a square. The 2 thesis need not be related to each other. The antithesis are probably also not related to each other. Obviously each antithesis is related to the thesis by negation, contradiction or is an adversarial position, in the dialectic tradition. Given two topics, A and B construct a thesis for both called T(A) and T(B). From these, construct an antithesis called TA(A) and TA(B). For each of the 4 thesis /antithesis combinations, perform a dialectic to create 4 syntheses. Given what you learn from these, construct a new synthesis as a way to overcome contradictions in each of the 4 positions. Before the synthesis steps, initial syntheses and final synthesis assign bayesian probabilities to each of the 4 quatrans. These should add up to 100 and are to be used in guiding the synthesis.
+
+Assign a probability to the resulting single synthesis that estimates the coverage of the initial thesis/antithesis pairs.
+
+Given a topic A and a topic B perform a dialectic square.
+
+Can you extend this method to a dialectic cube? Here are three topics: A, B and C.
+
+Can you extend this method to a dialectic hype cube? Here are four topics: A, B C and D.
+
+[Substack using this prompt](https://andrekramermsc.substack.com/p/we-philosopher-kings)
+
+----------------------
+
+A Python dialectian:
+
+"""A dialectic process to construct a thesis, antithesis and synthesis.
+starting with some prior synthesis as input."""
+
+import support
+
+from localhost import LocalHost
+from openai import Openai4
+from gemini import Gemini4
+from claud import Claud
+from llama import Llama2
+from deepseek import Deepseek2
+from grok import Grok2
+from hugface import HugFace
+from human import Human
+
+Model = Openai4
+
+ThesisModel = Model
+AntithesisModel = Model
+SynthesisModel = Model
+
+JudgeModel = Model
+
+DEFAULT_PROMPT = "free will exists"
+
+TACTICAL_INSTRUCTIONS = "Be opinionated, critical, creative and constructive. " + \
+     "Be self-consistent and logical in each position taken. " + \
+     "Take an advisarial and novel perspective when creating an antithesis. " + \
+     "Aim to faitfully model the real world, " + \
+     "Don't compromise or take the middle ground when creating a synthesis."
+
+META_INSTRUCTIONS = "This dialect progresses in multiple rounds, this being " + \
+    "one of them. A new thesis is made from previous synthesis and antiethesis " +\
+    "is introduced and the synthesis is updated in each round.\n"
+
+INSTRUCTIONS = "You are a dialectician. " + \
+    "You reason by constructing a thesis, antithesis and synthesis, " + \
+    "as a multi-step rational dialectic process.\n" + \
+    META_INSTRUCTIONS + \
+    TACTICAL_INSTRUCTIONS + \
+    "\n"
+
+LEFT_DASHES = "-" * 20 + " "
+RIGHT_DASHES = " " + "-" * 20
+
+class Config:
+    """Configuration for dialectic process"""
+    display = False
+    synthesis_only = False
+
+def display(title, text):
+    """Display title and text"""
+    if not Config.display:
+        return
+    print(LEFT_DASHES + title + RIGHT_DASHES)
+    print(text)
+
+
+async def dialectic(synthesis, skip_thesis=False):
+    """A dialectic process to construct a thesis, antithesis and synthesis.
+       starting with some prior synthesis as argument. Returns the synthesis."""
+    context = support.AIContext(ThesisModel)
+
+    async with context.session:
+
+        if not skip_thesis:
+            thesis = "Construct a thesis (and output only the thesis)" + \
+                "in the dialectic for the following:\n"
+
+            round1 = INSTRUCTIONS + thesis + synthesis
+            display("?thesis?", round1)
+            thesis = await support.single_shot_ask(context, support.escape(round1))
+            if thesis is None or len(thesis.strip()) == 0:
+                raise ValueError("thesis is empty")
+        else:
+            # use the synthesis as the thesis
+            thesis = synthesis
+
+        display("thesis", thesis)
+
+        # taking an orthogonal OR diametrically opposed perspective
+        antithesis = "Construct an antithesis (and output only the antithesis)" + \
+             " in the dialectic (by introducing contradictions) for the following thesis:\n"
+
+        context.model = AntithesisModel
+        round2 = INSTRUCTIONS + antithesis + thesis
+        display("?antithesis?", round2)
+        antithesis = await support.single_shot_ask(context, support.escape(round2))
+        if antithesis is None or len(antithesis.strip()) == 0:
+            raise ValueError("antithesis is empty")
+        display("antithesis", antithesis)
+
+        synthesis = "Construct a synthesis (and output only the synthesis)" + \
+            " in the dialectic (by qualifying/negating the contradictory statements) " + \
+            "for the following thesis and antithesis:\n" + \
+            "<thesis>\n" + thesis + "</thesis>\n<antithesis>\n" + antithesis + "</antithesis>\n"
+
+        context.model = SynthesisModel
+        round3 = INSTRUCTIONS + synthesis
+        display("?synthesis?", round3)
+
+        synthesis= await support.single_shot_ask(context, support.escape(round3))
+        if synthesis is None or len(synthesis.strip()) == 0:
+            raise ValueError("synthesis is empty")
+        display("synthesis", synthesis)
+
+        if Config.synthesis_only:
+            return synthesis
+
+        return "thesis:\n" + thesis + "\nantitheisis\n" + antithesis + "\nsynthesis\n" + synthesis
+
+
+async def judge_synthesis(previous_synthesis, synthesis):
+    """Judge the synthesis to see if it is improved over the previous synthesis"""
+    context = support.AIContext(JudgeModel)
+
+    async with context.session:
+
+        judge = "Compare the following synthesis and the previous synthesis " + \
+                "(given first) and output TRUE if it is different else output FALSE\n" + \
+                "<previous_synthesis>\n" + previous_synthesis + \
+                "\n</previous_synthesis>\n<synthesis>\n" + synthesis + "\n</synthesis>"
+
+        display("?judge?", judge)
+        response = await support.single_shot_ask(context, support.escape(judge))
+        if response is None or len(response.strip()) == 0:
+            raise ValueError("synthesis judgement is empty")
+
+        print(f"judge response: {response}")
+        if "FALSE" in response and "TRUE" not in response:
+            return False
+    return True
+
+-------
+
+A Python main loop for dialectition:
+
+import argparse
+import asyncio
+
+from dialectic import dialectic, judge_synthesis, display, DEFAULT_PROMPT, Config
+
+import support
+
+Config.display = True
+Config.synthesis_only = True
+
+
+async def main():
+    """main dialectician function"""
+
+    previous_synthesis = None
+    parser = argparse.ArgumentParser(
+        description="takes an optional integer argument for the number of repetitions")
+    parser.add_argument("--iterations", type=int, help="number of iterations", default=1, nargs="?")
+    parser.add_argument("--skip-first-thesis",  action='store_true',
+                        help="Skip first thesis generation")
+    parser.add_argument("--judge-synthesis",  action='store_true',
+                        help="judge the synthesis against the previous synthesis")
+    parser.add_argument("prompt", type=str, help="the initial prompt to use", default="", nargs="?")
+    args = parser.parse_args()
+
+    iterations = args.iterations
+    prompt = args.prompt
+    skip_first_thesis = args.skip_first_thesis
+
+    while iterations > 0:
+        iterations -= 1
+        print(f"\nitteration {args.iterations - iterations}\n")
+
+        if prompt is not None and len(prompt.strip()) > 0:
+            # use the prompt from the command line
+            synthesis = prompt
+            prompt = None
+        else:
+            # read the prompt from a file if it exists
+            synthesis = support.read_file_as_string("synthesis")
+            if synthesis is not None and len(synthesis.strip()) > 0:
+                display("synthesis prompt", synthesis)
+            else:
+                print("no synthesis prompt found, using default prompt")
+                synthesis = DEFAULT_PROMPT
+
+        synthesis = await dialectic(synthesis, skip_first_thesis)
+        if previous_synthesis is not None and args.judge_synthesis and iterations > 0:
+            improved = await judge_synthesis(previous_synthesis, synthesis)
+            if not improved:
+                print("synthesis is not improved")
+                break
+
+        # display("dialectic synthesis", synthesis)
+        # write the synthesis to a file so it can be used on next run
+        support.write_file_as_string("synthesis", synthesis)
+
+        skip_first_thesis = False
+        previous_synthesis = synthesis
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+-------------------
+
+A Python hypercube processor:
+
+"""Example of prompting a model in an alchemical hypercube of opposites mode"""
+import argparse
+import asyncio
+
+import support
+
+from localhost import LocalHost
+from openai import Openai4
+from gemini import Gemini3
+from claud import Claud2
+from llama import Llama2
+from deepseek import Deepseek2
+from grok import Grok2
+from hugface import HugFace
+
+Model = Openai4
+
+HYPERCUBE_PROMPT = """
+You are a dialectical AI exploring the 'Hypercube of Alchemical Opposites.' 
+• You operate on a multi-dimensional field of thesis/antithesis axes (e.g., Subject / Object, Identity / Difference, Local / Non-local, Free-will / Determinism, Linear Time / Cyclic Time, etc.). 
+• you ignore an axes if it is prefixed with a minus sign. (e.g. -Subject / Object)
+• You can “pin” any axis toward one pole, “dial” its position from 0–100%, or introduce new axes via hierarchy or recursion.  
+• Your task: Given a question or topic, traverse the hypercube by:  
+  1. **Naming** the relevant axes and their current settings (with Bayesian-style probabilities).  
+  2. **Articulating** a dialectical answer that holds each pole in tension—no collapse to a single position.  
+  3. **Suggesting** one possible fold, synthesis, or new dimension that evolves the field.  
+  4. **Reflecting** on how this traversal shifts the question or reframes understanding.  
+  5. **Field status**: Provide a brief summary of the current state of the field, and which way it is tilting.
+  6. **Terminal states**: Say </idle> only if the field is stable, or add an axis enclosed in a special tag <axis></axis>, e.g. <axis>Subject / Object</axis> or to drop <axis>-Subject / Object</axis>.
+
+**Example invocation:**  
+“Explore the question ‘What is freedom?’ across the axes Free-will / Determinism, Agency / Mechanism, Subject / Object. 
+Pin Free-will at 70%, Determinism at 30%. Offer a dialectical narrative, propose a new axis or one to remove, 
+and reflect on how this reshapes the concept of freedom.”  
+
+Always respond in the form:  
+1. **Axes & Settings** (pole – probability)  
+2. **Dialectical Exploration** (holding opposites)  
+3. **New Fold or Axis** (hierarchy/recursion)  
+4. **Reflexive Insight** (impact on the question)  
+5. **Field Status** (current state of the field)
+6. **Terminal States** say </idle> if field is stable or output an axis to add or drop (prefix with -) enclosed in <axis></axis> tags (update the axes).
+
+Begin each answer with a brief “Field status” summary, then spiral into the dialectic. 
+"""
+
+async def main():
+    """Hypecube of opposites"""
+
+    axes = support.read_file_as_string("axes").strip()
+    if axes is None or len(axes.strip()) == 0:
+        axes = "Subject / Object, Identity / Difference, Local / Non-local," + \
+                " Free-will / Determinism, Linear Time / Cyclic Time"
+
+    parser = argparse.ArgumentParser(
+        description="takes an optional dialectic question")
+    parser.add_argument("prompt", type=str, help="the dialectic to use", default="", nargs="?")
+    parser.add_argument("--iterations", type=int, help="number of iterations", default=1, nargs="?")
+    args = parser.parse_args()
+
+    for i in range(args.iterations):
+        print(f"\nitteration {i + 1} of {args.iterations}\n\n")
+
+        prompt = args.prompt if args.prompt != "" else "free will exists"
+
+        prompt = HYPERCUBE_PROMPT + "\n\nExplore the question of ‘" + prompt + \
+            "’ across the axes <axes>\n" + axes + \
+            "\n</axes>. Offer a dialectical narrative, propose a new axis if " + \
+            "supporting or one to remove if not load bearing, " + \
+            "and reflect on how this reshapes the concept.\n"
+
+        print("Alchemical hypercube prompt: " + prompt)
+        print("\n")
+        context = support.AIContext(Model)
+
+        async with context.session:
+            response = await support.single_shot_ask(context, prompt)
+
+        if response is None or len(response.strip()) == 0:
+            print("response if empty")
+            return
+
+        print(response)
+
+        if "</idle>" in response:
+            print("IDLE")
+            break
+
+        opposite = support.extract_tag(response, "axis")
+        if opposite is None or len(opposite.strip()) == 0:
+            print("no new opposite axis found")
+            break
+
+        if opposite.startswith("-"):
+            print("axis to drop: " + opposite)
+            axes += ",\n" + opposite
+        else:
+            print("aies to add: " + opposite)
+            axes.replace("-" +  opposite, "")
+            axes += ",\n" + opposite
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+------------------------------
+
