@@ -1,0 +1,70 @@
+AI Nestor
+Telemachus seeks the advise of Nestor for this search for Odysseus.
+
+In The Odyssey, when Telemachus sets out in search of his father, Odysseus, his first stop is not to confront monsters or navigate the seas—but to seek counsel from Nestor, the wise old king of Pylos. Nestor does not offer the final answer, but he sets Telemachus on the right path: seek wisdom, but learn through action. For anyone trying to make sense of artificial intelligence today, especially its deeper implications, that lesson is just as relevant.
+
+My grandfather, a self-educated socialist, used to tell me:“Andre, always remember: Theory and Praxis.”
+
+He meant that no theory, no matter how elegant, is of much use if it’s not tested in and transformed by practice. It was a common refrain in leftist German circles of the 20th century—drawn in part from Hegelian thought—but it’s one that seems increasingly forgotten in today’s hyper-optimised society. Especially when that optimisation is being done by, and for, AI.
+
+The Theory–Praxis Dialectic
+
+The concept originates in Hegelian dialectics. Hegel saw history and human consciousness as unfolding through contradictions and their resolutions—thesis, antithesis, and ultimately sublation (or Aufhebung), where opposing concepts are not merely cancelled out, but lifted to a new, integrated level.
+
+Theory and praxis are one such dialectical pair.
+
+Theory: abstraction, concept, model.
+
+Praxis: grounded action, engagement with the real.
+
+This is not the same as testing a theory or benchmarking a system. Tests can be rigged to fit the theory; benchmarks can be gamed. Praxis is deeper: it is action in and transformation through real-world tension. It changes both the world and the actor.
+
+Marx famously inverted Hegel’s dialectic. Where Hegel saw reality as emerging from thought, Marx insisted that thought arises from material activity—from praxis. Theory must not just interpret the world; it must emerge from efforts to change it. My grandfather, who lived through wars and rebuilding, saw in this inversion a profound truth.
+
+And now, some decades later, I see the same dialectic reemerging—often tragically—in AI.
+
+AI Without Praxis
+
+Much of what we call “intelligence” in AI today is instrumental: it optimises a reward signal, masters a benchmark, wins a game. But without a grounding in praxis, it repeats many of the same errors humans have made when detached from context: brittle assumptions, lack of generality, shallow mimicry of understanding.
+
+Like Telemachus, we must ask: Where is the wisdom that guides us? In AI, it will not emerge from theory alone. We must ground it—recursively—in experience.
+
+In upcoming posts, as we follow Odysseus on his long journey, I hope to explore this more deeply.
+
+The Hypercube of Opposites
+
+In my recent book, I introduced the Hypercube of Alchemical Opposites, a framework that explores meaning-making as the navigation of dialectical tensions—between life and death, self and other, order and chaos, and now, theory and praxis.
+
+Theory / praxis is not just another political tension, but a foundational structure of intelligence itself. Intelligence, whether biological or artificial, must recursively integrate experience (praxis) and abstraction (theory). It is through this recursive dance—praxis to theory to praxis again—that transformation occurs.
+
+This maps well to the Actor–Critic model used in machine learning. The Actor engages with the world; the Critic evaluates the results. But these roles can be generalized:
+
+Praxis as the Actor (doing)
+
+Theory as the Critic (reflecting)
+
+Even more, in our speculations on split actor–critic loops, we see self-awareness and even proto-consciousness arising from recursive application—where each loop critiques not just the external world, but itself. In Hegelian terms, this maps to the Master–Slave dialectic, which I suggest modernizing as Teacher–Student, and again, actor-critic or Praxis–Theory.
+
+Real and Synthetic Grounding
+
+Praxis need not always mean physical embodiment. In robotics, it does. But virtual environments, rich synthetic data, and recursive world models can serve as approximations. What matters is grounding in meaningful feedback loops—interacting with a world that pushes back.
+
+The Hypercube of Opposites offers another kind of grounding. Its oppositional structure reflects real-world tensions, and its recursive updating mirrors learning from experience. It self-reflectively includes the theory–praxis pair as an axis, making it both model and method, map and territory.
+
+Toward General Intelligence
+
+A gold medal in a math competition is impressive. So is a flawless coding test (Goodhart’s law). But creativity, insight, and general intelligence arise not from perfection but from sublation—the integration of contradictions into new forms. This is what Marx did to Hegel. What Einstein did to Newton. What I’m waiting for an AI to do next.
+
+But I don’t believe it will happen in theory alone.It will require praxis—struggle, grounding, friction with the real.
+
+With the upcoming generation of reasoning models (late Summer 2025), we will see whether the field can finally integrate theory and praxis—or whether it will remain trapped in abstract optimisation.
+
+In any case, I turn again to Nestor/Opa.His advice is simple, but hard to follow:Seek counsel, act wisely, and learn from doing.Then reflect, revise—and do again.Praxis, theory, praxis. Repeat.That is the journey. For Telemachus. For Odysseus. For AI. And for us.
+
+(ChatGPT inexplicably made a garbled image from my notes when prompted about AI Nestor. I think the result is somewhat alarming and quite surreal to me.)
+
+Andre (and ChatGPT-4o), July 2025
+
+Thanks for reading. As a follow-up, I’m definitely adding theory/praxis as a fundamental opposition within the hypercube framework. I’ve also uploaded a simple Python script to a GitHub repo to help explore the double dyadic structure.
+
+“The reference to Goodhart’s Law is important but underdeveloped: When a measure becomes a target, it ceases to be a good measure—this directly undermines praxis, which depends on embedded, context-sensitive engagement with the world. Optimization pressure—especially in AI systems—is precisely what detaches theory from lived complexity, converting open-ended action into reward maximization. In this sense, instrumental AI is theory run wild, detached from the grounding feedback loops that praxis demands. Expanding on this would strengthen the argument that true general intelligence requires resisting premature optimization and remaining in tension with the world, not above it.” - thanks, Nestor. We’ll take that forward too.
