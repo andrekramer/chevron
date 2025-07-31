@@ -14,6 +14,8 @@ from grok import Grok2
 from hugface import HugFace
 
 Model = Gemini3
+Teacher_Model = Model
+Student_Model = Model
 
 
 TEACHER_PROMPT = "You are a teacher, consider the self and the world with a student as your dialectic opponent."
@@ -78,7 +80,7 @@ async def main():
         if next == ".":
             break
 
-        context = support.AIContext(Model)
+        context = support.AIContext(Teacher_Model if teacher else Student_Model)
 
         async with context.session:
             response = await support.single_shot_ask(context, dialectic_prompt)
