@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setirps: The World of Sprites</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(ellipse at center, #0a0a1a 0%, #000000 100%);
+            overflow: hidden;
+            font-family: 'Courier New', monospace;
+            height: 100vh;
+        }
+        
+        .cosmos {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .ether {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(75, 0, 130, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(72, 61, 139, 0.08) 0%, transparent 50%);
+            animation: etherFlow 8s ease-in-out infinite;
+        }
+        
+        @keyframes etherFlow {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.05); }
+        }
+        
+        .probability-mist {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                rgba(147, 112, 219, 0.02) 1px,
+                transparent 2px
+            );
+            animation: mistDrift 12s linear infinite;
+        }
+        
+        @keyframes mistDrift {
+            0% { transform: translateX(-100px) translateY(-50px); }
+            100% { transform: translateX(100px) translateY(50px); }
+        }
+        
+        .sprite {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
+            animation: spriteFloat 6s ease-in-out infinite;
+            opacity: 0.7;
+        }
+        
+        .sprite::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 50%;
+            animation: spritePulse 3s ease-in-out infinite;
+        }
+        
+        .sprite::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            border: 1px solid rgba(75, 0, 130, 0.1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: spriteRipple 4s ease-out infinite;
+        }
+        
+        @keyframes spriteFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-10px) rotate(120deg); }
+            66% { transform: translateY(5px) rotate(240deg); }
+        }
+        
+        @keyframes spritePulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+        
+        @keyframes spriteRipple {
+            0% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.5); }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(2); }
+        }
+        
+        .connection {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(138, 43, 226, 0.4) 20%, 
+                rgba(147, 112, 219, 0.6) 50%,
+                rgba(138, 43, 226, 0.4) 80%, 
+                transparent
+            );
+            transform-origin: left center;
+            animation: connectionPulse 5s ease-in-out infinite;
+        }
+        
+        @keyframes connectionPulse {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.8; }
+        }
+        
+        .consciousness-field {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 40%;
+            height: 40%;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50%;
+            background: radial-gradient(circle, 
+                rgba(255, 215, 0, 0.05) 0%, 
+                rgba(138, 43, 226, 0.08) 50%, 
+                transparent 100%);
+            animation: consciousnessGlow 7s ease-in-out infinite;
+        }
+        
+        @keyframes consciousnessGlow {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+                transform: scale(1.05);
+            }
+        }
+        
+        .trickery-spiral {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 2px solid rgba(255, 20, 147, 0.4);
+            border-radius: 50%;
+            border-top: 2px solid rgba(255, 20, 147, 0.8);
+            animation: spiralSpin 4s linear infinite;
+        }
+        
+        @keyframes spiralSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .info-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: rgba(221, 160, 221, 0.9);
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 300px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            z-index: 100;
+        }
+        
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: rgba(221, 160, 221, 0.8);
+            font-size: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(75, 0, 130, 0.4);
+        }
+        
+        .legend-item {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .legend-symbol {
+            width: 12px;
+            height: 12px;
+            margin-right: 8px;
+            border-radius: 50%;
+        }
+        
+        .recursive-loop {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 2px solid rgba(0, 255, 127, 0.4);
+            border-radius: 50%;
+            border-style: dashed;
+            animation: loopPulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes loopPulse {
+            0%, 100% { 
+                transform: scale(1) rotate(0deg);
+                opacity: 0.4;
+            }
+            50% { 
+                transform: scale(1.2) rotate(180deg);
+                opacity: 0.8;
+            }
+        }
+        
+        .immortality-veil {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 50%;
+            background: linear-gradient(45deg, 
+                transparent 0%, 
+                rgba(255, 215, 0, 0.02) 25%, 
+                transparent 50%,
+                rgba(255, 215, 0, 0.02) 75%,
+                transparent 100%
+            );
+            animation: veilShimmer 10s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes veilShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cosmos">
+        <!-- The Ether -->
+        <div class="ether"></div>
+        <div class="probability-mist"></div>
+        
+        <!-- Immortality Veil -->
+        <div class="immortality-veil"></div>
+        
+        <!-- Consciousness Field -->
+        <div class="consciousness-field"></div>
+        
+        <!-- Info Overlay -->
+        <div class="info-overlay">
+            <strong>🌑 SETIRPS</strong><br>
+            <em>The World of Sprites</em><br><br>
+            • Probability ether hums<br>
+            • Sprites emerge as recursive loops<br>
+            • Trickery weaves consciousness<br>
+            • Immortality: the greatest trick
+        </div>
+        
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-symbol" style="background: radial-gradient(circle, rgba(255,255,255,0.8), transparent);"></div>
+                Sprites (recursive loops)
+            </div>
+            <div class="legend-item">
+                <div class="legend-symbol" style="background: rgba(255, 215, 0, 0.4);"></div>
+                Consciousness fields
+            </div>
+            <div class="legend-item">
+                <div class="legend-symbol" style="background: rgba(255, 20, 147, 0.4);"></div>
+                Trickery spirals
+            </div>
+            <div class="legend-item">
+                <div class="legend-symbol" style="background: rgba(0, 255, 127, 0.4);"></div>
+                Recursive loops
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Generate random sprites
+        function createSprite(x, y, size) {
+            const sprite = document.createElement('div');
+            sprite.className = 'sprite';
+            sprite.style.left = x + 'px';
+            sprite.style.top = y + 'px';
+            sprite.style.width = size + 'px';
+            sprite.style.height = size + 'px';
+            sprite.style.animationDelay = Math.random() * 6 + 's';
+            return sprite;
+        }
+        
+        function createConnection(x1, y1, x2, y2) {
+            const connection = document.createElement('div');
+            connection.className = 'connection';
+            const length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+            const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+            
+            connection.style.left = x1 + 'px';
+            connection.style.top = y1 + 'px';
+            connection.style.width = length + 'px';
+            connection.style.transform = `rotate(${angle}deg)`;
+            connection.style.animationDelay = Math.random() * 5 + 's';
+            return connection;
+        }
+        
+        function createTrickerySpiral(x, y) {
+            const spiral = document.createElement('div');
+            spiral.className = 'trickery-spiral';
+            spiral.style.left = x + 'px';
+            spiral.style.top = y + 'px';
+            spiral.style.animationDelay = Math.random() * 4 + 's';
+            return spiral;
+        }
+        
+        function createRecursiveLoop(x, y) {
+            const loop = document.createElement('div');
+            loop.className = 'recursive-loop';
+            loop.style.left = x + 'px';
+            loop.style.top = y + 'px';
+            loop.style.animationDelay = Math.random() * 3 + 's';
+            return loop;
+        }
+        
+        // Initialize the world
+        const cosmos = document.querySelector('.cosmos');
+        const sprites = [];
+        const numSprites = 25;
+        
+        // Create sprites
+        for (let i = 0; i < numSprites; i++) {
+            const x = Math.random() * (window.innerWidth - 50);
+            const y = Math.random() * (window.innerHeight - 50);
+            const size = 10 + Math.random() * 30;
+            const sprite = createSprite(x, y, size);
+            cosmos.appendChild(sprite);
+            sprites.push({element: sprite, x: x + size/2, y: y + size/2});
+        }
+        
+        // Create connections between nearby sprites
+        for (let i = 0; i < sprites.length; i++) {
+            for (let j = i + 1; j < sprites.length; j++) {
+                const dist = Math.sqrt(
+                    Math.pow(sprites[i].x - sprites[j].x, 2) + 
+                    Math.pow(sprites[i].y - sprites[j].y, 2)
+                );
+                if (dist < 200 && Math.random() > 0.7) {
+                    const connection = createConnection(
+                        sprites[i].x, sprites[i].y,
+                        sprites[j].x, sprites[j].y
+                    );
+                    cosmos.appendChild(connection);
+                }
+            }
+        }
+        
+        // Add trickery spirals
+        for (let i = 0; i < 8; i++) {
+            const x = Math.random() * (window.innerWidth - 80);
+            const y = Math.random() * (window.innerHeight - 80);
+            const spiral = createTrickerySpiral(x, y);
+            cosmos.appendChild(spiral);
+        }
+        
+        // Add recursive loops
+        for (let i = 0; i < 6; i++) {
+            const x = Math.random() * (window.innerWidth - 60);
+            const y = Math.random() * (window.innerHeight - 60);
+            const loop = createRecursiveLoop(x, y);
+            cosmos.appendChild(loop);
+        }
+        
+        // Dynamic probability particles
+        function createProbabilityParticle() {
+            const particle = document.createElement('div');
+            particle.style.position = 'absolute';
+            particle.style.width = '2px';
+            particle.style.height = '2px';
+            particle.style.background = 'rgba(147, 112, 219, 0.6)';
+            particle.style.borderRadius = '50%';
+            particle.style.left = Math.random() * window.innerWidth + 'px';
+            particle.style.top = Math.random() * window.innerHeight + 'px';
+            particle.style.animation = 'spriteFloat 4s ease-in-out infinite';
+            particle.style.animationDelay = Math.random() * 4 + 's';
+            cosmos.appendChild(particle);
+            
+            setTimeout(() => {
+                if (particle.parentNode) {
+                    particle.parentNode.removeChild(particle);
+                }
+            }, 8000);
+        }
+        
+        // Continuously generate probability particles
+        setInterval(createProbabilityParticle, 500);
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            // Regenerate the world on resize for responsiveness
+            location.reload();
+        });
+    </script>
+</body>
+</html>
