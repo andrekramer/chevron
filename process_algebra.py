@@ -166,7 +166,7 @@ class ProcessAlgebra:
 def demonstrate_quadrant_algebra():
     """Demonstrate the composition of processes using log/exp algebra"""
     
-    pa = ProcessAlgebra(dt=0.01, T=20.0)
+    pa = ProcessAlgebra(dt=0.01, T=50.0)  # Longer time series for better statistics
     
     # Generate base processes
     simple_rand = pa.simple_random(scale=1.0)
@@ -279,8 +279,114 @@ def mathematical_framework():
     print("   Q4: Exploration noise with temporal correlations")  
     print("   Q1: Learning dynamics (directed exploration)")
 
+def validate_composition_directly():
+    """
+    Direct validation: Does log(Q1) ≈ α·log(Q2) + β·log(Q4)?
+    This tests the composition hypothesis directly rather than through emergent properties
+    """
+    
+    pa = ProcessAlgebra(dt=0.01, T=50.0)
+    
+    # Generate base processes
+    simple_adapt = pa.simple_adaptive(target=0.0, strength=1.5, x0=2.0)
+    complex_rand = pa.complex_random(alpha=0.3, scale=1.5)
+    
+    # Compose via our algebra
+    α, β = 0.6, 0.4
+    offset = 5.0  # Ensure positivity
+    
+    sa_pos = simple_adapt - simple_adapt.min() + offset
+    cr_pos = complex_rand - complex_rand.min() + offset
+    
+    # The composition rule
+    log_sa = np.log(sa_pos)
+    log_cr = np.log(cr_pos)
+    log_composed_predicted = α * log_sa + β * log_cr
+    composed_predicted = np.exp(log_composed_predicted)
+    
+    # Also generate a "true" complex adaptive process for comparison
+    complex_adapt_direct = pa.complex_adaptive_direct()
+    ca_pos = complex_adapt_direct - complex_adapt_direct.min() + offset
+    log_ca_actual = np.log(ca_pos)
+    
+    # Test the composition hypothesis
+    correlation_predicted_actual = np.corrcoef(log_composed_predicted, log_ca_actual)[0,1]
+    
+    # Test linear relationship in log space
+    slope, intercept, r_value, p_value, std_err = stats.linregress(
+        α * log_sa + β * log_cr, log_ca_actual
+    )
+    
+    print("DIRECT COMPOSITION VALIDATION")
+    print("=" * 50)
+    print(f"Composition rule: log(Q1) = {α}·log(Q2) + {β}·log(Q4)")
+    print(f"Correlation between predicted and actual log processes: {correlation_predicted_actual:.3f}")
+    print(f"Linear regression: slope={slope:.3f}, R²={r_value**2:.3f}, p={p_value:.3e}")
+    
+    # Test decomposition: can we recover α, β from a known composition?
+    try:
+        # Stack the log processes as predictors
+        X = np.column_stack([log_sa, log_cr])
+        y = log_composed_predicted
+        
+        # Solve for coefficients
+        coefficients = np.linalg.lstsq(X, y, rcond=None)[0]
+        recovered_α, recovered_β = coefficients
+        
+        print(f"\nDECOMPOSITION TEST:")
+        print(f"Original α={α:.3f}, β={β:.3f}")
+        print(f"Recovered α={recovered_α:.3f}, β={recovered_β:.3f}")
+        print(f"Recovery error: α={abs(α-recovered_α):.4f}, β={abs(β-recovered_β):.4f}")
+        
+    except Exception as e:
+        print(f"Decomposition failed: {e}")
+    
+    # Visualize the relationship
+    plt.figure(figsize=(15, 5))
+    
+    plt.subplot(1, 3, 1)
+    plt.plot(pa.t, log_sa, 'g-', alpha=0.7, label='log(Q2)')
+    plt.plot(pa.t, log_cr, 'r-', alpha=0.7, label='log(Q4)')
+    plt.plot(pa.t, log_composed_predicted, 'b-', linewidth=2, label=f'{α}·log(Q2) + {β}·log(Q4)')
+    plt.title('Log-Space Composition')
+    plt.legend()
+    plt.grid(True, alpha=0.3)
+    
+    plt.subplot(1, 3, 2)
+    plt.scatter(log_composed_predicted, log_ca_actual, alpha=0.6, s=1)
+    plt.plot([log_composed_predicted.min(), log_composed_predicted.max()], 
+             [log_ca_actual.min(), log_ca_actual.max()], 'r--', alpha=0.8)
+    plt.xlabel('Predicted log(Q1)')
+    plt.ylabel('Actual log(Q1)')
+    plt.title(f'Correlation: {correlation_predicted_actual:.3f}')
+    plt.grid(True, alpha=0.3)
+    
+    plt.subplot(1, 3, 3)
+    plt.plot(pa.t, composed_predicted, 'b-', linewidth=2, label='Composed Q1')
+    plt.plot(pa.t, complex_adapt_direct, 'purple', alpha=0.7, label='Direct Q1')
+    plt.title('Exponiated Processes')
+    plt.legend()
+    plt.grid(True, alpha=0.3)
+    
+    plt.tight_layout()
+    plt.show()
+    
+    return {
+        'correlation': correlation_predicted_actual,
+        'regression_r2': r_value**2,
+        'recovered_alpha': recovered_α if 'recovered_α' in locals() else None,
+        'recovered_beta': recovered_β if 'recovered_β' in locals() else None
+    }
+
+# Add this to the main execution
 if __name__ == "__main__":
-    # Run demonstration
+    from scipy import stats
+    
+    # Run original analysis
     mathematical_framework()
     print("\n" + "="*60 + "\n")
     processes, analysis = demonstrate_quadrant_algebra()
+    
+    print("\n" + "="*60 + "\n")
+    # Run direct validation
+    validation_results = validate_composition_directly()
