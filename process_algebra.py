@@ -125,9 +125,10 @@ class ProcessAlgebra:
         autocorr = autocorr[len(autocorr)//2:]
         autocorr = autocorr / autocorr[0]
         
-        # Memory decay
+        # Memory decay (improved method)
         lags = np.arange(len(autocorr)) * self.dt
-        memory_decay = np.where(autocorr < 0.1)[0]
+        # Find where autocorrelation drops to 1/e ≈ 0.37 instead of 0.1
+        memory_decay = np.where(autocorr < np.exp(-1))[0]
         memory_time = lags[memory_decay[0]] if len(memory_decay) > 0 else self.T
         
         # Directedness (trend strength)
