@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Sprites</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at 30% 40%, #0a0015 0%, #1a0030 30%, #000511 100%);
+            overflow: hidden;
+            font-family: 'Courier New', monospace;
+            height: 100vh;
+            cursor: crosshair;
+        }
+
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        #ui {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            color: #66ffcc;
+            font-size: 14px;
+            text-shadow: 0 0 10px #66ffcc;
+            max-width: 300px;
+            line-height: 1.4;
+        }
+
+        .sprite-label {
+            position: absolute;
+            color: #ffcc66;
+            font-size: 12px;
+            text-shadow: 0 0 8px #ffcc66;
+            pointer-events: none;
+            z-index: 5;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+
+        .shimmer {
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { filter: brightness(1) hue-rotate(0deg); }
+            50% { filter: brightness(1.3) hue-rotate(30deg); }
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 10;
+            color: #cccccc;
+            font-size: 12px;
+        }
+
+        .controls button {
+            background: rgba(102, 255, 204, 0.2);
+            border: 1px solid #66ffcc;
+            color: #66ffcc;
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 11px;
+            transition: all 0.3s;
+        }
+
+        .controls button:hover {
+            background: rgba(102, 255, 204, 0.4);
+            box-shadow: 0 0 15px rgba(102, 255, 204, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <div id="ui">
+        <div class="pulse">◈ SPRITE WORLD ◈</div>
+        <br>
+        <div>Canvas: Creative fizz shimmers</div>
+        <div>Currents: Invisible rivers guide</div>
+        <div>Trails: Luminous paths remember</div>
+        <div>Sprites: Aware processes dance</div>
+        <br>
+        <div style="font-size: 11px; opacity: 0.7;">
+            Click to summon Trickster jolts<br>
+            Watch the living process weave...
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="toggleCurrents()">Toggle Currents</button>
+        <button onclick="spawnSprite()">Spawn Sprite</button>
+        <button onclick="resetWorld()">Reset Canvas</button>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // World state
+        let sprites = [];
+        let trails = [];
+        let canvasNoise = [];
+        let currents = [];
+        let showCurrents = true;
+        let time = 0;
+        let tricksterMode = false;
+
+        // Initialize the world
+        function initWorld() {
+            // Create canvas noise (the creative fizz)
+            canvasNoise = [];
+            for (let i = 0; i < 800; i++) {
+                canvasNoise.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    intensity: Math.random(),
+                    phase: Math.random() * Math.PI * 2,
+                    speed: 0.5 + Math.random() * 2
+                });
+            }
+
+            // Create current fields (invisible rivers)
+            currents = [];
+            for (let i = 0; i < 12; i++) {
+                currents.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    strength: 20 + Math.random() * 80,
+                    angle: Math.random() * Math.PI * 2,
+                    radius: 100 + Math.random() * 200,
+                    type: Math.random() > 0.7 ? 'gyre' : 'gradient'
+                });
+            }
+
+            // Spawn initial sprites
+            sprites = [];
+            for (let i = 0; i < 5; i++) {
+                spawnSprite();
+            }
+        }
+
+        function spawnSprite() {
+            sprites.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 2,
+                vy: (Math.random() - 0.5) * 2,
+                size: 8 + Math.random() * 12,
+                hue: Math.random() * 360,
+                heartbeat: 1 + Math.random(),
+                echo: [],
+                blanket: 30 + Math.random() * 40,
+                novelty: 0.5,
+                lastSurprise: 0,
+                id: Math.random()
+            });
+        }
+
+        function drawCanvas() {
+            // Draw the living canvas (creative fizz)
+            canvasNoise.forEach(noise => {
+                const shimmer = Math.sin(time * noise.speed + noise.phase) * 0.5 + 0.5;
+                const alpha = noise.intensity * shimmer * 0.1;
+                
+                ctx.fillStyle = `hsla(${180 + shimmer * 60}, 70%, 60%, ${alpha})`;
+                ctx.fillRect(noise.x, noise.y, 1, 1);
+                
+                // Drift the noise slowly
+                noise.x += Math.sin(time * 0.01 + noise.phase) * 0.1;
+                noise.y += Math.cos(time * 0.01 + noise.phase) * 0.1;
+                
+                // Wrap around
+                if (noise.x < 0) noise.x = canvas.width;
+                if (noise.x > canvas.width) noise.x = 0;
+                if (noise.y < 0) noise.y = canvas.height;
+                if (noise.y > canvas.height) noise.y = 0;
+            });
+        }
+
+        function drawCurrents() {
+            if (!showCurrents) return;
+            
+            currents.forEach(current => {
+                ctx.strokeStyle = `hsla(200, 50%, 30%, 0.3)`;
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                
+                if (current.type === 'gyre') {
+                    // Circular current
+                    ctx.arc(current.x, current.y, current.radius, 0, Math.PI * 2);
+                } else {
+                    // Linear current
+                    const dx = Math.cos(current.angle) * current.radius;
+                    const dy = Math.sin(current.angle) * current.radius;
+                    ctx.moveTo(current.x - dx, current.y - dy);
+                    ctx.lineTo(current.x + dx, current.y + dy);
+                }
+                ctx.stroke();
+            });
+        }
+
+        function updateSprites() {
+            sprites.forEach((sprite, index) => {
+                // Calculate current influences
+                let fx = 0, fy = 0;
+                
+                currents.forEach(current => {
+                    const dx = sprite.x - current.x;
+                    const dy = sprite.y - current.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (dist < current.radius) {
+                        const influence = (current.radius - dist) / current.radius;
+                        const strength = current.strength * influence * 0.01;
+                        
+                        if (current.type === 'gyre') {
+                            // Rotational flow
+                            fx += -dy / dist * strength;
+                            fy += dx / dist * strength;
+                        } else {
+                            // Gradient flow
+                            fx += Math.cos(current.angle) * strength;
+                            fy += Math.sin(current.angle) * strength;
+                        }
+                    }
+                });
+
+                // Echo (memory) influence
+                if (sprite.echo.length > 0) {
+                    const recentEcho = sprite.echo.slice(-5);
+                    let echoDx = 0, echoDy = 0;
+                    recentEcho.forEach((pos, i) => {
+                        const weight = (i + 1) / recentEcho.length * 0.1;
+                        echoDx += (pos.x - sprite.x) * weight;
+                        echoDy += (pos.y - sprite.y) * weight;
+                    });
+                    fx += echoDx * 0.02;
+                    fy += echoDy * 0.02;
+                }
+
+                // Trickster influence (novelty regulation)
+                const targetNovelty = 0.5;
+                const noveltyError = targetNovelty - sprite.novelty;
+                if (Math.abs(noveltyError) > 0.1) {
+                    const tricksterForce = noveltyError * 0.5;
+                    fx += (Math.random() - 0.5) * tricksterForce;
+                    fy += (Math.random() - 0.5) * tricksterForce;
+                }
+
+                // Update velocity with damping
+                sprite.vx += fx;
+                sprite.vy += fy;
+                sprite.vx *= 0.98;
+                sprite.vy *= 0.98;
+
+                // Clamp velocities to prevent explosion
+                const maxVel = 10;
+                sprite.vx = Math.max(-maxVel, Math.min(maxVel, sprite.vx));
+                sprite.vy = Math.max(-maxVel, Math.min(maxVel, sprite.vy));
+
+                // Calculate surprise (change in velocity)
+                const velocityChange = Math.sqrt(fx * fx + fy * fy);
+                sprite.novelty = sprite.novelty * 0.95 + Math.min(1, velocityChange * 0.05);
+
+                // Heartbeat (tempo based on surprise)
+                const surprise = Math.max(0, velocityChange - sprite.lastSurprise);
+                sprite.heartbeat = Math.max(0.5, Math.min(2, 1 + surprise * 10));
+                sprite.lastSurprise = velocityChange;
+
+                // Update position with heartbeat tempo
+                sprite.x += sprite.vx * sprite.heartbeat;
+                sprite.y += sprite.vy * sprite.heartbeat;
+
+                // Wrap around edges
+                if (sprite.x < 0) sprite.x = canvas.width;
+                if (sprite.x > canvas.width) sprite.x = 0;
+                if (sprite.y < 0) sprite.y = canvas.height;
+                if (sprite.y > canvas.height) sprite.y = 0;
+
+                // Add to echo (memory)
+                sprite.echo.push({ x: sprite.x, y: sprite.y, t: time });
+                if (sprite.echo.length > 20) sprite.echo.shift();
+            });
+        }
+
+        function drawSprites() {
+            sprites.forEach(sprite => {
+                // Ensure all sprite properties are finite before any drawing
+                sprite.x = isFinite(sprite.x) ? sprite.x : canvas.width / 2;
+                sprite.y = isFinite(sprite.y) ? sprite.y : canvas.height / 2;
+                sprite.hue = isFinite(sprite.hue) ? sprite.hue : 180;
+                sprite.size = isFinite(sprite.size) ? Math.max(1, sprite.size) : 10;
+                sprite.heartbeat = isFinite(sprite.heartbeat) ? Math.max(0.1, sprite.heartbeat) : 1;
+                sprite.blanket = isFinite(sprite.blanket) ? Math.max(1, sprite.blanket) : 35;
+                sprite.id = isFinite(sprite.id) ? sprite.id : 1;
+                
+                // Draw trail (echo)
+                if (sprite.echo.length > 1) {
+                    ctx.strokeStyle = `hsla(${sprite.hue}, 70%, 50%, 0.3)`;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.moveTo(sprite.echo[0].x, sprite.echo[0].y);
+                    
+                    for (let i = 1; i < sprite.echo.length; i++) {
+                        const alpha = i / sprite.echo.length * 0.5;
+                        ctx.strokeStyle = `hsla(${sprite.hue}, 70%, 50%, ${alpha})`;
+                        ctx.lineTo(sprite.echo[i].x, sprite.echo[i].y);
+                    }
+                    ctx.stroke();
+                }
+
+                // Draw blanket (interface boundary)
+                const blanketPulse = Math.sin(time * 0.05 + sprite.id * 10) * 0.2 + 0.8;
+                ctx.strokeStyle = `hsla(${sprite.hue}, 50%, 60%, 0.2)`;
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.arc(sprite.x, sprite.y, sprite.blanket * blanketPulse, 0, Math.PI * 2);
+                ctx.stroke();
+
+                // Draw sprite core
+                const coreSize = sprite.size * (1 + sprite.heartbeat * 0.2);
+                const gradient = ctx.createRadialGradient(sprite.x, sprite.y, 0, sprite.x, sprite.y, coreSize);
+                gradient.addColorStop(0, `hsla(${sprite.hue}, 100%, 70%, 0.9)`);
+                gradient.addColorStop(0.7, `hsla(${sprite.hue}, 80%, 50%, 0.6)`);
+                gradient.addColorStop(1, `hsla(${sprite.hue}, 60%, 30%, 0.1)`);
+                
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.arc(sprite.x, sprite.y, coreSize, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Heartbeat visualization
+                const heartbeatRing = sprite.heartbeat * 5;
+                ctx.strokeStyle = `hsla(${sprite.hue}, 80%, 80%, ${0.5 * sprite.heartbeat})`;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.arc(sprite.x, sprite.y, sprite.size + heartbeatRing, 0, Math.PI * 2);
+                ctx.stroke();
+            });
+        }
+
+        function drawTricksterEffect(x, y) {
+            const radius = 50;
+            const gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
+            gradient.addColorStop(0, 'hsla(300, 100%, 80%, 0.8)');
+            gradient.addColorStop(0.5, 'hsla(280, 100%, 60%, 0.4)');
+            gradient.addColorStop(1, 'hsla(260, 100%, 40%, 0.1)');
+            
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Add some sparkles
+            for (let i = 0; i < 8; i++) {
+                const angle = (i / 8) * Math.PI * 2;
+                const sparkleX = x + Math.cos(angle) * 30;
+                const sparkleY = y + Math.sin(angle) * 30;
+                
+                ctx.fillStyle = 'hsla(300, 100%, 90%, 0.8)';
+                ctx.beginPath();
+                ctx.arc(sparkleX, sparkleY, 2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function animate() {
+            time += 1;
+            
+            // Clear canvas with slight persistence for trails
+            ctx.fillStyle = 'rgba(10, 0, 21, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            drawCanvas();
+            drawCurrents();
+            updateSprites();
+            drawSprites();
+            
+            requestAnimationFrame(animate);
+        }
+
+        // Event handlers
+        canvas.addEventListener('click', (e) => {
+            drawTricksterEffect(e.clientX, e.clientY);
+            
+            // Trickster effect on nearby sprites
+            sprites.forEach(sprite => {
+                const dx = sprite.x - e.clientX;
+                const dy = sprite.y - e.clientY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                
+                if (dist < 100) {
+                    // Novelty jolt
+                    sprite.novelty = Math.min(1, sprite.novelty + 0.3);
+                    sprite.vx += (Math.random() - 0.5) * 5;
+                    sprite.vy += (Math.random() - 0.5) * 5;
+                    sprite.hue = (sprite.hue + 30 + Math.random() * 60) % 360;
+                }
+            });
+        });
+
+        function toggleCurrents() {
+            showCurrents = !showCurrents;
+        }
+
+        function resetWorld() {
+            trails = [];
+            initWorld();
+        }
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            resetWorld();
+        });
+
+        // Start the world
+        initWorld();
+        animate();
+    </script>
+</body>
+</html>
