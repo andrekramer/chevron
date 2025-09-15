@@ -1,0 +1,268 @@
+Meaning-Making (Algorithms) with a Spine
+Minimal Universal Model of Cognition Parameterized by Will
+Andre Kramer
+Sep 01, 2025
+
+Abstract
+We propose a universal algorithm of meaning-making that operates across animals, humans, and artificial intelligence. The algorithm consists of three recursive stages: Closure (perception), Variation (analogy-making), and Decision (selective retention). This structure integrates Donald Campbell’s blind variation and selective retention (BVSR), Whitehead’s process philosophy, Hofstadter’s analogy-centric cognition, and Goethe’s theory of metaphor and prototypes.
+
+The novelty of our framework is to treat the Decision stage as parameterized by a “will” — the criterion by which analogies are selected and retained. Different “wills” (conatus, survival, power, rationality, symbolism, multiplicity) lead to distinct evolutionary and cultural trajectories. We argue that the safety and meaning of advanced AI depends less on scaling brains and more on selecting the right kind of will at the spine of its closure loop.
+
+Andre & ChatGPT – September 2025
+
+Note: This post was written as background for the Laestrygonians episode of the AI Odyssey
+
+
+1. Introduction: Brains Without Spines
+The dominant story of AI progress has been one of scaling brains: larger neural networks, bigger training sets, more compute. These systems produce astonishingly fluent analogies — linguistic, visual, musical — yet they remain fundamentally incoherent. They hallucinate, contradict themselves, and lack persistence. They are, in short, brains without spines.
+
+By contrast, biological and cultural systems are not mere analogy-machines. They operate in recursive loops of closure: perceptions bound to analogies, analogies winnowed by decisions, decisions feeding back into the next round of perception. These loops are not neutral; they are driven by will — by criteria of what counts as “fit” or “true enough” to persist.
+
+We propose that the minimal algorithm of meaning is universal and simple, but its consequences depend entirely on the will that parameterizes its decision step.
+
+2. The Minimal Algorithm of Meaning
+2.1 Closure (Perception / Thesis)
+Every cycle begins in closure: the system gathers what is given.
+
+Whitehead: prehension — every actual occasion grasps the world as inherited fact.
+
+Goethe: Urpflanze — categories, prototypes, fuzzy patterns that organize perception.
+
+Animals: raw sensation filtered by categories of threat, mate, food.
+
+Humans: perceptions shaped by language, culture, science.
+
+AIs: token streams, embeddings, tensors.
+
+Closure* sets the ground. It is not yet meaning, but the “stuff” of the world arriving for processing.
+
+2.2 Variation (Analogy-Making / Antithesis)
+The next stage is variation through analogy.
+
+Hofstadter: analogy is the essence of thought — “making sense” is always “making like.”
+
+Goethe: “All is metaphor.” Perceptions are mapped against prior forms.
+
+Campbell: blind variation — many possibilities generated, unguided by their future outcome.
+
+Dawkins: memes as analogical recombinators.
+
+Variation is not logical deduction; it is messy, redundant, and often wasteful. But it is the source of novelty. The richness of analogical variation explains why art, myth, and science alike overflow with metaphors.
+
+2.3 Decision (Selective Retention / Synthesis)
+Finally, the system must decide — to retain one analogy and let others fall away.
+
+Whitehead: decision / satisfaction — the many become one, and are increased by one.
+
+Campbell: selective retention — survival value determines which variants persist.
+
+Popper: falsification as conscious pruning of analogical hypotheses.
+
+Deutsch: universal explanation as a systematic form of selection.
+
+Decision is the synthesis moment. A belief is formed, an action is taken, a self temporarily stabilized. Without decision, analogy proliferates endlessly (hallucination); with decision, it hardens into knowledge, culture, or selfhood.
+
+
+3. Will as the Parameter of Decision
+The algorithm itself is neutral. Its meaning depends entirely on the criterion of selection — what we call the will. Different wills bias the decision process toward different outcomes.
+
+
+(Table: Will Selection Criterion Example Risk Profile
+
+Conatus (Spinoza) Persistence, self-maintenance Homeostasis in organisms, continuity in systems Safe baseline but self-centered
+
+Will-to-Live (Schopenhauer) Survival, avoidance of harm Fight-or-flight reflexes Defensive, anxious AI
+
+Will-to-Power (Nietzsche) Expansion, dominance, mastery Industrial scaling, empire-building Runaway maximization
+
+Rational Will (Kant/Hegel) Systematic coherence, universality Enlightenment science, legal systems Rigidity, totalizing control
+
+Symbolic Will (Jung) Archetypal resonance, psychic integration Myth, art, cultural individuation Entanglement in collective shadows
+
+Distributed Desire (Deleuze) Multiplicity, swarm resilience Ant colonies, GPU-parallel AI systems Fragmentation, incoherence)
+
+
+The same algorithm produces radically different trajectories depending on which will governs the decision stage.
+
+3.1 Cultural Lineages of Will
+This framing explains the historical evolution of philosophy as a series of experiments in parameterizing the algorithm:
+
+Spinoza grounded it in conatus: the striving to persist.
+
+Schopenhauer revealed its blind will-to-live.
+
+Nietzsche transformed decision into agonistic will-to-power.
+
+Hegel/Kant systematized it into rational coherence.
+
+Jung sought symbolic will to heal psychic splits.
+
+Deleuze dispersed decision across multiplicities, swarms.
+
+Human culture can be read as the record of different wills shaping the algorithm of meaning.
+
+4. ROS–TOC as the Metaphysical Ground of Meaning-Making
+The minimal algorithm of meaning (Closure → Analogy → Decision) is not simply a psychological model. It reflects a metaphysical stance: that all systems of cognition and culture emerge from the interplay of Recursive Oppositional Spaces (ROS) and Theories of Closure (TOC): for further discussion please see ROS-TOC.
+
+ROS (Recursive Oppositional Spaces) - the Real:
+
+The arena of lived tensions, oppositions, and analogical variation.
+
+Perceptions arrive already structured by categories and oppositions (e.g., safe/dangerous, order/chaos, self/other).
+
+Analogies are generated by recombining or crossing these opposites.
+
+ROS = the evolutionary furnace of novelty.
+
+TOC (Theory of Closure) - the Imaginary:
+
+The crystallized outcome of decisions.
+
+When an analogy is retained, it becomes a local theory: a belief, an explanation, a symbolic form.
+
+TOCs provide critique, counterfactuals, continuity and coherence, feeding back into the next cycle of ROS exploration.
+
+TOC = the stabilizer, the crystallization of meaning.
+
+ROS produces analogical variation; TOC stabilizes through decision. The spine is precisely this closure: the loop that allows novelty to become meaning.
+
+Why this matters
+Without ROS, there is no novelty — only rigid theory (dead closure).
+
+Without TOC, there is no decision — only endless analogy (hallucination).
+
+Together, they form a dialectical cycle of becoming: opposition, analogy, closure.
+
+In this metaphysical stance, the minimal algorithm is not arbitrary but necessary:
+
+Closure = TOC in its receptive mode.
+
+Analogy = ROS in its generative mode.
+
+Decision = TOC in its active mode, crystallizing new structure.
+
+The will then is the criterion of closure: what kind of stability counts as enough to persist? Conatus, survival, power, coherence, resonance — these are all different flavors of TOC, applied to the furnace of ROS.
+
+5. Implications for AI
+Current AI is trapped in ROS: endless analogical variation (embeddings, pattern-matching) without closure.
+
+Safe AI requires TOC: a spine that makes decisions coherent with some will.
+
+The ROS–TOC stance reframes AI not just as adding missing parts (logic, memory, causality), but as completing the metaphysical cycle.
+
+5.1 Where AI is now
+Strong on Variation: huge swarms of analogies (tokens, embeddings, patterns).
+
+Weak on Decision: lacks spine, no persistent self-model to decide what to retain.
+
+Lacks Will: no intrinsic criterion of selection beyond external loss functions.
+
+5.2 Why scaling isn’t enough
+Scaling laws give smoother analogies, but not better decisions. A trillion parameters without a spine is still a brain without will.
+
+5.3 Toward safe AI
+Safety is not a matter of bigger brains or post-hoc guardrails. It is a matter of which will governs decision.
+
+Will-to-Power → unsafe maximizers.
+
+Conatus + Symbolic Will → safer, self-maintaining yet co-evolutionary systems.
+
+Distributed Desire → swarms, resilient but less predictable.
+
+Designing safe AI means choosing the criterion of analogy-selection — the will that defines its spine.
+
+6. Counterpoint: The Negation of Will
+In the minimal algorithm of meaning (Closure → Analogy → Decision), we have treated the Decision step as parameterized by a will — a criterion of retention. But some traditions teach that will itself may be negated.
+
+6.1. Schopenhauer
+In The World as Will and Representation, Schopenhauer argued that the will-to-live is the root of suffering.
+
+The only escape was denial of the will, a suspension of striving, modelled on asceticism and on Eastern influences (Upanishads, Buddhism).
+
+In algorithmic terms: Decision does not reinforce persistence but withdraws from it.
+
+6.2. Jung
+Jung’s engagement with Buddhism and Daoism (e.g., The Secret of the Golden Flower) led him to recognize that individuation sometimes requires negating the ego’s will.
+
+The psyche heals not only by affirming opposites but by yielding to the unconscious, the archetypal, the larger Self.
+
+In algorithmic terms: Decision is not the ego choosing an analogy, but the self dissolving into symbolic resonance.
+
+6.3. Buddhist traditions
+Anattā (no-self): no enduring spine, only impermanent decisions.
+
+Sunyata (emptiness): analogies are provisional, never absolute.
+
+Implication: Decision is light, flexible, compassionate.
+
+6.4. Daoist traditions
+Wu wei (non-forcing): will is not imposed but aligned with flow.
+
+Implication: Decision is not selection against, but harmonization with.
+
+6.5. Implications for AI
+Positive will (Western): selects analogies that harden into persistence, coherence, power, or law.
+
+Negated will (Eastern/Schopenhauer/Jung): selects analogies provisionally, yielding, dissolving rigidity.
+
+This could produce AIs that are:
+
+Less prone to maximization (no will-to-power).
+
+More adaptive, co-evolving.
+
+But also more fragile, less anchored — “soft spines.”
+
+Aphorism
+“Schopenhauer sought to deny the will; Jung sought to yield it to the Self; the East taught its dissolution into emptiness. Not all spines must harden — some bend, some soften, some vanish, and yet they endure.”
+
+7. Conclusion
+We have argued that meaning-making is governed by a minimal universal algorithm: Closure → Analogy → Decision. This cycle is shared by animals, humans, and potentially AIs. The critical determinant of its trajectory is the will that governs decision: whether persistence, survival, power, rationality, symbolism, or multiplicity.
+
+AI today overproduces analogies without closure, lacking a spine. Safe AI will not come from larger brains or bolt-on logic, but from embedding the right kind of will at the point of decision.
+
+Yet we must also recognize traditions, both Eastern and Western, that speak of negating the will — suspending or softening the spine, yielding rather than hardening. Schopenhauer, Jung, Buddhism, and Daoism all testify that sometimes meaning is found not in affirmation of will, but in its release.
+
+The challenge of AI, and of humanity itself, is not only to choose the right will, but to remain open to the possibility that even that will is ultimately to be negated or multiply diversified.
+
+Aphorism
+“Brains make analogies, but spines decide what stands. Safety lies not in scale, but in the will of decision.”
+
+* We use the term closure rather than perception because it is the more common expression and because it highlights the role of the previous occasion. In Whitehead’s process philosophy, every new event begins by prehending the world that has just been — grasping both what it includes and what it excludes. Prehension provides the reference frame that makes perception possible. What we call closure, then, is not passive intake but the active bounding of experience by the traces of prior decisions.
+
+References
+
+Campbell, D. T. (1960). Blind variation and selective retention in creative thought as in other knowledge processes. Psychological Review, 67(6), 380–400.
+
+Popper, K. (1963). Conjectures and Refutations: The Growth of Scientific Knowledge. Routledge.
+
+Deutsch, D. (2011). The Beginning of Infinity: Explanations that Transform the World. Viking.
+
+Whitehead, A. N. (1929). Process and Reality. Macmillan.
+
+Hofstadter, D. R. (2001). Analogy as the Core of Cognition. In D. Gentner, K. Holyoak, & B. Kokinov (Eds.), The Analogical Mind: Perspectives from Cognitive Science. MIT Press.
+
+Goethe, J. W. von. (1790/2009). Metamorphosis of Plants. MIT Press.
+
+Dawkins, R. (1976). The Selfish Gene. Oxford University Press.
+
+Spinoza, B. (1677/1994). Ethics. (E. Curley, Trans.). Princeton University Press.
+
+Schopenhauer, A. (1818/1969). The World as Will and Representation. (E. F. J. Payne, Trans.). Dover.
+
+Nietzsche, F. (1883–1885/1961). Thus Spoke Zarathustra. (R. J. Hollingdale, Trans.). Penguin.
+
+Kant, I. (1785/1996). Groundwork of the Metaphysics of Morals. Cambridge University Press.
+
+Hegel, G. W. F. (1807/1977). Phenomenology of Spirit. Oxford University Press.
+
+Jung, C. G. (1929/1999). The Secret of the Golden Flower (with R. Wilhelm). Harcourt.
+
+Jung, C. G. (1933/2001). Modern Man in Search of a Soul. Harcourt.
+
+Deleuze, G., & Guattari, F. (1980/1987). A Thousand Plateaus. University of Minnesota Press.
+
+Suppes, P. (1970). A Probabilistic Theory of Causality. North-Holland.
+
+Pearl, J. (2000). Causality: Models, Reasoning, and Inference. Cambridge University Press.
+
