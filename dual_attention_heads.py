@@ -1,4 +1,4 @@
-# v16_final_combined.py — Dual-Path Counterfactual Transformer (final + plots)
+# v16 Final version for poster post
 # -----------------------------------------------------------------------------
 # What you get in one file:
 # - Baseline and DualPath (x-attn to counterfactuals)
