@@ -280,3 +280,33 @@ plt.tight_layout()
 plt.savefig("r_rule_vs_boltzmann_hmc.png", dpi=200)
 plt.show()
 
+# ============================================================
+# 7. Stability check: Does R-rule actually stay in new minimum?
+# ============================================================
+
+def stability_diagnostics(qs, label, q_target, fraction=0.2):
+    """Compute mean/std of q over last fraction of trajectory."""
+    tail = qs[int(len(qs)*(1-fraction)):]
+    mean_q = np.mean(tail)
+    std_q = np.std(tail)
+    print(f"{label}: mean q={mean_q:.4f}, std={std_q:.4f}, distance to target={abs(mean_q - q_target):.4f}")
+    return mean_q, std_q
+
+print("\n--- Stability diagnostics ---")
+mean_q_r, std_q_r = stability_diagnostics(qs_r, "R-rule", right_q)
+mean_q_h, std_q_h = stability_diagnostics(qs_hmc, "HMC-like", right_q)
+
+# Plot q(t) for both HMC and R-rule to visualize
+plt.figure(figsize=(8,4))
+plt.plot(qs_hmc, label='HMC-like (momentum only)', color='purple', alpha=0.7)
+plt.plot(qs_r, label='R-rule (annealed)', color='green', alpha=0.8)
+plt.axhline(right_q, color='gray', linestyle='--', label='Right-hand minimum')
+plt.axhline(left_q, color='lightgray', linestyle='--', label='Left-hand minimum')
+plt.title("q(t) trajectories: HMC vs R-rule")
+plt.xlabel("time steps")
+plt.ylabel("q position")
+plt.legend()
+plt.tight_layout()
+plt.savefig("r_rule_stability_check.png", dpi=200)
+plt.show()
+
