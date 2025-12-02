@@ -1,0 +1,272 @@
+
+Andre on the R rule
+
+
+
+The R-Rule: Geometry of a Minimal Self
+in a World of Opposites in Tension
+Dec 02, 2025
+
+
+Every world of action is defined by oppositions:
+
+approach vs. avoid
+
+hot vs. cold
+
+risky vs. safe
+
+self vs. other
+
+To remain coherent in such a world, an agent must do the simplest possible thing:
+
+balance what it wants with what the world demands.
+
+This tension defines a plane of meaning.
+
+A minimal self is simply the system that can rotate within that plane.
+Geometric Ingredients
+Let:
+
+ψ = the agent’s current state (a multivector in meaning-space)
+
+A = the agent’s drive / preference vector
+
+N = the world’s constraint / correction vector
+
+I = A ∧ N = the oriented plane of tension (a bivector)
+
+This is the smallest geometry capable of representing:
+
+normativity (A)
+
+structure (N)
+
+meaning-relations between them (I)
+
+No higher grades are required.
+
+The Generator of Change (Two Equivalent Views)
+Simple geometric form (shows minimality):
+
+G = αA  −  βIN.
+
+Vector = directed pull
+
+Bivector = structural rotation
+
+α,β weight agency vs. structure
+
+This is the bare minimum geometry of a self.
+
+Phase-controlled form (shows balance angle):
+
+G_θ = α sin⁡θ A  −  β cos⁡θ IN.
+
+Here θ describes how the self distributes and cycles attention between:
+
+its own drive (sin⁡ θ)
+
+the world’s structure (cos ⁡θ)
+
+with a phase ⁡θ
+
+A geometric “will–world” balance.
+
+The R-rule in geometric algebra form.
+
+Bayesian Uncertainty Weighting
+λ = η sqrt(p(1−p)), p= ∣ψ∣^2 / ∑b ∣ψb∣^2.
+
+
+This expresses a simple truth:
+
+When certain → rotate less
+
+When uncertain → rotate more
+
+Maximum transformation occurs at maximal uncertainty
+
+This is straight Jaynesian statistical inference expressed as scalar geometry.
+
+The Update (Minimal Self-Transformation)
+
+R = e^⁡ ⁣(λ/2 G_θ), ψ′= R ψ Ṝ.
+
+A rotor is the simplest transformation that can:
+
+preserve coherence
+
+change orientation
+
+update the self by updating its frame
+
+couple agency and constraint
+
+do so reflexively (ψ changes how it can change next time)
+
+This is the minimal geometry of a self in a world of oppositions.
+
+Why This Matters
+This formulation shows that a self does not need:
+
+a complex world-model,
+
+a utility function,
+
+a specific neural network,
+
+a hidden-state engine, or
+
+a deep inference hierarchy.
+
+It needs only:
+
+a scalar (uncertainty),
+
+a vector (drive),
+
+a bivector (structural meaning),
+
+and a rotor (self-transform).
+
+This is:
+
+cybernetically complete (absorbs external variety),
+
+geometrically minimal (no higher grades needed),
+
+Bayesian by construction (uncertainty = scalar modulation),
+
+Jaynesian maximum-entropy inference (update strength comes from p(1−p), the MaxEnt uncertainty term),
+
+normative but not goal-maximizing,
+
+recursively self-updating,
+
+coherent by geometric necessity.
+
+recursive and reflexive, self-updating.
+
+It is the smallest mathematical object that can behave like a self.
+
+To include a self in a model, a collapse step is required. Internal meaning dynamics can be continuous, drifting, and multi-valued, but agency requires a point of commitment: ‘What will I do?’ The scalar collapse of ψ into ⟨ψ⟩₀ is that commitment. It is the moment where potentials become action, where the system becomes observable to itself and others, and where a self appears as the boundary that forces decisions.
+
+⟨ψ⟩₀ = p = |ψ|² / ∑ᵦ|ψᵦ|² — the scalar obtained when the multivector ψ collapses to a (Born-rule) probability for action.
+
+Notes
+The non-GA version of the R-rule used so far in this series of posts is an approximation of the full geometric form. It updates the state by a complex-valued correction:
+ψ′ = ψ + η√(p(1−p)) [α sinθ A − i β cosθ N],
+where p = |ψ|² / Σ_b |ψ_b|² is a Born-like relative probability.
+
+This simplified form captures the key dynamics—uncertainty-scaled rotation driven by A and corrected by N—even though the true geometric update is a rotor acting in a bivector plane.
+
+A and N are both vectors because they encode directional influences in meaning-space.
+A carries prediction-driven tendencies (surprise, desire, goal-gradient), while N carries internal structural constraints (coherence, stability, norms).
+Their opposition creates a bivector plane I = A ∧ N (but see below), the meaning-plane in which the agent can reorient itself.
+The probability term p expresses the agent’s certainty; √p(1−p) is the Jaynesian maximum-uncertainty amplitude that modulates how strongly A and N influence the update.
+Together they generate the minimal rotor dynamics ψ′ = RψṜ of a self reorienting within its tensions.
+
+I is the unit meaning-plane formed by the opposition between the agent’s drive A and its structural constraint N.
+It is defined as the normalized wedge: I = (A ∧ N) / |A ∧ N|
+
+This ensures that the rotation depends only on the direction of the tension between A and N, not their magnitudes.
+With I normalized, the R-rule remains a pure geometric rotor.
+
+A (drive / prediction)
+
+↑
+
+|
+
+|
+
+• ψ (current self-state)
+
+/ \
+
+/ \
+
+/ \
+
+N (constraint)----→ IN (constraint rotated in I)
+
+where I = A ∧ N (meaning-plane / tension-plane)
+
+The phase-controlled generator G_θ = α sin⁡θ A − β cos⁡θ IN lets the agent shift continuously between drive-led and constraint-led updates, creating a tunable “phase” of attention. This phase angle allows different layers or subsystems to align, synchronize, or deliberately de-align their updates by adjusting θ, making cross-layer coordination a natural geometric consequence of rotating within the same meaning-plane.
+
+λ is the uncertainty-gain of the R-rule: it controls how strongly the agent rotates its meaning-state ψ in response to tension. It is computed from a Born-like probability p extracted from ψ, for example by projecting ψ onto the drive direction A and normalizing:
+p = |proj_A(ψ)|² / ∑₍b₎ |ψ_b|².
+λ = η√(p(1−p)) is maximal when the agent is most uncertain (p ≈ 0.5) and minimal when the agent is confident (p near 0 or 1). Thus λ naturally produces slow updates when ψ is settled, fast reorientation when ψ is unsure, and the characteristic lag-and-burst dynamics of real decision-making.
+
+ART and the algebraic R-rule are first-order, piecewise-linear approximations to a deeper geometric dynamic. In geometric algebra, that deeper law appears as a rotor-driven self-update: ψ′ = R ψ R̃. Biology seems to approximate this rotor method at macroscopic scale.
+
+A self is the locus where differences that make a difference (Bateson) are gathered, oriented, and preserved. The world presents differences; the agent selects which of them matter. A carries the differences that drive action, N carries the differences that constrain coherence, and their opposition creates the meaning-plane in which ψ rotates. In this sense, a self is not a substance but a geometric process: the ongoing transformation of ψ by the rotor R ψ R̃, integrating relevant differences into a coherent stance. Where differences acquire orientation, significance, and reflexive update—there a self appears.
+
+Whitehead’s idea of prehension—that every actual occasion becomes itself by integrating inherited data with a self-generated subjective aim—maps strikingly onto the rotor form of the R-rule. In the update ψ′ = R ψ R̃, the left action R represents the agent’s creative advance, its subjective pull toward novelty or valuation, while the right action R̃ expresses the inherited structure that restores coherence and integrates the new into the old. Together they form a reflexive act: not an external push, but a self-constituting transformation where the agent both changes and witnesses its own change. This is exactly Whitehead’s dipolar process—physical feeling (inheritance) and conceptual feeling (aim) unified into a single concrescent becoming—expressed here as a minimal geometric rotation in the meaning-plane defined by its tensions.
+
+Once the R-rotor is nested across scales inside N, with phase ϕ coupling the levels,
+the system becomes a 2nd-order cybernetic learner. It controls not just its actions, but the structure of its own control.
+
+A mathematically explicit 2nd-order cybernetic agent
+whose internal distinctions, constraints, and scales co-evolve recursively.
+
+Following the spirit of second-order cybernetics, one might say: the goal of a goal is to stabilize the goal-making system.
+
+Parallel opposites collapse to scalars; orthogonal opposites create planes. GA makes this difference explicit: the scalar and bivector are the fundamental structures of the Hypercube of Opposites.
+
+If ψ has a scalar component ⟨ψ⟩₀ that remains invariant under R ψ R̃, this may function as a kind of ‘trace’ — not in the matrix sense, but as the persistent core of the self that is preserved across transformations.
+
+The rotor update R ψ R̃ evolves the agent’s meaning-state smoothly in its internal space of tensions. But action requires collapsing this continuous multivector ψ into a discrete scalar decision. Any such collapse—whether softmax, thresholding, or an emphemeral trace—is necessarily discontinuous. That discontinuity marks the boundary of the self: the moment where the world forces a commitment and the self becomes observable to another. Every action is, in this sense, a measurement performed by the world (as another agent) on the self.
+
+A scalar decision, such as the trace of ψ or a softmax commitment, need not be imposed externally. It can arise when ψ stabilizes, when a higher layer forces a choice (as with pain thresholds, reflex arcs, or value systems), or when the environment demands immediate action. In more complex agents, multiple layers evolve in parallel, leading to drift, negotiation, and delayed collapse. Thus, the scalar ‘decision’ is a flexible emergent event, arising from the interplay of nested meaning-planes, not a simple external measurement.
+
+T-Shirt version
+Front
+ψ′ = R ψ R̃
+
+Back
+R = e^(½ λ G)
+
+Gθ = α sinθ A − β cosθ I N (basic form G = α A − β I N)
+
+I = (A ∧ N) / |A ∧ N|
+
+λ = η √(p(1−p))
+
+⟨ψ⟩₀ = p = |ψ|² / ∑ᵦ|ψᵦ|²
+
+Where A and N are vectors of action and constraints
+
+Differences that make a difference become a self
+
+Conatus ψ: Potentia in tension with Potestas
+
+Meaning as the geometry of difference
+
+⟨ψ⟩₀ — a measurement on a self
+
+Minimal
+ψ′ = R ψ R̃
+
+R = e^(½ λ G)
+
+I = A ∧ N
+
+G = α A − β I N
+
+A: action N: constraint
+
+Differences that make a difference
+
+An It from random bit — through a self that learns.
+
+⟨ψ⟩₀ — the trace that matters
+
+We began this series with the famous Newgrange Neolithic triple spiral. We can now offer an interpretation::
+
+
+
+
+ψ′ = R ψ R̃ - The triskele’s three arms become ψ, R, and R̃ — a rotation of meaning across millennia.
+
