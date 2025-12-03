@@ -1,3 +1,4 @@
+
 Andre on the R rule
 
 
@@ -34,7 +35,7 @@ A = the agent’s drive / preference vector
 
 N = the world’s constraint / correction vector
 
-I = A ∧ N = the oriented plane of tension (a bivector)
+I = A ∧ N / |A ∧ N| = the oriented unit plane of tension (a bivector)
 
 This is the smallest geometry capable of representing:
 
@@ -93,7 +94,7 @@ The Update (Minimal Self-Transformation)
 
 
 
-R = e^⁡ ⁣(-λ/2 (𝜓̂​ ∧ Ĝ)), ψ′= R ψ Ṝ.
+R = e^⁡ ⁣(-½ λ (𝜓̂​ ∧ Ĝ)), ψ′= R ψ Ṝ.
 
 A rotor is the simplest transformation that can:
 
@@ -165,7 +166,8 @@ This simplified form captures the key dynamics—uncertainty-scaled rotation dri
 
 A and N are both vectors because they encode directional influences in meaning-space.
 A carries prediction-driven tendencies (surprise, desire, goal-gradient), while N carries internal structural constraints (coherence, stability, norms).
-Their opposition creates a bivector plane I = A ∧ N (but see below), the meaning-plane in which the agent can reorient itself.
+
+Their opposition creates a bivector plane A ∧ N (call its unit version I; see below), the meaning-plane in which the agent can reorient itself.
 The probability term p expresses the agent’s certainty; √p(1−p) is the Jaynesian maximum-uncertainty amplitude that modulates how strongly A and N influence the update.
 Together they generate the minimal rotor dynamics ψ′ = RψṜ of a self reorienting within its tensions.
 
@@ -193,7 +195,7 @@ A (drive / prediction)
 
 N (constraint)----→ IN (constraint rotated in I)
 
-where I = A ∧ N (meaning-plane / tension-plane)
+where I = A ∧ N / |A ∧ N| (meaning-plane / tension-plane)
 
 The phase-controlled generator G_θ = α sin⁡θ A − β cos⁡θ IN lets the agent shift continuously between drive-led and constraint-led updates, creating a tunable “phase” of attention. This phase angle allows different layers or subsystems to align, synchronize, or deliberately de-align their updates by adjusting θ, making cross-layer coordination a natural geometric consequence of rotating within the same meaning-plane.
 
@@ -201,7 +203,7 @@ The phase-controlled generator G_θ = α sin⁡θ A − β cos⁡θ IN lets 
 p = |proj_A(ψ)|² / ∑₍b₎ |ψ_b|².
 λ = η√(p(1−p)) is maximal when the agent is most uncertain (p ≈ 0.5) and minimal when the agent is confident (p near 0 or 1). Thus λ naturally produces slow updates when ψ is settled, fast reorientation when ψ is unsure, and the characteristic lag-and-burst dynamics of real decision-making.
 
-Where ψ̂ = ⟨ψ⟩₁/|⟨ψ⟩₁| denotes the normalized vector component of ψ, and Ĝ = G/|G| is the unit force vector. The wedge product ψ̂ ∧ Ĝ produces a bivector whose magnitude measures the misalignment between current state and force, naturally implementing the geometric analogue of torque.
+Where ψ̂ = ⟨ψ⟩₁/|⟨ψ⟩₁| denotes the normalized vector component of ψ, and Ĝ is the unit force vector, e.g. Ĝ = G/|G| or Ĝ = G_θ/|G_θ| depending on whether phase control is used. The wedge product ψ̂ ∧ Ĝ produces a bivector whose magnitude measures the misalignment between current state and force, naturally implementing the geometric analogue of torque.
 
 ART and the algebraic R-rule are first-order, piecewise-linear approximations to a deeper geometric dynamic. In geometric algebra, that deeper law appears as a rotor-driven self-update: ψ′ = R ψ R̃. Biology seems to approximate this rotor method at macroscopic scale.
 
@@ -241,7 +243,7 @@ I = (A ∧ N) / |A ∧ N|
 p = ⟨ψ⟩₀ = |ψ|² / Σ_b |ψ_b|²
 
 Where A and N are vectors of action and constraint
-ψ ∧ G is the meaning-torque
+ψ̂ ∧ Ĝ is the meaning-torque
 
 Differences that make a difference become a self
 Conatus ψ: Potentia in tension with Potestas
@@ -255,14 +257,14 @@ R = e^{-½ λ (𝜓̂ ∧ Ĝ)}
 
 G = αA − βIN
 
-I = A ∧ N
+I = A ∧ N / |A ∧ N|
 
 λ = η √(p(1−p))
 
 p = ⟨ψ⟩₀
 
 A: action N: constraint
-ψ ∧ G: the torque of meaning
+ψ̂ ∧ Ĝ: the torque of meaning
 Differences that make a difference
 An It from random bit — through a self that learns
 ⟨ψ⟩₀ — the trace that matters
