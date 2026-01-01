@@ -1,0 +1,1075 @@
+MALT - Request for Comments definition and proposed RIs
+Minimal Agent Learner Theory
+Andre Kramer
+Jan 01, 2026
+
+
+MALT-0001: Minimal Agent Learner Theory
+Status: Draft RFC (minimal / conceptual)
+Scope: Substrate-agnostic (biology, robotics, software, chemical systems)
+Aim: Define minimal agency-with-learning as an organizational closure, not as a particular implementation.
+
+1. Motivation
+Many systems exhibit control (input→output loops) without being agents in a learning sense. MALT proposes that a minimal learning agent requires a specific internal closure:
+
+Actioning (A): generation or implication of alternatives (explicitly or implicitly)
+
+Norming (N): evaluation/selection pressure relative to viability constraints
+
+Retention (R): persistent updating such that past outcomes shape future action and evaluation
+
+This closure yields a minimal “self-like” continuity: a bounded system that can improve its future trajectories by altering how it selects actions over time.
+
+2. Definitions
+Agent: A system with a persistent internal state and an interface to an environment across which it exchanges matter/energy/information.
+
+Boundary: An inside/outside partition: a set of internal variables whose evolution is partly self-conditioned and persists across time.
+
+Gradient / viability ordering: Any non-indifferent constraint or ordering over states/trajectories such that some futures are functionally “better/worse” for the system (e.g., integrity, homeostasis/allostasis, resource stability, error reduction, social viability). This need not be explicit reward.
+
+Actioning (A): A process (possibly implicit) that defines a non-degenerate space of possible actions/policies from current state and memory.
+
+Norming (N): An evaluative process, grounded in gradients and history, that ranks/weights action-possibilities.
+
+Retention (R): A mechanism by which outcomes update internal state/memory so that future Actioning and/or Norming changes.
+
+Requisite inertia: Existence of at least one slow-changing internal component that remains stable across many action cycles, enabling continuity of “the same learner.”
+
+3. Axioms
+A0 — Boundary
+There exists a persistent inside/outside cut: a set of internal variables that (i) persists across time and (ii) whose evolution depends partly on internal dynamics, not only immediate external input.
+
+Conceptual implication: the system can carry history forward as an internal condition of its future behavior.
+
+Boundaries are drawn at the level where the A↔N↔R closure is maintained.
+
+A1 — Gradients (viability ordering)
+There exists at least one non-indifferent ordering over states/trajectories: some departures are “worse” and some recoveries are “better” for the system, in a functional sense.
+
+This may be implicit (e.g., a maintained set of variables, integrity constraints, error constraints, resource constraints).
+
+In physical systems, G often corresponds to maintaining boundary conditions against dissipation (i.e., resisting entropy locally), though MALT does not require an explicitly thermodynamic formulation.
+
+A2 — Actioning (alternatives, explicit or implicit)
+From (s, m), the system’s control is defined over a non-degenerate space of possible actions/policies.
+
+Equivalently: the next move is not a single fixed reflex that is invariant under changes to evaluation; there is room of variation in what could occur next.
+
+Notes:
+
+Actioning need not enumerate a discrete candidate list.
+
+Continuous/analytic/gradient-based controllers are admissible: the “alternative set” may be implicit in a direction field over an action manifold.
+
+A3 — Norming (evaluation grounded in gradients and history)
+There exists an evaluative functional N that ranks or weights action-possibilities as a function of differences, gradients, valences, current state, and retained context:
+
+N = f(G, s, m)
+
+Norming may be distributed or implicit; what matters is that it supplies selection pressure tied to viability constraints and history.
+
+A4 — Closure (A↔N coupling)
+Action selection is counterfactually sensitive to Norming.
+
+Conceptual criterion:
+
+If the evaluative criterion changes while the sensory stream is held fixed, the selected action distribution changes.
+
+This is the defining closure: evaluation is causally efficacious in steering action, not merely a descriptive label.
+
+A5 — Retention (learning)
+Outcomes update internal structure so that future Actioning and/or Norming changes:
+
+mₜ₊₁ = R(mₜ, sₜ, aₜ, oₜ₊₁, Nₜ)
+
+Retention may begin as episodic storage; slower “meta-norms” may emerge via consolidation rather than a separate explicit module.
+
+Retention note (working vs consolidated):
+Retention includes (i) working retention that persists across multiple action cycles within an episode (e.g., short-term state, temporary memory, context buffers) and (ii) consolidated retention that persists across episodes (e.g., durable memory, parameter updates, structural rewiring).
+MALT requires at least working retention; systems that also exhibit consolidated retention satisfy a stronger form (“MALT-LT”).
+
+A6 — Requisite inertia (slow mode)
+There exists at least one slow-changing internal component (a retained bias/constraint) that remains stable across many action cycles.
+
+This supports continuity and identity-like persistence: the system is not merely a moment-to-moment mirror of its environment.
+
+Notes:
+
+This does not require exactly two discrete timescales; it requires at least one slow mode relative to action-selection.
+
+4. Minimal falsifiers (conceptual)
+MALT is intended as a set of necessary conditions for minimal agentic learning. It is falsified by any reproducible counterexample that clearly exhibits agentic learning in a nontrivial environment while lacking one of the axioms.
+
+F1 — Counterfactual insensitivity (no closure):
+The system’s action selection is insensitive to evaluative variation: there exists no intervention or contextual shift that changes behavior in a way consistent with altered internal evaluation while holding the sensory stream effectively constant.
+
+F2 — No retention (no lasting update)
+The system improves behavior without any persistent internal change (no memory/structural update of any kind).
+
+F3 — No viability ordering (no gradients)
+The system displays persistent goal-directed regulation with no maintained constraints and no functional better/worse ordering over trajectories.
+
+F4 — No inertia (no slow mode)
+The system exhibits stable identity-like continuity and learning with no slow-changing internal components at all (everything updates only at the action timescale).
+
+5. Notes and non-claims
+MALT does not claim consciousness.
+
+MALT does not require explicit internal simulation; model-based cognition is a natural extension, not a prerequisite.
+
+MALT is compatible with implementations in neurons, bitstrings, chemical networks, or engineered control systems, provided the axioms are satisfied and the boundary is specified.
+
+“Norming” is treated as functional viability selection pressure; it can later be extended to social norms and meta-norms via retention and consolidation.
+
+6. One-sentence definition
+A minimal agent learner is a bounded system that generates action alternatives, selects among them using viability gradients, and retains updates with sufficient inertia to preserve identity over time.
+
+“I will argue specifically that self-reference, against the background of a thermodynamic gradient, creates an instability in an embedded agent’s ability to know the future or even treat it as a potential object of knowledge. That instability captures the sense in which the future remains for her perpetually open and the passage of time resolves openness into the fixity of fact.” - Jenann Ismael.
+
+References
+Ashby, W. R. (1958). “Requisite Variety and Its Implications for the Control of Complex Systems.” Cybernetica, 1(2), 83–99. docs.adaptdev.info+1
+
+Wheeler, J. A. (1989). “Information, Physics, Quantum: The Search for Links.” (conference paper / widely circulated PDF). philpapers.org+1
+
+Suppes, P. (1984). Probabilistic Metaphysics. Basil Blackwell. Internet Archive+1
+
+Jaynes, E. T. (2003). Probability Theory: The Logic of Science. Cambridge University Press. Cambridge University Press & Assessment+1
+(Commonly circulated as a PDF based on Jaynes’ final manuscript drafts.) bayes.wustl.edu
+
+Ismael, J. (2023). “The Open Universe: Totality, Self-reference and Time.” (paper; circulated as PDF; discussed in subsequent journal exchanges). jenanni.com+2Taylor & Francis Online+2
+
+
+
+
+Positioning: MALT as Spec, RIs as Builds, R-rule as Dynamics
+It helps to separate three layers that can otherwise get conflated:
+
+1) MALT is a specification (what must be present)
+MALT defines minimal learning agency in structural terms: a bounded internal state, non-indifferent gradients, non-degenerate action alternatives, evaluative closure, retention, and inertia. It is deliberately implementation-neutral: it tells us what an agent must contain (A0–A6), not how to compute it.
+
+2) The Reference Implementations (see Appendixes) are concrete embodiments (how to build it)
+The RIs (Tension Layers, Hopfield/TD, VSR, etc.) are engineering patterns that instantiate MALT in testable ways. They provide explicit module boundaries (encode/retrieve/propose/score/update), allow ablations, and make “MALT-ness” observable as failure modes (no closure, no retention, no inertia).
+
+3) The R-rule is a candidate internal update law (how the inside moves)
+The R-rule is not a definition of agency and not a full architecture. It is a candidate micro-dynamics for updating the agent’s internal meaning/state under a dialectic between:
+
+A (drive / action / forward projection) and
+
+N (norm / constraint / coherence / counterfactual structure),
+with step size modulated by uncertainty (the √(p(1−p)) self-annealing term) and, in the geometric form, implemented as a rotation/phase update in the A∧N tension plane.
+
+How they fit together
+MALT says an agent must have selection + learning + identity (closure + retention + inertia).
+
+An RI provides the wiring that makes this testable in practice.
+
+The R-rule can serve as a shared inner-loop dynamic inside multiple RIs—especially where you want principled handling of:
+
+interference (constructive/destructive alignment as rotation/phase effects),
+
+self-annealing (uncertainty-gated update magnitude),
+
+and the fast/slow coupling between actioning and norming.
+
+Practical implication
+You can treat the R-rule as an optional “engine” behind any RI:
+
+In the Tension Layers RI (Appendix 4), the scalar tension update is a first-order projection of the rotor view.
+
+In Hopfield/TD (Appendix 3), Hopfield supplies attractor coherence (Boltzmann-like settling) and TD supplies temporal credit; the R-rule adds the explicit A/N coupling and uncertainty gating.
+
+In VSR (Appendix 5), the R-rule provides a continuous analogue of evolutionary explore→select→retain by modulating exploration with uncertainty and stabilizing via constraint integration.
+
+In short: MALT tells you what to build, RIs show how to build it, and the R-rule offers a compact candidate law for how the “inside” evolves once built.
+
+Appendix 1: Interference in MALT
+A.1 Concept
+MALT agents generally operate under multiple simultaneous influences (gradients, constraints, features, drives, action-fragments). Interference refers to cases where the combined effect of two influences on selection and learning is non-additive.
+
+In MALT terms, interference is studied through the agent’s Norming signal (tension, error, surprise, cost) and its effect on Actioning and Retention.
+
+A.2 Definition (constructive vs destructive)
+Let τ be the agent’s tension (or cost) under some fixed context. Consider two influences A and B (e.g., two constraints, two sensory features, two candidate action-fragments, two axes in an opposites-map).
+
+Define the change in tension produced by enabling A alone as Δτ(A), enabling B alone as Δτ(B), and enabling both together as Δτ(A,B) (relative to a baseline).
+
+Constructive (positive) interference / synergy:
+The joint effect is better-than-additive.
+A convenient criterion (for “reducing tension” as good) is:
+Δτ(A,B) < Δτ(A) + Δτ(B)
+
+Destructive (negative) interference / conflict:
+The joint effect is worse-than-additive.
+Δτ(A,B) > Δτ(A) + Δτ(B)
+
+Notes:
+
+If “good” is increasing a value rather than reducing tension, flip the inequalities accordingly.
+
+Interference may appear as synergy, suppression, oscillation, freezing, or persistent conflict.
+
+A.3 Where interference appears in the MALT loop
+Norming (A3/A4):
+Interference corresponds to interaction terms in evaluation: some constraint-pairs are mutually supportive (synergy), others mutually incompatible (conflict). This is expected whenever multiple gradients are active.
+
+Actioning (A2):
+When Actioning generates alternatives by recombination (e.g., crossover, compositional policy fragments), interference describes whether combined fragments improve or degrade expected viability relative to their isolated contributions.
+
+Retention and inertia (A5/A6):
+Repeated constructive interference tends to be consolidated into stable structure (habits, priors, prototypes). Repeated destructive interference can produce attractor conflict, oscillatory behavior, “freeze” modes, or pressure to change representation (basis rotation / remapping).
+
+A.4 Minimal test protocol (black-box compatible)
+To probe interference without inspecting internals:
+
+Choose a fixed context (or replay the same sensory stream).
+
+Measure baseline τ₀.
+
+Enable influence A → measure τ_A and compute Δτ(A)=τ_A−τ₀.
+
+Enable influence B → measure τ_B and compute Δτ(B)=τ_B−τ₀.
+
+Enable A and B together → measure τ_AB and compute Δτ(A,B)=τ_AB−τ₀.
+
+Compare Δτ(A,B) with Δτ(A)+Δτ(B).
+
+Interpretation:
+
+If Δτ(A,B) is better-than-additive → constructive interference.
+
+If worse-than-additive → destructive interference.
+
+Optional extensions:
+
+Repeat across many contexts to map a pairwise “interference matrix.”
+
+Track how interference patterns change over time to study consolidation or representation shifts.
+
+A.5 Representation rotation as an interference response (optional note)
+A common response to destructive interference is to change the internal representation so that conflicting influences become more separable (reducing interaction terms). In geometric terms, this is a basis rotation: remapping coordinates so that selection and learning become better-conditioned.
+
+This links interference directly to MALT’s representational role: representations are valuable insofar as they reduce destructive interference and amplify constructive interference for viable control.
+
+Addendum 2: Classicality Placement Taxonomy for MALT Agents (CC/CQ/QC/QQ)
+Motivation. MALT requires (A5) Retention and (A6) Requisite inertia: stable records that persist long enough to bias future Actioning/Norming. In quantum foundations terms, stable records are typically associated with some form of classicality (preferred-basis stability, decoherence-selected “pointer” structure, and record redundancy). Adlam, McQueen, and Waegell (2025) analyze “quantum agents” by asking where classical resources enter and argue that purely coherent unitary dynamics (“purely quantum”) is not sufficient for agency as they define it.
+
+Taxonomy: where “classicality” enters the agent loop
+We can classify candidate agents by the location of classical resources within the MALT closure:
+
+CC (Classical–Classical): classical environment and classical agent.
+
+MALT mapping: straightforward. Sensors yield effectively classical records; Norming and Retention operate over stable variables; inertia is implementable in durable memory.
+
+CQ (Classical agent – Quantum environment): the environment may be quantum, but the agent’s interface reduces it to classical records (measurement outcomes) used for selection and retention.
+
+MALT mapping: classical Retention and inertia remain intact; quantum appears primarily as stochasticity/uncertainty in observations and dynamics.
+
+Interpretation: “quantum in the world,” but the agent’s internal loop is classical.
+
+QC (Quantum agent – Classical environment): the agent’s internals are coherent/quantum while the environment supplies a preferred basis (classical records).
+
+Key issue: Adlam–McQueen–Waegell argue this category is fragile: even if the environment is classical, a quantum agent may lack reliable access to (or alignment with) the classical basis / reference frame that makes records usable, and may require additional resources (basis alignment, tomography-like steps, or explicit decoherence inside the agent) to function as an agent.
+
+MALT mapping: the bottleneck is A5/A6—retention requires stable, consultable records; if the agent remains fully coherent internally, record formation and reuse become problematic without introducing classicality inside the boundary.
+
+QQ (Quantum–Quantum / “purely quantum”): coherent unitary agent in a coherent unitary environment, with no decoherence/collapse and no preferred basis.
+
+Claim: Adlam–McQueen–Waegell argue agency fails in this regime under their definition, because deliberation/selection/retention require classical resources (preferred basis and stable records) that are absent “for free” in a fully coherent setting.
+
+MALT mapping: MALT predicts the same pressure point more generally: without record-like stability, A5 Retention and A6 inertia cannot be satisfied, so the A↔N↔R closure cannot persist as a learner.
+
+This taxonomy reframes “quantum agency” debates as placement problems: if a proposed quantum agent satisfies MALT, then somewhere in the loop there must exist (i) stable records, (ii) a preferred basis or equivalent stability structure, and (iii) sufficient inertia for identity. Adlam–McQueen–Waegell’s critique can be read as a challenge: proposals that advertise “purely quantum agency” should specify where these classical resources enter and why the quantum element does not simply reduce to “quantum sensing feeding a classical learner.”
+
+(Reference: Adlam, E., McQueen, K. J., & Waegell, M. (2025). arXiv:2510.13247.)
+
+Faggin’s QIP (as developed with D’Ariano) ties qualia to an “inside view” of a system in a pure (ontic) quantum state, and treats “collapse” as what an external observer sees when a conscious “seity” exercises free will via purity-preserving (“atomic”) quantum operations: quantum probabilities are then not mere ignorance about a pre-existing fact, but probabilities over outcomes that “do not yet exist” prior to measurement because the seity’s choice partly constitutes which outcome becomes actual in spacetime. arXiv+1
+
+Adlam, McQueen, and Waegell (2025) push hard the other way: they argue that agency can’t be “purely quantum” in the sense of coherent unitary evolution without decoherence/collapse, because minimal agency requires building and copying a world-model for deliberation, and the no-cloning constraint (plus linearity) blocks that in a purely quantum regime; stable, copyable records require substantial classical resources (a preferred basis emerging via decoherence, etc.). arXiv+1 The tension with QIP is sharp: if “will/choice” lives fundamentally in purity-preserving quantum processes, then the paper says the machinery that makes choice actionable (retention, deliberation, world-model copying) must be classical—so QIP either (a) relocates agency to a quantum–classical hybrid where classical memory does the real work (raising the question of what extra causal role the “pure seity” adds), or (b) needs a new account that avoids the cloning/linearity obstacles without simply relabeling the hard part as “quantum.” arXiv+1
+
+MALT interpretation and recommendation
+This taxonomy reframes “quantum agency” debates as placement problems: if a proposed quantum agent satisfies MALT, then somewhere in the loop there must exist (i) stable records, (ii) a preferred basis or equivalent stability structure, and (iii) sufficient inertia for identity. Adlam–McQueen–Waegell’s critique can be read as a challenge: proposals that advertise “purely quantum agency” should specify where these classical resources enter and why the quantum element does not simply reduce to “quantum sensing feeding a classical learner.”
+
+**Recommendation for implementation**: Given these considerations, MALT reference implementations will focus on CC (Classical–Classical) systems first. This ensures stable records and interpretable retention dynamics while the core A↔N↔R closure is validated. Questions about quantum resources (coherence, entanglement, basis-dependence) can be addressed later as controlled variations once classical baselines are established.
+
+Appendix 3: MALT-MIN-BS-Hop-TD-0001 Reference Implementation: Bitstrings, Hopfield and TD
+Title: Reference implementation of MALT using keyed bitstrings, crossover operators, Hopfield associative recall, and TD valence learning
+Status: Draft / experimental blueprint
+Purpose: Provide a minimal, comparable scaffold for experimenting with MALT agents across substrates and implementations.
+
+1. Overview
+This reference implementation realizes MALT as a cybernetic loop over bitstrings:
+
+Perception: gradients sampled by sensors are encoded as a key bitstring K
+
+Actioning: candidate interventions are produced by mutation, crossover, and merge operators over payload bitstrings P
+
+Norming: candidates are scored by valence tails V (probability-ratio bits) representing learned preference/viability
+
+Retention: episodes are stored as keyed records; valence is updated using temporal-difference (TD) learning
+
+Inertia: stability arises from slow TD updates and/or Hopfield-stored attractors/prototypes
+
+2. Data Structures
+2.1 Bitstring episode record
+Each stored record R is a concatenation:
+
+Key: K ∈ {0,1}^L
+
+Payload: P ∈ {0,1}^M
+
+Valence tail: V ∈ {0,1}^R
+
+Notation:
+R := [K | P | V]
+
+Interpretation:
+
+K: associative address / context signature
+
+P: action template and/or predicted next-state bits
+
+V: encoded evaluation statistic (e.g., “goodness probability”)
+
+2.2 Valence decoding
+Let ones(V) be the number of 1s in V. Define:
+
+p = ones(V) / R
+
+p is interpreted as a learned preference estimate (or a component of it).
+
+3. Module Interfaces
+3.1 Encode: observations → key
+Encode(o, m) -> K
+
+Input: observation stream o (raw sensors); optional internal context from memory m
+
+Output: key bitstring K of length L
+
+Reference behavior:
+
+apply random projection / hashing / sparse masking to observations
+
+threshold to bits (optionally stochastic thresholding)
+
+3.2 Retrieve: key → candidate records
+Retrieve(K, Memory, k) -> {R_i}
+Input: key K, episodic store Memory, top-k parameter k
+
+Output: up to k records whose keys are “nearest” to K
+
+Distance metric (reference): Hamming distance on keys.
+
+Hopfield optional variant:
+
+clamp K into a Hopfield net storing (K|P) prototypes
+
+relax dynamics to retrieve P for the closest attractor
+
+attach V from episodic store or prototype store
+
+3.3 Propose: records → candidate payloads
+Propose({R_i}, n) -> {P_j}
+
+Input: retrieved records {R_i}, desired number of candidates n
+
+Output: candidate payloads {P_j}
+
+Reference operators (Actioning primitives):
+
+Mutation(P): flip a small number of bits in P
+
+Crossover(P_a, P_b): one-point or two-point crossover
+
+Merge(P_a, P_b): XOR or OR merge (implementation choice)
+
+Candidates may be generated by:
+
+selecting pairs from retrieved payloads
+
+applying crossover + mutation
+
+optionally adding a few purely random payloads as exploration
+
+3.4 Predict (optional): candidate → predicted next key/state
+Predict(K, P, Model) -> K_pred
+
+Optional module that predicts the next context key given current key and action payload.
+
+If omitted, TD can use observed next key directly (model-free).
+
+3.5 Score: candidate payloads → selection distribution
+Score(K, {P_j}, Memory, Constraints) -> {score_j}
+
+For each candidate P_j:
+
+lookup or estimate valence tail V̂(K, P_j) from Memory (nearest match or default prior)
+
+decode p_j = ones(V̂)/R
+
+compute penalties for constraint violations (optional)
+
+produce a scalar score
+
+Reference score function:
+
+score_j = p_j − λ * penalty_j
+
+Selection:
+
+greedy argmax, or
+
+max-entropy sampling: Pr(P_j) ∝ exp(β * score_j)
+
+3.6 Act: payload → environment action
+Act(P) -> a*
+
+Convert the payload bitstring to an environmental action.
+
+This mapping is domain-specific (robot motor commands, game input, API call, etc.).
+
+Minimal requirement: the mapping is consistent across time.
+
+3.7 Observe: environment → outcome bits
+Observe() -> o_next
+
+Read sensors after action.
+
+3.8 UpdateValenceTD: TD update of valence tail
+UpdateValenceTD(K, P, V, r, K_next, P_next, Memory)*
+
+Define:
+
+p = ones(V)/R
+
+p_next = ones(V_next)/R (estimated for next state-action)
+
+Compute TD error:
+
+δ = r + γ * p_next − p
+
+Update p:
+
+p ← clip(p + α * δ, 0, 1)
+
+Implement as bit-tail editing:
+
+if p increased: flip some 0 bits in V to 1
+
+if p decreased: flip some 1 bits in V to 0
+
+number of flips proportional to |α*δ| and tail length R
+
+Write back updated record for (K, P*).
+
+3.9 StoreEpisode: retention
+StoreEpisode(K, P, V_updated, K_next, meta) -> Memory*
+
+Store a new or updated record:
+
+R_new := [K | P* | V_updated]
+Optionally store outcome key K_next and other metadata in an auxiliary table.
+
+4. Gradient Signal (Norming input)
+The implementation requires a scalar feedback r per step.
+
+Reference choice:
+
+r = −Δτ
+where τ is a “tension” function of boundary violation, surprise, resource drift, etc.
+
+Minimal viable starting point:
+
+τ = boundary_violation_bits_count
+
+r rewards reductions in violations.
+
+5. Hopfield Component (optional but supported)
+[This part is optional but supported as required for full emulation of the R rule’ s N function.]
+
+5.1 Role
+Hopfield recall is used to:
+
+perform content-addressable completion: K → plausible P
+
+provide inertia via attractor stability
+
+5.2 Storage options
+Store prototypes of (K|P) for frequent episodes (consolidation)
+
+Keep V in a separate table keyed by (K,P) or by prototype ID
+
+5.3 Learning
+Hopfield weights can be trained by:
+
+Hebbian outer-product rule on stored prototypes (classic)
+
+or incremental/Storkey-style updates (optional)
+
+Hopfield learning is not required for minimal compliance; a nearest-neighbor KV store suffices.
+
+6. Main Loop (reference pseudocode, conceptual)
+K ← Encode(o, m)
+
+R_set ← Retrieve(K, Memory, k)
+
+P_cands ← Propose(R_set, n)
+
+score ← Score(K, P_cands, Memory, Constraints)
+
+P* ← Select(score)
+
+Act(P*)
+
+o_next ← Observe()
+
+K_next ← Encode(o_next, m)
+
+r ← GradientSignal(o, o_next, boundary)
+
+UpdateValenceTD(K, P*, V, r, K_next, P_next, Memory)
+
+StoreEpisode(K, P*, V_updated, K_next, meta)
+
+o ← o_next; repeat
+
+7. MALT Compliance Mapping
+A0 Boundary: persistent Memory + internal valence table + current key/state
+
+A1 Gradients: r derived from viability/tension constraints
+
+A2 Actioning: Propose generates non-degenerate alternatives via operators
+
+A3 Norming: Score evaluates candidates as function of gradients + memory
+
+A4 Closure: selection uses score to steer action choice
+
+A5 Retention: StoreEpisode + TD updates change future behavior
+
+A6 Requisite inertia: slow updates to V and stable attractors/prototypes
+
+8. Minimal knobs for experiments
+L (key length), M (payload length), R (tail length)
+
+k (retrieval count), n (candidate count)
+
+α (learning rate), γ (discount), β (selection temperature), λ (constraint weight)
+
+mutation rate, crossover rate, merge operator (XOR vs OR)
+
+Hopfield on/off; prototype consolidation rate
+
+9. Notes and intended use
+This reference design is intentionally “inefficient but inspectable.”
+It is meant to:
+
+support rapid ablation studies (remove crossover, remove TD, remove Hopfield, etc.)
+
+permit comparison across implementations (same interfaces, different internals)
+
+make “agency” observable as closure and retention, not as a single monolithic model.
+
+Appendix 4: MALT-MED-BS-T-R-0001 Reference Implementation (Bitstrings + Tension/Attention + R-rule)
+0) What this implementation is
+A minimal agent loop with:
+
+Bits: a binary “surface code” from sensors and memory
+
+Tensions p: a compact internal stance over learned difference-axes (interpretable)
+
+Attention: selects which tensions “matter now”
+
+Actioning: generates candidate interventions using mutation + crossover over bit-patterns
+
+Norming: scores candidates via tension/surprise + constraints
+
+Retention: stores episodes (key→value) and slowly consolidates stable axes
+
+Drive: a MaxEnt principle that keeps the agent exploratory while respecting constraints (Jaynes-style: MaxEnt under constraints)
+
+This is essentially our Tension Layer architecture as the “self-state,” plus optional R-rule geometry as the underlying update law. This medium complexity reference implemtation aims for a good tradeoff between power, complexity and implementability.
+
+1) State: what exists “inside the boundary”
+1.1 Fast observable code (bits)
+Sensor bits: x ∈ {0,1}^N
+(thresholds, detectors, discretized features; optionally stochastic sampling from probabilities)
+
+Optional internal bits: b_int ∈ {0,1}^M
+(flags, context, short-term markers)
+
+1.2 Slow stance / belief code (tensions)
+Tension vector: p ∈ [0,1]^K
+Each p_k is a Bernoulli-like stance along an interpretable axis (0 pole ↔ 1 pole, 0.5 = maximal tension/uncertainty).
+
+tension-layers
+
+1.3 Memory (Retention)
+Episodic KV store: M = { (key → value) }
+
+key: a long sparse mask / projection / hash of (x, p, context)
+
+value: action-fragment(s), outcome bits, and resulting tension deltas (Δp), plus a scalar score (tension change / reward)
+
+Consolidated store (slow): prototypes or “axis priors” distilled from many episodes (optional, but this is where A6 inertia naturally lives).
+
+This matches the “inefficient but higher level than a classic TM” KV idea: the address space is part of the representation.
+
+2) Perception: bits → guesses (high-level “attention layers”)
+You don’t need to commit to a specific N. Just assume a learnable map that turns current observation into “fast guesses” about the K axes:
+
+Encoder: h = Enc(x, p) (can be linear/MLP/tiny transformer; keep it small)
+
+Guess head: g = σ(W_g h + b_g), so g ∈ [0,1]^K
+
+Interpretation: g_k is a fast, perception-driven proposal: “given what I see, axis k should be toward the 1-pole with probability g_k.”
+
+3) Norming update: scalar tension dynamics (simple mode)
+This is the minimal, implementable update loop from the Tension Layer architecture (tension-layers).
+
+3.1 Uncertainty (Jaynesian gain)
+For each k:
+
+U_k = p_k (1 − p_k)
+
+scale_k = √(ε + U_k)
+
+3.2 Update
+p_k ← clip( p_k + scale_k [ η (g_k − p_k) + σ_noise ξ_k ], 0, 1 )
+
+ξ_k ~ Normal(0,1)
+
+Key property: maximal learning at maximal uncertainty (p≈0.5), minimal near commitment (p≈0 or 1), never totally frozen due to ε.
+
+3.3 Attention (salience → weights)
+S_k = scale_k · |g_k − p_k|
+
+a_k = softmax(β S)_k
+
+So attention focuses compute on axes that are both uncertain and surprised.
+
+3.4 Output of a layer
+Minimal option: layer output is just p (a low-D concept code).
+Stacking layers means next layer sees p^(1) as input and learns “categories of categories.” (tension-layers)
+
+4) Norming update: GA rotor dynamics (geometric mode)
+If you want the “north star” geometry, the same update can be viewed as rotating a meaning-state ψ in a tension-plane defined by Drive A and Constraint N.
+
+r-rotor
+
+4.1 Objects
+ψ = agent meaning-state (multivector; in minimal implementations, you can treat ψ as a vector embedding that corresponds to p)
+
+A = drive / preference vector
+
+N = world constraint / correction vector
+
+I = (A ∧ N) / |A ∧ N| (unit tension-plane bivector)
+
+4.2 Generator (two equivalent views)
+G = α A − β I N
+or phase-controlled:
+
+G_θ = α sinθ A − β cosθ I N
+
+r-rotor
+
+4.3 Uncertainty gain (Born-like)
+p = |ψ|² / Σ_b |ψ_b|²
+
+λ = η √(p(1−p))
+
+r-rotor
+
+4.4 Rotor update
+R = exp( −½ λ ( ψ̂ ∧ Ĝ ) )
+
+ψ′ = R ψ Ṝ
+
+r-rotor
+
+Practical bridge: in early experiments, you can implement the scalar tension rule as the “projection” of this rotor picture (the r-rotor doc explicitly notes the simplified r-rule algebraic approximation).
+
+5) Actioning: candidate generation over bits (mutation + crossover)
+This is the minimal “evolution inside” mechanism:
+
+5.1 Retrieve episodes
+Use current (x,p) to retrieve top-m keys from memory by Hamming distance / masked match.
+
+5.2 Generate candidates
+Each candidate is a proposed action template, represented as a bit-operation program:
+
+Mutation: flip a small set of action bits (or parameters)
+
+Crossover: recombine substrings from two retrieved action templates
+
+Optional: attention-guided mutation (mutate bits tied to high-salience axes)
+
+Result: a set of candidate actions {a_i}.
+
+This gives MALT’s “alternatives” in a concrete cybernetic form, without requiring discrete symbolic planning.
+
+6) Norming for action selection: MaxEnt as animating drive
+The information optimization idea: knowledge (Shannon) to optimize (Boltzmann) entropy via Bayesian inference. A minimal way to operationalize this without going full Active Inference is:
+
+6.1 Maintain a MaxEnt prior over “next states”
+Given constraints (viability, coherence), the agent prefers the maximum entropy distribution consistent with what it knows (Jaynes).
+
+6.2 Score candidate actions by a MaxEnt objective
+For each candidate action a_i, estimate its effect on:
+
+expected tension (viability/coherence): E[τ | a_i]
+
+expected information gain (Shannon): E[IG | a_i]
+
+policy entropy (exploration): H(π)
+
+A simple combined score (one line, easy to swap):
+
+J(a_i) = − E[τ | a_i] + κ · E[IG | a_i] + α · H(π)
+
+Interpretation:
+
+reduce tension (stay viable / coherent)
+
+seek information when uncertain (learn)
+
+keep exploratory slack (avoid premature lock-in)
+
+This is a “maximum entropy under constraints” drive expressed as selection pressure.
+
+(You can start with just the first two terms: tension reduction + info gain.)
+
+7) Retention + inertia
+7.1 Episodic write
+After acting and observing outcome x′ and updated p′:
+Store an episode:
+
+key = hash/mask(x, p, context)
+
+value = (a, x′, Δp, Δτ, timestamp)
+
+7.2 Consolidation (slow mode)
+Periodically (every N steps / “sleep”):
+
+cluster episodes by key similarity
+
+distill prototypes (typical Δp per context)
+
+stabilize a small subset of axes (slow priors)
+
+This is where “identity” and “core stance” can emerge as attractors in p-space (the tension-layers Phase 3 idea).
+
+Minimal experiment-ready loop
+Sense: get x ∈ {0,1}^N
+
+Guess: g = σ(W_g Enc(x,p))
+
+Update p (scalar rule) or update ψ via rotor → derive p
+
+Compute salience S and attention a
+
+Retrieve memory neighbors
+
+Generate candidates via mutation + crossover
+
+Score candidates with J (tension + info gain + entropy)
+
+Act: execute chosen action
+
+Observe x′, update p′
+
+Store episode; occasionally consolidate
+
+That’s a complete MALT reference implementation you can build small, then swap parts (memory, attention sharpness, rotor vs scalar, scoring objective) to compare dynamics.
+
+Appendix 5: MALT-MIN-BS-VSR-0001: Reference implementation using only Variation–Selection–Retention on BitStrings
+1) Core state (inside the boundary)
+All internal state is just two stores:
+
+Episodic pool E: a rolling set of episode bitstrings
+
+Retained model C: a compressed representation (a neural net encoder/decoder or hash-compressor)
+
+No explicit “planner.” No explicit value function required (though one can emerge inside C). Aims to be minimal and philosophically grounded and plausible.
+
+2) Bitstring formats
+2.1 Observation and action
+Observation bits: x ∈ {0,1}^Nx
+
+Action bits: a ∈ {0,1}^Na
+
+2.2 Episode record
+Store each transition as one long bitstring (concatenate):
+
+e = [k | x | a | x′ | g | meta]
+
+Where:
+
+k: random key / context hash (optional but helpful for indexing)
+
+g: gradient outcome bits (multi-variance “fitness signals” encoded as ratios or short bit-vectors)
+
+meta: timestamp/age, novelty, etc.
+
+3) V: Variation (directed)
+Variation generates a set of candidate action bitstrings {aᵢ}. It is directed by the retained compressor C and/or nearest episodes.
+
+3.1 Candidate generator
+Given current observation x:
+
+Retrieve a small set of relevant episodes from E (nearest key, nearest x, or random sample).
+
+Produce candidates via operators:
+
+mutate_dir(a, mask): flip bits in positions suggested by attention/mask from C
+
+crossover(a₁, a₂): recombine two action strings
+
+merge(a₁, a₂): XOR/OR merge for compositional actions
+
+inject_novelty: add a few random actions (entropy floor)
+
+Directedness mechanism (minimal):
+Let C produce a bitmask m(x) ∈ {0,1}^Na indicating “where changes matter.” Mutate primarily where m=1.
+
+This keeps VSR but gives it steering.
+
+4) S: Selection (multi-variance)
+Selection ranks candidates using multiple gradients simultaneously.
+
+4.1 Multi-gradient outcome representation
+Let the environment return (or the agent compute) a gradient vector G after acting:
+
+G = (g₁, g₂, …, g_M)
+Each g_j may be:
+
+a scalar mapped to ratio bits,
+
+or a short binary indicator (“constraint violated?”).
+
+Examples:
+
+boundary integrity (homeostasis)
+
+surprise/prediction error
+
+resource drift
+
+novelty / info gain proxy
+
+social constraint proxy
+
+4.2 Fitness / score
+After trying action aᵢ (or predicting its outcome), compute a score:
+
+score(aᵢ) = Σ_j w_j * φ_j(g_j)
+
+where φ_j converts gradient bits into a scalar.
+
+Multi-variance selection means you don’t collapse to one objective: you can do:
+
+weighted sum (simplest)
+
+Pareto selection (keep nondominated set)
+
+lexicographic (hard constraints first, then optimize)
+
+4.3 MaxEnt “animator” (optional but clean)
+To keep agency from freezing into one policy too early:
+
+sample actions from exp(β * score) rather than always argmax
+
+keep a minimum entropy by mixing in a small fraction of random actions
+
+That’s selection as “Boltzmann choice under constraints.”
+
+5) R: Retention (compression as learning + inertia)
+Retention has two layers:
+
+5.1 Episodic retention (fast)
+Always store recent episodes e in E (with aging/forgetting).
+
+5.2 Consolidated retention (slow) = compression C
+Periodically train/update a compressor C on the episode pool.
+
+Minimal version of C:
+
+Encoder z = Enc(e) (low-dimensional latent, binary or real)
+
+Decoder ê = Dec(z)
+
+Train to minimize reconstruction loss + optionally predict gradients g from (x,a)
+
+What C buys you:
+
+generalization across similar episodes (metaphor)
+
+similarity retrieval in latent space (analogy)
+
+directed mutation masks (where to vary)
+
+requisite inertia: C updates slower than action cycles
+
+This is still VSR: learning is nothing but “retain compressed regularities of past trials.”
+
+6) Complete loop (pure VSR)
+At each timestep:
+
+Observe x
+
+V: generate candidate actions {aᵢ} using mutation/crossover guided by C
+
+For each aᵢ (either simulate with C or execute a small batch in the env): obtain gradient bits gᵢ
+
+S: select action a* using multi-variance selection (weighted / Pareto / Boltzmann)
+
+Execute a*, observe x′, compute g*
+
+Store episode e = [k|x|a*|x′|g*|meta] in E
+
+R (slow): occasionally update compressor C on E
+
+7) Why this satisfies MALT (conceptually)
+A0 Boundary: E + C are persistent internal state.
+
+A1 Gradients: g encodes viability/tension constraints.
+
+A2 Actioning: V produces non-degenerate alternatives in action space.
+
+A3 Norming: S ranks alternatives by gradients and retained structure.
+
+A4 Closure: selected action depends counterfactually on scoring.
+
+A5 Retention: E and C change future variation and selection.
+
+A6 Inertia: C updates slowly; E has aging; identity persists via retained latent structure.
+
+8) Minimal knobs (so it’s actually testable)
+Nx, Na: observation/action bit lengths
+
+n_cand: number of candidates per step
+
+mutation rate + crossover rate
+
+selection method: weighted / Pareto / Boltzmann (β)
+
+episode pool size |E| and forgetting schedule
+
+compression update interval and capacity (latent size)
+
+9) What to implement first (practical)
+Phase 1: E + V + S only (no compressor)
+
+directedness comes from nearest-neighbor episodes + heuristic masks
+Phase 2: add compressor C for R
+
+begin with an autoencoder or even a simple hashed prototype map
+Phase 3: use C for directed mutation masks and “simulate-before-act” scoring
+
+
+
+
+Alternative Reference Implementations (No Robotics Required)
+If you want to experiment with MALT without building a physical robot as we do, there are several other strong “software-only” reference implementations (RIs) beyond the three already listed (Tension Layers, Hopfield/TD, and VSR). These are useful either as drop-in alternatives or as comparison baselines for ablation studies.
+
+1) ART RI (Adaptive Resonance Theory + Valence)
+Why it’s compelling: ART is an unusually clean fit for MALT because it solves the stability–plasticity problem directly via vigilance (a tunable “same kind vs new kind” threshold). It gives you explicit, inspectable categories (metaphor: “is-a”), and match scores (analogy: “like”).
+MALT mapping:
+
+A0/A6: stable category prototypes provide boundary + inertia
+
+A5: incremental learning is native
+
+A3/A4: resonance/reset is an explicit norming gate
+Best for: continual learning, identity stability, and avoiding catastrophic forgetting in a minimal way.
+
+2) Discrete Active Inference RI (POMDP / Expected Free Energy)
+Why it’s compelling: Active Inference provides a principled selection rule where gradients are encoded as prior preferences over outcomes, and action selection minimizes expected free energy (a blend of goal-seeking and uncertainty reduction).
+MALT mapping:
+
+A1: preferences = gradients
+
+A2–A4: policy evaluation and selection are explicit
+
+A5/A6: slow learning of generative-model parameters provides retention + inertia
+Best for: “physics-flavored” MALT experiments (surprise/tension, MaxEnt-style reasoning) in small gridworlds or bandits.
+
+3) Memory-Augmented Controller RI (Key–Value Memory + Attention)
+Why it’s compelling: Attention mechanisms are a differentiable version of analogy: retrieve “what is like this” and recombine. If you add persistent memory writes plus a slow consolidation schedule, you get clear A5/A6 without retraining huge models.
+MALT mapping:
+
+A2: candidate generation via retrieval + recombination
+
+A3/A4: scoring/gating of retrieved candidates
+
+A5/A6: memory writes + consolidation create inertia
+Best for: scalable prototypes where you want rich associative behavior but still keep the architecture modular and ablatable.
+
+4) Evolution Strategies RI (Population VSR over Policy Parameters)
+Why it’s compelling: If you want VSR “all the way down,” use a distribution over policies and update it by selection (ES / CMA-ES Covariance Matrix Adaptation Evolution Strategy style). This makes exploration and retention explicit without requiring differentiability.
+MALT mapping:
+
+A2: variation is literal population diversity
+
+A3/A4: selection is explicit and testable
+
+A5/A6: the evolving population distribution is retention + inertia
+Best for: clean experiments on exploration/selection dynamics and multi-objective norming.
+
+5) MDL / Compression-Driven RI (AIXI-lite)
+Why it’s compelling: This RI treats “knowledge” as compressive models (Minimum Description Length). The agent acts to improve predictive compression under constraints—very aligned with a Jaynes/MaxEnt framing.
+MALT mapping:
+
+A1: constraints define what “better” means
+
+A5/A6: retained models change slowly via complexity penalties (inertia)
+Best for: conceptual clarity around “representation as compression” and principled generalization in toy environments.
+
+6) A Future RI: Thousand Brains / HTM (Multi-Model Reference-Frame Agent)
+Jeff Hawkins’ Thousand Brains framework (often associated with HTM-style ideas) is best treated as a distinct future reference implementation rather than being folded into the MDL/compression RI. It shares the “prediction matters” vibe, but its core novelty is many parallel models anchored in reference frames, combined by consensus.
+
+Core intuition:
+Instead of one monolithic world model, the agent maintains many partial models (“columns”), each learning sensorimotor structure in its own reference frame. Perception and action emerge from agreement (voting) across these models.
+
+Why it’s MALT-shaped
+
+A0 Boundary: the ensemble of models plus shared state/voting mechanism forms a persistent internal system.
+
+A1 Gradients: prediction error and goal constraints act as viability/tension signals.
+
+A2 Actioning: multiple models generate competing hypotheses and candidate actions (active sensing policies).
+
+A3 Norming: candidates are evaluated by prediction error reduction, goal satisfaction, and cross-model consistency.
+
+A4 Closure: selection is steered by the consensus/voting outcome (and by tensions).
+
+A5 Retention: each model updates its sequence memory and reference-frame hypotheses from experience.
+
+A6 Requisite inertia: learned structures in each model update more slowly than moment-to-moment state, yielding identity stability.
+
+What it adds compared to other RIs
+
+A built-in answer to “where do categories come from?”: stable objects are those that can be represented consistently across many reference frames.
+
+A clean mechanism for multi-variance norming: agreement is itself a constraint (a kind of coherence pressure).
+
+A natural path to “social/self” extensions: other agents can be treated as structured objects with their own frames.
+
+Minimal software-only experiment (no robotics required)
+
+Use a toy environment (gridworld or simple 2D world) where an “agent” receives partial local observations.
+
+Implement multiple parallel predictors that each learn transitions in different coordinate schemes (or different feature subsets).
+
+Let action selection be: choose actions that (i) reduce prediction error and (ii) increase consensus among models.
+
+Why it’s a “future” RI
+This RI is attractive but nontrivial: the engineering challenge is making “reference frame” and “voting” precise and testable in a minimal sandbox. It’s still a great candidate once you want to move beyond single-model agents toward distributed internal societies of predictors.
+
+I plan to work on MALT in 2026, so if you are interested or want to contribute then let me know.
+
+Developed with ChatGTP-5.2. With feedback from Claud Sonnet 4.5 and Gemini 3 Pro.
+
+Andre,
+
+January 2026
+
