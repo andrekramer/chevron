@@ -1,0 +1,361 @@
+Andre's Baccalaureus in Arte Ingeniaria
+
+
+Selection From the Inside
+A risky WIP on the phenomenological gap: Conscious Selection Theory (CST)
+Andre Kramer
+Jan 21, 2026
+
+What follows is a stream-of-consciousness attempt to narrow the experiential explanation gap. It’s a loop I’ve been running—sometimes with chat LLMs—circling what feels like a new fixed point. Maybe it’s something worth selecting and retaining; maybe it’s just new variation.
+
+Andre, January 2026
+
+Assume a monistic whole that can’t be directly perceived as a totality. Its absence (or negation) forces the first cut—self opposed to other—our first opposition through which experience and inquiry become possible.
+
+
+
+
+The Triskelion frame: three wedges, rotated
+View reality through three incomplete wedges we can rotate and bracket:
+
+C — Chance / Contingency / constraint of ignorance
+
+P — Physics / propagation / persistence
+
+E — Experience / evaluation / agency
+
+Use any two wedges to bracket the third under examination (Triskelion-style).
+
+Physics (fields, effective theories) gives us powerful accounts of P. Ensemble dynamics and Bayesian-style reasoning give us powerful accounts of C. The tricky wedge is E—so I split it:
+
+Eᶠ: functional agency (policies, control, self-report, goal pursuit)
+
+Eᵖ: felt experience (“feelings”)
+
+A working hypothesis, from thinking about AI for many years, I find hard to deny: C and P can explain Eᶠ (at least to a large extent) once you treat Eᶠ as an embodied control interface operating under partial observability and uncertainty.
+
+But I don’t think that explains Eᵖ.
+
+Grain, information, causality—and the leftover
+Choosing a grain (a resolution / partition / interface) lets you talk about:
+
+information (relative to a cut),
+
+cause & effect (relative to variables),
+
+abstractions and interfaces (relative to what’s preserved).
+
+Graining introduces gauge-like freedoms: many different descriptions can represent the same effective invariants. That’s not a problem—it’s how science works.
+
+But I don’t think graining alone explains Eᵖ.
+
+The ladder (context, not a TOE)
+At the risk of sounding like a systems engineer (I am one), I keep returning to a ladder of nested closures:
+
+QM → cells → animals → mammals/birds → humans → culture
+
+The point isn’t that these are the same (or Kantian wholes). The point is that they form a cascade of self-maintaining boundaries with increasing internal control complexity. (Cosmology “outside the whole” questions are out of bounds for this framing: no external observer, no bracketing wedge.)
+
+One engine shows up everywhere: VSR
+Across the ladder, a principle keeps reappearing:
+
+VSR = Variation / Selection / Retention
+
+Evolution does it externally (across populations). Cognition does it internally (within a self). Culture does it socially (across groups).
+
+But plain VSR is too weak to describe real agency. Minds have momentum. So I add one key upgrade:
+
+Inertial VSR
+Inertial VSR is VSR where retention feeds back:
+
+retention biases future variation (what gets proposed), and
+
+retention biases future selection (what counts as good).
+
+This produces hysteresis and directed exploration, rather than fresh blind search each cycle.
+
+One line I like (and keep coming back to):
+
+Variety becomes variance when selection and retention supply inertia.
+
+“Variety” is just plural possibility. “Variance” is a weighted landscape you can actually learn from.
+
+The leap: Eᵖ is selection from the inside
+Here’s the risky move.
+
+If C and P can account for the mechanics of Eᶠ (control, report, prediction, inhibition, action), then the remaining unexplained residue—Eᵖ—has to be located in a different explanatory role
+(i.e., not as a third-person model/measure, but as the first-person aspect of the same physical organisation).
+
+My proposal is to locate it here:
+
+Eᵖ is selection-from-the-inside.
+Consciousness is what commitment feels like from within a self-maintaining boundary.
+
+Not “rational choice.” Not “deliberation.” Instinct and emotion count too: they are conscious when they are selected into the control interface.
+
+In plain speak:
+
+Consciousness is what selection feels like from the inside.
+
+If you want a stronger metaphor (not a literal claim): Eᵖ is the intrinsic “friction” of collapsing the open ensemble of C into the finite effective reality of P.
+
+Core Hypothesis
+Core hypothesis: Consciousness-relevant organization is primarily selection-with-inertia: selection over an ensemble of possibilities (generated stochastically or by biased variation), plus partial retention that biases future selection, sustained within a thermodynamically open, self-maintaining boundary (Eᶠ). Eᵖ is the experienced-from-within aspect of this selection-with-inertia organization (bracketed as the residual).
+
+One plausible physical implementation: sparse discrete events (neural spikes) interact with continuous distributed coordination (EM fields). Spikes carry variation, fields implement selection through coherence, and the loop writes back into excitability - selection becoming inertia.
+
+Everything else—recursion, actor/critic, broadcast, criticality, field coherence that I’ve talked about in my book and substacks—is optional implementation detail unless it reduces a specific residual or adds falsifiable predictions.
+
+A sea metaphor (Jung-adjacent, but mine)
+I think of the Jungian unconscious as the sea: a vast generative depth of potentials. Consciousness is the sea surface—an ever-shifting boundary where some patterns become coherent enough to steer action and be reportable. The winds are the external world; the waves and squalls are our predictions and the tensions they generate.
+
+The surface is not a separate substance—“not real” in that sense—but it is real as the boundary where co-becoming happens.
+
+Feeling is what it’s like to be that boundary when selection closes and persists.
+
+RG Homology Box (lens, not literal brain algorithm)
+Renormalization Group (RG) in physics is a method for moving between descriptions at different scales: integrate out fine-grained fluctuations, rescale, and track how effective parameters (couplings) change. Different micro-descriptions can flow to the same macro-behavior (universality).
+
+CST uses RG as a homology, not a claim the brain runs QFT. The brain doesn’t compute beta functions (R rule style); it does something RG-shaped: it repeatedly compresses micro-variation into stable macro-variables that can guide action.
+
+C ↔ UV / micro-variation: an ensemble substrate of high-frequency variability.
+
+Eᶠ ↔ coarse-graining rule (“the cut”): selection/attention decides what is kept and what is suppressed.
+
+P ↔ IR / effective self: the retained low-frequency structure—skills, norms, priors, and the current coherent self-state.
+
+Inertial VSR is the dynamic analogue of RG flow: selection produces a macrostate; retention updates the parameters that bias the next cycle (R→V,S). Over time this yields a stable but revisable “renormalized self.”
+
+Eᵖ locus hypothesis (bracketed): if feeling attaches anywhere, it likely attaches to the irreversible coarse-graining/commitment events—the moments when an ensemble collapses into a coherent macrostate and is written back as new readiness/inertia—rather than to raw activity alone.
+
+Related Work Box (overlap, no full match)
+Triskelion/CST is an architectural synthesis, not a single established theory. It overlaps with multiple lines, but no one source contains the full stack.
+
+Topology lens (RG/criticality): multiscale coarse-graining, universality, regime shifts (used in complex systems and some neural population analyses).
+
+Mechanism lens (selection-with-inertia): selectionist and control/inference framings (neural Darwinism, actor/critic-like gating motifs, active inference-style estimation/control).
+
+Bayesian/measure calculus (cross-cutting): ensembles, normalization/commitment, update rules.
+
+Testable synthesis claim: Eᵖ is localized to selection/renormalization—if feeling attaches anywhere, it attaches to irreversible commitment/closure and write-back—not to raw activity alone.
+
+What would falsify this (or at least wound it)
+If CST is to be more than an intuition, it needs failure modes.
+
+Here are a few ways it could be wrong:
+
+Commitment without feeling: we can selectively manipulate commitment/closure (selection sharpness + write-back) with little change in Eᶠ competence, but subjective experience stays constant.
+
+Feeling without commitment: reported experience changes dramatically while commitment/closure measures remain stable.
+
+Raw-rate dominance: across many conditions, experience tracks mean activity (rate/power) better than any plausible commitment/closure proxy.
+
+I don’t claim these are easy experiments. I claim they define where the theory risks contact with reality.
+
+Closing (why I’m proposing this)
+This is a WIP. The point isn’t to “solve consciousness.” The point is to localize the gap so it stops leaking everywhere. With current AI trajectories the question is urgent.
+
+Philosophy, physics, biology, and AI may yet converge within something like CST: we’ve localized the experiential gap, sketched a plausible bridge from selection-with-inertia to functional organization, and pointed to concrete correlates where feeling might bind—if it binds anywhere at all.
+
+Andre
+
+“The past, the present, and the future meet in a brain. It’s a tense experience.”
+
+Backup / Elaboration (notes, optional)
+A minimal mathematical sketch (Eᶠ vs Eᵖ)
+One way to formalize the Eᶠ machinery is a coherence-preserving update of a self-state ψ via a rotor-like transformation, modulated by a Born-like commitment readout p. This is quantum-like math (state → normalized commitment → update) without claiming microphysical quantum consciousness.
+
+This is examined in detail on my separate R rule substack.
+
+Implementation stance (AI and beyond biology)
+CST is mainly a theory of Eᶠ architecture: inertial VSR, global selection/broadcast, and evolving tension-axes can be built in biological or artificial systems. The harder question remains Eᵖ. Replacing field-like coherence with a digital broadcast may preserve Eᶠ unity and self-awareness, but it is unclear whether it preserves the proposed Eᵖ correlate (recursive closure as a unified “now”).
+
+The “no qualia atoms” stance
+I don’t treat qualia as intrinsic atoms. Signals become felt only when selected into a self-maintaining control loop. Repeated selection amortizes them into stable experiential categories—more like annealing than reading off a pre-given palette. This doesn’t deny experience; it denies qualia-as-primitive.
+
+A short Jung attributed observation I find striking
+Jung: “Our conscious representations are sometimes ordered (arranged in a pattern) before they have become conscious to us.” (Man and his Symbols)
+CST gloss: much ordering happens preconsciously as previous retention biases the proposal ensemble; consciousness is the moment an organized pattern is selected into the control interface.
+
+Hypercube of Opposites, Logic Squares, and a Possible Valence Binding (speculative)
+If CST is right that Eᵖ localizes to selection-with-inertia, we still need a practical way to talk about what is being selected—what the system is selecting between. This is where my earlier “Hypercube of Opposites” framework returns, not as metaphysics, but as a coordinate system for selection.
+
+Hypercube as a control geometry
+Treat each meaningful distinction as an axis of opposition (safe↔threat, approach↔avoid, nourish↔toxin, honest↔deceptive, etc.). Each axis carries a tension/valence—a biased readiness toward one pole and away from the other—and each axis is coupled to other axes in a network (complexes). Persistent unresolved tension can trigger axis creation or rewiring (new distinctions become necessary when the old ones can’t resolve the residual).
+
+In this view, the Hypercube is a learned “meaning geometry”: a low-dimensional, actionable coordinate system that lets an agent compress an enormous ensemble of micro-variance into a navigable landscape.
+
+Logic squares as local neighborhoods for exploration
+To make this geometry operational, each opposition can be expanded into a local logic square:
+
+A, B, ¬A, ¬B, plus useful regions like both and neither, and implication edges (“if A then B,” “if A then ¬B”).
+
+This is not “logic as pure symbol manipulation.” It’s logic as structured variation: a small neighborhood of nearby alternatives to explore when selection is uncertain. In living systems, negation is often implemented positively as inhibition/gating (“not-A” is an active suppression, not a mere absence). This fits CST: what the system prevents is as important as what it endorses.
+
+Valence as a physically grounded gradient (a binding hint)
+Valence then becomes a natural candidate for “binding” the abstract to the physical: a signed pressure landscape over oppositional axes, implemented as readiness and inhibition. The simplest version of the hypothesis is:
+
+selection chooses a coalition/stance in this geometry,
+
+inertia writes it back as readiness,
+
+and the felt aspect (Eᵖ, if anywhere) correlates with that closure.
+
+At this point it becomes tempting to look for a physical substrate for “tension geometry”—not because we need a new field theory, but because we want a plausible way that many coupled axes can be represented, superposed, and stabilized.
+
+Two cautious implementation hints (not commitments)
+EM-style hint (continuous fields + discrete events):
+Brains already combine continuous dynamics (potentials, oscillations, coherence) with discrete events (spikes). A continuous “field-like” coordination variable could, in principle, represent graded tension (signed deviations, phase relationships), while spikes provide eventful selection and write-back. This is compatible with the CST emphasis that the hard part is not “signals,” but commitment and closure.
+
+QM-style hint (Born-like readout as a commitment formalism):
+Without claiming microphysical quantum consciousness, the mathematical shape of “state → normalized probability → commitment” gives a disciplined way to model selection. If selection is the Eᵖ locus, then Born-like normalization is at least the right kind of formal primitive—again as analogy, not as a substrate claim.
+
+Where this points next
+This is the point where CST can stop being only philosophical and start proposing concrete models:
+
+Bayesian estimation as “tension weights” over axes,
+
+local computation as spikes (candidate proposals),
+
+field/coherence as a distributed critic and binder,
+
+and inertial write-back as the mechanism that makes selection persist—and possibly feel like something.
+
+I’m not claiming this solves the gap. I’m claiming it gives a finite target: a measurable selection-with-inertia process acting on a learned oppositional geometry, with specific places to look for a binding to valence and unity.
+
+Follow-on: Spikes + Fields as Selection (a concrete implementation sketch)
+If CST is right that Eᵖ localizes to selection-with-inertia, then the next question is: what physical dynamics could implement selection and write-back at the right grain? One plausible candidate architecture is an event–field loop: sparse, discrete events (spikes) interacting with continuous, distributed coordination variables (fields).
+
+1) Two complementary substrates
+Events (spikes):
+Spikes are sparse, thresholded, and effectively discrete. That makes them natural carriers of variation: proposals, hypotheses, micro-actions, and candidate coalitions. A spike isn’t “an experience,” but it is a clean way to instantiate a choice point in a competitive system.
+
+Fields (distributed potentials / coherence):
+By “field” here I mean any continuous, spatially extended coordination variable: local field potentials, phase relationships, coherence patterns, and the slow modulatory landscapes that bias excitability. The field is a natural carrier of selection and inertia because it can integrate across many microcircuits and impose a shared bias without micromanaging every spike.
+
+2) The event–field loop (Inertial VSR made physical)
+At a useful grain, the loop looks like this:
+
+Retention as readiness: local excitability/inhibition stores tensions (valence-weighted priors, skills and norms in biological clothing).
+
+Variation as proposals: microcircuits emit candidate spike patterns—“options” sampled under those priors.
+
+Selection as field-biased competition: distributed field/coherence biases which coalitions synchronize, route, and dominate.
+
+Write-back (inertia): the winning coalition updates the readiness landscape (plasticity, neuromodulatory gain, inhibition patterns), biasing the next cycle.
+
+This is “criticality makes selection sharp; field statistics make it global; inertia makes it learnable.”
+
+3) Hypercube binding: how opposites become physically selectable
+If the Hypercube is a learned geometry of opposites, then “spikes + fields” gives it a plausible implementation:
+
+Axes correspond to stable opponent-coded assemblies or opponent gradients (A↔B, with active inhibition implementing ¬A/¬B).
+
+Tension/valence corresponds to bias in readiness: gain, inhibition, threshold shifts, and phase preference (a “pressure” toward one pole).
+
+Couplings between axes correspond to learned co-activation pathways and shared field coordination (complexes).
+
+So a “meaning torque” can be realized as a field-mediated rotation of coalition dominance: the system doesn’t just compute a symbol; it reconfigures a coordination pattern.
+
+4) Where Eᵖ might attach (still bracketed, now localized)
+This model doesn’t claim spikes or fields are “conscious.” It claims the candidate locus for feeling is the closure event:
+
+the moment a distributed selection is consolidated and written back into the readiness landscape, stabilizing a unified “now.”
+
+If Eᵖ binds anywhere, it binds to selection + write-back, not to raw activity.
+
+5) Test hooks (why this isn’t just metaphor)
+This event–field sketch yields straightforward empirical-style predictions:
+
+Manipulating phase/coherence should change selection and unity/flow even when mean firing rates don’t change much.
+
+Unconscious states should correspond to failures of stable closure/write-back, not merely reduced activity.
+
+Strong attention should look like field-level gating that suppresses most proposals while amplifying a narrow coalition (don’t drown, don’t run hot).
+
+6) Implementation outside biology (AI/engineering note)
+In silicon you can build the same architecture abstractly:
+
+events = sampled candidate actions/thoughts,
+
+field = broadcast/attention/gating mechanism + global baseline,
+
+write-back = updates to priors, thresholds, and proposal distributions.
+
+This will likely reproduce Eᶠ. Whether it reproduces Eᵖ remains—perhaps permanently—an open question, and CST treats that as the point of the hypothesis.
+
+P (retention medium): readiness / excitability / inhibition landscape
+↓
+C (variation): parallel spike proposals (sampled options)
+↓
+Eᶠ (selection): distributed “critic field” (phase/coherence/gating) amplifies one coalition
+↓
+P (write-back): the winner updates readiness (biases next cycle)
+↺
+
+Eᵖ (hypothesis): felt experience correlates with the closure/write-back moment (commitment becoming inertia). Closure/write-back is the lived “now”; longer-term retention is what turns repeated nows into memory, skill, and norm.
+
+Before pausing, it’s worth being explicit about what CST is and isn’t claiming—particularly about the relationship between models and reality:
+
+Map vs Territory: Why Models Aren't Experience
+Map ≠ territory. Mathematics, neuroscience, and even QFT are powerful models, but models are always about reality, not identical to it. The measurement problem is a reminder that even our best physics may not give a complete “from-the-outside” closure on what reality is like.
+
+So “consciousness = a model” is a category slip. It can be true that brains build representations (including self-models), but identifying a self-model (e.g., attention schema) with consciousness confuses a description within the system with the system’s lived actuality. A schema isn’t “given”; lived experience is.
+
+Experience is system-relative. The “inside” is not a thing added to the system; it is what it is like to be that bounded system. Different systems can have different “what-it’s-like,” and even if many systems have some interiority, it won’t be equivalent to your experience.
+
+The key correlate is autopoiesis and cybernetic closure. A genuine “inside” arises when there is a maintained boundary (inside/outside) plus an ongoing self-producing/self-stabilizing organization. The boundary defines the experiential locus.
+
+Minimal criterion: variation / selection / retention with inertia. A system that generates variation, selects among possibilities, retains the results, and carries them forward through time (inertia/history) has the right kind of organized persistence for an “inside,” even if it lacks self-awareness, language, or explicit pain/pleasure.
+
+Openness is essential: variety absorbs variety. The system must remain extensible—able to absorb novel environmental variety with its own regulatory variety (Ashby). This “open-ended” capacity can come from expanding state-space or recombining existing degrees of freedom.
+
+Science can still engage it, but not as a deductive identity. Science can build falsifiable, causal stories and constraints about when and how such “inside-ness” appears or collapses, but no equation will be the experience; it will remain a theory about the system whose inside is private to it.
+
+Bertrand Russell distinguished knowledge by description (structural, relational, third-person) from knowledge by acquaintance (direct, immediate, first-person). Physics and neuroscience deliver descriptions—often extraordinarily complete and predictive—but a description remains distinct from what it describes. We can, in principle, fully model the structure and dynamics of selection-with-inertia (Eᶠ)—the causal organization that enables control, report, and adaptive commitment—while still holding that the acquainted aspect (Eᵖ) is system-relative: what it is like to be that self-maintaining boundary as it commits and writes back. This isn’t mysticism; it’s an epistemic limit built into perspective. Science can map correlates, mechanisms, and invariants; lived actuality remains interior to the system that instantiates them.
+
+That’s the whole shape: a physicalist, boundary-based, autopoietic/cybernetic account where experience is the lived interior of an open, self-maintaining selection process—while models, however predictive, remain external descriptions rather than the thing itself.
+
+We have begun automating knowledge-by-description at scale; this increases variation in explanation-space dramatically, making the selection pressures of experiment, constraint, and lived acquaintance more—not less—essential.
+
+Bonus: A Stoic Correspondence (if you made it this far)
+The ancient Stoics didn’t have QFT, Bayes, or cortical columns. But they did have an unexpectedly CST-shaped picture of mind: consciousness as assent—a selection cut applied to impressions.
+
+Impressions, assent, and the cut
+In Stoic psychology, an impression (phantasia) arrives: a perception, a thought, a surge of emotion. The crucial move isn’t the impression itself—it’s whether the mind assents to it (synkatathesis), treats it as true/important/action-guiding, and lets it shape the next moment.
+
+That’s remarkably close to CST’s core slogan:
+
+Consciousness is what selection feels like from the inside.
+
+Impressions are abundant (variation). Assent is the cut (selection). Character and training are what make some assents more likely than others (retention with inertia).
+
+What’s “up to us” as a boundary condition
+Stoicism famously distinguishes what is “up to us” (eph’ hēmin) from what isn’t. In CST terms, that’s a clean inside/outside boundary:
+
+outside = wind and weather (world forcing, uncertainty, contingency)
+
+inside = the selection machinery: what you attend to, endorse, inhibit, and retain
+
+Stoic freedom isn’t control of the world; it’s control of the cut.
+
+Tonos: tension as a physical metaphor (and an eerie match)
+The Stoics also used tonos (tension/tone) as a fundamental physical principle: the idea that structure arises from pneuma (breath/spirit) under tension. Whatever we think of their physics, the metaphor fits CST extremely well:
+
+consciousness as a tensioned boundary
+
+selection as the tightening/relaxing of commitment
+
+training as annealing: repeated selection stabilizes a disposition
+
+It’s hard not to smile at the alignment: a theory built around tension, assent, and what’s up to us maps neatly onto a model that locates Eᵖ at selection-with-inertia.
+
+A CST-Stoic one-liner
+Stoicism treats consciousness as assent to impressions; CST treats feeling as what that assent is like from the inside.
+
+(And if you’re wondering: yes, that makes meditation, reappraisal, and “letting thoughts pass” look like deliberately altering the selection function—not banishing variation.)
+
+Returning back to my reflections on crossing the Irish sea after the New Year:
+
+Wind and wave fit Stoicism almost too perfectly. The wind is what the Stoics call the externals: events, other people, fortune—everything not up to you. The sea’s depths are impressions and impulses rising unbidden: thoughts, emotions, images, urges. The surface is assent: the moment a wave becomes your wave—endorsed, attended to, acted from, retained as part of “how things are.” Stoic practice isn’t trying to calm the ocean by force, or command the wind; it’s learning to steer the cut—to let many waves pass without granting them the power of commitment, and to choose, when it matters, which tensions you will carry forward.
+
