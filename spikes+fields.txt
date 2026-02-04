@@ -1,0 +1,254 @@
+Andre's Baccalaureus in Arte Ingeniaria
+
+
+WIP: Resonance, Memory, and Self-Learning
+Inertial VSR, codec dynamics, and A/N dual-path learning for continual agency
+Andre Kramer
+Feb 02, 2026
+
+
+
+
+Motivation
+Most current AI success comes from overparameterized gradient-trained systems with brittle continual learning and awkward stories about memory, counterfactuals, and “world models.” Neuroscience, meanwhile, suggests cognition depends on dynamics (fields/oscillations, gating, replay, plasticity at multiple timescales) that aren’t well captured by backprop + dense attention alone.
+
+This proposal pursues a biologically motivated path to agency via memory and continual learning, while staying disciplined about consciousness: Eᵖ (phenomenological experience - what it feels like to be - givenness) remains private and not “solved.” The goal is an Eᶠ-mechanistic account (functional subjective experience - constructed “I” - self-representation) that can be tested in engineered systems and compared for homologies with brains.
+
+Core hypothesis
+Inertial VSR is the general learning principle at our grain.
+Learning is best modeled as Variation → Selection → Retention with inertia (multi-timescale consolidation) rather than a single-step optimizer. The system must update without thrashing and without freezing.
+
+We are missing a codec layer.
+Brains (and robust agents) may operate primarily in an intermediate encoding/decoding space: transform-friendly, error-tolerant, distributed. The “world model” is not a direct picture of reality, but a probabilistic belief field (a “hologram of belief”) that supports correlation-based association and compositional binding.
+
+Spikes + fields is a useful mechanistic split.
+
+“Fields” (continuous latent dynamics) maintain coherence, resonance, routing, and belief evolution.
+
+“Spikes” (discrete events - modeling neural activations) implement commitment, gating, and write-back.
+This explains why correlates can look contradictory: measurements are projections of a higher-order code plus sparse commit events.
+
+Our hypothesis is that there is a recursive feedback linkage between these.
+
+A/N dual-path cognition makes predictive processing actionable.
+
+A-path: fast, spike-like, action-proximate “active inference/minimization” (commitments under constraints).
+
+N-path: slow, field-like, normative core, holistic generative memory supporting counterfactual rollouts and “for-me” prediction.
+A is conditioned on N (Norms); N is updated (slowly) by the consequences of A (including counterfactual signals).
+
+Resonance gating (ART-like) is the missing control law.
+Commit when match/coherence is sufficient; otherwise reset/search. This prevents premature collapse and supports stable continual learning.
+
+Breakout: Bayesian Inference as a Darwinian Learning Loop
+
+Biologically plausible learning can be framed as a simple, recurring cycle: inertia → variety → selection → retention. A system starts with an existing population of hypotheses/behaviours (inertia, the prior P(H)P(H)P(H)). Noise, mutation, exploration, or combinatorial recomposition generates new candidates (variety). Incoming data then selects among them by multiplicative reweighting:
+
+P(H∣D) ∝ P(D∣H) P(H)
+
+—the Bayesian update, structurally identical to fitness-proportional selection in evolution. Normalization conserves total probability mass, while repeated cycles concentrate weight on candidates that predict and control well (retention). Crucially, “directed” internal variety (curiosity, play, epistemic actions) isn’t waste: it’s how the agent manufactures the requisite variety to match a complex world. In this view, learning is not backprop’s global gradient magic, but a local selection process that turns exploratory variation into stable, adaptive structure.
+
+Proposed architecture
+A minimal testbed architecture can be built from four components:
+
+Codec (E/D): Encoder/decoder that maps observations to a latent “belief code.”
+
+Latent state supports distributed storage, associative recall, and compositional binding.
+
+Prefer a representation that can naturally express uncertainty (belief field), not just point embeddings.
+
+N-field (generative memory + rollouts):
+
+Maintains a slow-evolving belief manifold.
+
+Performs counterfactual simulation / replay / reconstruction from partial cues.
+
+Implements consolidation (inertia) and adaptive graining (merge/split when needed).
+
+A-spike controller (commit/gate/action):
+
+Samples/commits discrete actions, attention choices, or state commitments.
+
+Updates quickly under surprise and task demand, but with limited scope to prevent forgetting.
+
+Resonance gate (commit vs reset):
+
+Controls when A can commit and when N should refine the belief state.
+
+Provides a principled “don’t collapse too early” mechanism.
+
+Learning rule direction
+Backprop is not prohibited, but the research goal is to explore more biologically plausible learning compatible with the above split:
+
+Inertial VSR: structured variation (in a low-dimensional control subspace) + selection by fitness/coherence + slow retention.
+
+Feedback alignment / global modulators: error “waves” broadcast as global signals rather than exact gradient transport.
+
+Two-timescale plasticity:
+
+Fast adaptation (A, routing, gains, gating).
+
+Slow consolidation (N, codec, memory geometry), only when stable across contexts.
+
+Breakout box: R-rule as a Rao–Blackwell rare-event estimator for “stick or switch”
+In real life we rarely optimize averages; we mostly decide whether to stick with a strategy or switch before a rare bad outcome happens.
+
+A (Action / Actor) updates from what actually happened (fast, “spike-like” evidence and commitments).
+
+N (Normative / Negator) uses broader world/self knowledge + counterfactuals (slow, “field-like” constraints and rollouts).
+
+Together, N effectively Rao–Blackwellizes A: instead of trusting a noisy episodic sample, it conditions on a richer model (“given what I know about this situation, what does this outcome imply about risk?”), shrinking variance and making tail risk detectable earlier.
+
+A compact control rule:
+
+Stick when A’s performance is fine and N’s counterfactual/constraint model stays coherent (resonance).
+
+Switch/search when A degrades or N flags rising tail risk/constraint violation even if failures haven’t occurred yet (mismatch/reset).
+
+Inertial VSR is the glue: explore alternatives under mismatch, but consolidate slowly when the evidence stabilizes.
+
+So should we stick with LLMs (Transformer-only deep neural networks) or look to switch (in a largely already locked in future)?
+
+Key claims to test
+Pearl-like bidirectional message passing gives the fast resonance/settling dynamics; temporal filtering adds duration; inertial VSR adds slow structural learning—so the system doesn’t just update beliefs, it gradually changes the basis in which beliefs are representable, and the “self” is the stable fixed point of the double-mirror coupling between world-model and self-model. Itself modelled by the R rotor dynamics.
+
+This program lives or dies on memory + continual learning, not on philosophical elegance.
+
+Claim A — Continual learning without catastrophic forgetting:
+Sequential tasks should be learned while retaining prior competencies, with bounded memory and without full retraining.
+
+Claim B — Codec-first benefits:
+Explicit encoding/decoding into a belief-friendly latent space should reduce “contradictory correlates” internally and improve stability under distribution shift.
+
+Claim C — Counterfactual intelligence emerges naturally:
+N-driven rollouts plus resonance gating should improve planning, transfer, and “non-verbal” problem solving compared to a purely reactive controller.
+
+Claim D — Adaptive graining prevents collapse:
+The system should avoid both:
+
+overflow (too many micro-categories, unstable world-model), and
+
+lock-in (over-coarse categories, brittle behavior).
+
+Breakout box: Training without backprop (why and how)
+Backprop works—but it’s biologically odd: exact gradient transport, global synchronization, and weight symmetry. Our proposal keeps backprop as a baseline, but explores three more plausible learning routes:
+
+VSR / Evolution Strategies: learn by structured perturbations + selection; retain slowly (inertia).
+
+FA/DFA: broadcast a global error “wave” through fixed feedback; forward weights learn to align.
+
+Settling-based learning: let the system relax to a coherent state; nudge; relax again; update locally from the difference.
+
+These methods fit our fields + spikes intuition: slow field-like settling plus discrete commit/update events—without requiring full gradient plumbing.
+
+“The process of rotating the Rotor (R) so that the N-field reaches a state of minimal Tension (Resonance) more rapidly in response to A-path spikes.”
+
+Evaluation plan (minimal, staged)
+Toy continual learning (supervised): sequential classification/regression tasks; measure forgetting, transfer, and representation drift.
+
+We can build on the Tension based neural network architecture already proposed:
+
+WIP Tension Layers
+Andre Kramer
+·
+17 December 2025
+WIP Tension Layers
+Project Proposal: Tension-Based Neural Layers for Interpretable Learning
+
+Read full story
+Toy world dynamics: learn latent dynamics + rollouts; test planning from partial cues; measure sample efficiency and stability.
+
+A minimal learning agent is an ideal sandpit:
+
+MALT - Request for Comments definition and proposed RIs
+Andre Kramer
+·
+1 Jan
+MALT - Request for Comments definition and proposed RIs
+MALT-0001: Minimal Agent Learner Theory
+
+Read full story
+Continual control (RL-lite): shifting environments; evaluate adaptation speed vs retention; use safety-style metrics (hesitation/reset under mismatch).
+
+Ablations: remove resonance gate, remove inertia, remove codec, unify A/N → show failure modes match predictions (thrash, hallucination-like instability, collapse).
+
+Scope and epistemic discipline
+This is not a claim that we’ve explained or can find Eᵖ.
+
+The goal is to locate the Eᶠ architecture that makes memory, meaning, and agency workable: codec + resonance + inertial VSR.
+
+Taking inspiration from Holonomic brain theories without necessitating a quantum implementation.
+
+Philosophical language (Bohm implicate/explicate, Jung ego-as-selected-center, Bateson ecology and second order cybernetics), is used as intuition and organization, not as proof.
+
+Breakout box: Bayes as Compression (MAP ↔ MDL) — the missing “codec” link
+A deep bridge between Bayesian inference and learning-as-encoding comes from taking the log of MAP (maximum a posteriori - the most probable after seeing the data G) :
+
+arg⁡ max ⁡h  P(G∣h) P(h)    ≡    arg⁡ min⁡ h  [−log⁡2 P(G∣h)  −  log⁡2 P(h)]
+
+
+Read in bits:
+
+−log⁡2 P(h) = the number of bits to specify the hypothesis (model cost / simplicity pressure).
+
+−log⁡2 P(G∣h) = the number of extra bits to specify the data given the hypothesis (residual error / surprise).
+
+So MAP is (implicitly) choosing the hypothesis that gives the best total compression of experience — the same target made explicit by Minimum Description Length (MDL).
+
+CST link (A/N + codec):
+
+A (spike-ish, action/fit) ≈ minimizing residual bits: reduce surprise, fit what’s happening now.
+
+N (field-ish, normative/coherence) ≈ minimizing model bits: keep the codebook stable, reusable, “self-consistent.”
+
+Inertial VSR is the process: vary encodings, select what compresses better, retain slowly so the codec bends without thrashing.
+
+Takeaway: the “world model” isn’t a picture of reality; it’s a code that makes reality cheap to represent.
+
+Breakout box: RL as A/N — TD-error as “spike,” value landscape as “field”
+Reinforcement Learning already has a two-path structure that mirrors the R-rule:
+
+A (Actor / Policy) chooses actions — fast, discrete commitments (spike-like).
+
+N (Critic / Value) evaluates and stabilizes learning — a smoother, longer-timescale landscape (field-like).
+
+The basic learning signal in RL, the TD error (or “advantage”), is literally a mismatch spike:
+
+“What happened” minus “what the critic predicted.”
+
+So RL can be read as a minimal A/N system:
+
+bottom-up spikes: experience → TD error → update pressure
+
+top-down field: value estimates/baselines shape which actions get reinforced
+
+Why extend RL?
+Standard RL’s “N” is often just a scalar value estimator. The proposal here is to upgrade N into a holistic generative memory field (a learned codec + counterfactual rollouts + constraints), and add inertial VSR so the system can continually learn without thrashing or forgetting.
+
+Takeaway: actor–critic is A/N-lite; adding a true N-field (world/self model + replay + resonance gating) is a path from reward-chasing to robust, continual agency.
+
+Expected outcomes
+If successful, this line yields:
+
+a concrete mechanism stack for continual learning and agency,
+
+an interpretable story about how “belief fields” become committed action and stable self/world models,
+
+and a plausible route toward biologically inspired learning that does not depend on dense attention everywhere or exact backprop credit assignment.
+
+If it fails, it should fail clearly: no retention advantage, no stability benefit, no workable rollouts, or no scalable codec dynamics.
+
+There are other failure modes in scaling AI without grounded ethics and control: a normative core could be our best lever for real alignment—or a new source of lock-in, distortion, and harm.
+
+Andre (with ChatGPT-5.2),
+
+Comments and collaborations most welcome, were building on (and hopefully also testing) our main ideas from 2025:
+
+A self is just a rotor in meaning-space: ψ′ = R ψ R̃
+
+Learning is inertial (VSR): variation / selection and retention from inside such a self, where retention feeds back to bias both variety (becoming variation) and selection (becoming valence).
+
+A higher-level oppositional space: tensions and relations of meaning (HCoO), where tensions behave like Bayesian credences/likelihoods encoded in a field-like (“holonomic”) latent code.
+
+February 2026
+
