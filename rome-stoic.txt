@@ -1,0 +1,310 @@
+Andre' Equus
+
+
+
+Rome If You Want To: New Orders of Movement
+A travelogue of enfolded rubble, unfolded holograms, and Stoic learning.
+Andre Kramer
+Feb 16, 2026
+
+“… one may then have to see the irrelevance of old differences, and the relevance of new differences, and thus one may open the way to the perception of new orders, new measures and new structures.” - David Bohm, Wholeness and the Implicate Order.
+
+
+
+
+Part 1. Rome if you want to / Roam around the world
+The many layers of Rome had a strange effect on my affected Stoic reticence: I actually had a Desire to see the Spanish Steps but failed to recall why. Until I reached for Bob Dylan’s “When I paint my Masterpiece” for a hello-from-Rome Instagram - Ah, Spanish Stairs - yeah right - so I finally ran up them on my 3rd and last daily morning run.
+
+Thanks for reading Andre' Equus! Subscribe for free to receive new posts and support my work.
+
+I also unexplainably kept being drawn back to the Roman Cestius Pyramid in idly walking Joycean interconnecting circles, only to discover Goethe’s grave behind the (copied in Roman concrete and still too neatly clad) pyramid on the 4th and last day. But turns out it was Goethe’s August son buried near the Keats grave.
+
+Carrying “The Holographic Universe” (not Bohm’s Wholeness and the Implicate Order book I safely left behind) on (no run possible today) arrival day, in a thunderstorm, while walking, caused its cover and pages to fragment into flaking layers just as the streets of Rome are filled with rubble. It takes photon dust as well as lightning flashes to make a Hologram, a Holomovement or a 8.8m Whole in the Pantheon.
+
+Watching an Otter crossing a swollen yellow Tiber between steep walls, stopped dead on my 2nd early morning run by the sighting, a street sweeper commented prophetically in Italian and I replied “Otter” in German - not meaning the snake on the Isola island statue. Keats’ final “Here lies one whose name was writ in water”.
+
+Each morning texting to come unlock 4 doors, go down to the corner cafe for first coffee and pastries, a habit established on my 1st morning run. The forum: eat when I’m hungry, drink when I’m dry. And live my life on the square.
+
+By 2nd evening totally overwhelmed by mass hoard of Holy art, despite more religion-proofing espresso, I passed a bronze Copernican Heliocentric model of our Solar System and re-centered myself, before leaving the Vatican at night (muttering “And yet it moves”) via the Bramante Staircase (not a stairs but a true helix spiral like Dante descent). Still thinking about unspeakably rich Popes and Bruno’s many un-renounced alien worlds, my heart nearly stopped in sheer terror by a speeding car near missing my to-the-rightward-looking ahead striding daughter. “I noticed the impression: overwhelm. I withheld assent to catastrophe.” God is a shout in a street.
+
+Arbitrarily guessing platform by time of departure, we quit Rome by rail via platform 18 - which is behind 17 and 19, logically XVII, (XVIII), XIX. Sitting rear-facing Rome, I paused and silently agreed that my august daughter’s Intelligence is the superior. If only she, I or anyone could define intelligence then that would be the New Order and the measure of our Virtual age. As an Early Roman Kings Vico-like recurrent echo from an Implicate whole continuously made Explicate by selves - a transhuman Faust part 2. A Changing of the Guards.
+
+Part 2. Bohm is my Logos antidote to chaos-default.
+Rome is a chaos of explicate layers; I needed an implicate grammar to make sense of it. Bohm’s metaphysics isn’t just poetry. In the mathematical appendix to Chapter 6 he gets technical:
+
+“We now consider the following theorem. Every different algebra can be expressed in terms of products of a matrix algebra (i.e., an algebra whose rules of multiplication are similar to those of matrices) and a division algebra (i.e., an algebra in which the product of two non-zero terms is never zero).”
+
+“Matrices over a division algebra" captures much of the linear algebraic backbone of modern deep learning — an echo from the 1980s that still resonates.
+
+This ‘difference algebra’ move (kill nilpotents → matrices over a division algebra) is essentially the algebraic backbone of modern deep learning: linear operators over R/C, with learning and nonlinear gating layered on as process.
+
+His “similarity metamorphosis” E′=MEM^−1 is an abstract template for lawful self-transformation: structure preserved under conjugation, explicate patterns as unfolded expressions of implicate order. My R-rotor, as an agentic model of a self, is a concrete instance of this same skeleton in geometric algebra: ψ′=RψR~. Where Bohm stays general about which metamorphoses occur, the R-rotor adds learning-specific machinery — dual channels (A/N), uncertainty-sensitive gating, and phase/phase-difference dynamics — turning metamorphosis from a philosophical template into an implementable update rule for agents with inertial retention.
+
+Bohm invites us to see chaos not as the absence of order, but as order we have not yet learned to read: a higher order (Logos) folded in different proportions, many times over. That’s the layers and Spolia of Rome - both a holographic whole and a pile of rubble.
+
+Thanks for reading,
+
+Andre
+
+February 2026
+
+
+
+
+Sidebar: The Stoic Control Loop (Rome edition)
+Not advice. Just a pattern I noticed.
+
+There’s a simple loop the Roman Stoics kept returning to:
+
+An impression arrives.
+
+You notice it.
+
+You choose your assent (or withhold it).
+
+You act.
+
+You become slightly more like whatever you just practiced.
+
+That’s the whole thing.
+
+Rome was a good laboratory outside my usual orbit.
+
+Impression: the weight of centuries, the overload of holy art, the crowds, the thunderstorm, the speeding car.
+Notice: “Overwhelm.” “Awe.” “Irritation.” “Fear.”
+Assent: sometimes steady, sometimes a bit sloppy and personal—when I made it about me instead of just meeting what was there.
+Action: run up the steps, re-center at the heliocentric model, pause before reacting, step back from the curb.
+Becoming: a little steadier the next time — or, occasionally, a little more feeling.
+
+Where I complied:
+
+Pausing at the Copernican model and letting scale dissolve the Vatican excess.
+
+Catching the near-miss panic and refusing to narrate catastrophe.
+
+Returning to small rituals — coffee, morning runs — instead of chasing spectacle.
+
+Where I failed (or at least drifted):
+
+Letting symbolic threads (Bruno, Popes, Dante) spiral into private myth when a simpler response might have done.
+
+Feeling superior to the chaos/action instead of just part of it.
+
+Overthinking when a breath would have sufficed.
+
+The Stoic move isn’t suppression. It’s precision.
+Not “don’t feel,” but “don’t automatically agree with the first story your mind tells.”
+
+In Rome, the street kept shouting.
+The only question was which shouts I would let write the next line.
+
+Appendix
+I spent some idle Rome airport and flight time working David Bohm’s implicate and explicate order into the Stoic dual-aspect monism from my last post. Here’s the expanded scheme by ChatGPT-5.2 and a Stoic mapping. What follows is the structural skeleton behind the travelogue.
+
+One substance, two aspects, three views, four quadrants
+0) Purpose of the frame
+Give a compact “grammar” for talking about learning, mind, and world without splitting reality into two substances.
+
+Make room for structure + openness (coherence and variation) while keeping everything inside one evolving process.
+
+Set up a clean bridge to Stoicism (impressions/assent/character).
+
+1) One substance: an inertial VSR process
+1.1 The one thing that exists (for this model)
+A single ongoing process that continually:
+
+generates alternatives (Variation),
+
+selects among them (Selection),
+
+stabilizes what worked (Retention),
+
+and carries forward persistence (Inertia).
+
+1.2 Inertia is not a fifth thing
+Inertia is the continuity operator that prevents the loop from rewriting itself every moment.
+
+It supplies identity, stability, and “style” (for systems, agents, and models).
+
+1.3 The loop is self-contained
+No external homunculus is required: the process updates itself through its own internal transforms.
+
+2) Two aspects: two orthogonal cuts through the same process
+These are axes of description, not extra substances.
+
+2.1 Implicate ↔ Explicate (latent ↔ manifest)
+Implicate: the process in its latent/generative mode
+(constraints, dispositions, priors, potential forms, distributions)
+
+Explicate: the process in its manifest/stabilized mode
+(events, enacted outputs, experienced “now,” recorded facts)
+
+2.2 Inside ↔ Outside (disclosure ↔ description)
+Inside: the same process as lived / owned / disclosed
+(what it is like; salience; commitment; attention; stance)
+
+Outside: the same process as public / modelable / describable
+(causal relations; measurements; structures; reports)
+
+2.3 Why two axes
+With only implicate/explicate you get a field story, but not “thoughts vs things.”
+
+With only inside/outside you get dual-aspect language, but not a clean learning cycle.
+
+Together, they give both: unfolding + lived agency as one motion.
+
+3) Three views: P / C / E as lenses on any state or transition
+These are interpretive lenses (like basis vectors - from our Triskelion), not new ontological regions.
+
+3.1 P — coherence / propagation / constraint
+The “hologram” side: what makes patterns hold together and remain composable.
+
+In learning terms: structured dynamics, invariants, conservation-like regularities.
+
+3.2 C — contingency / variation / branching
+The “dust in the beam” side: degrees of freedom, uncertainty, exploration, drift.
+
+In learning terms: distributions, sampling, chaos-like sensitivity, novelty injection.
+
+3.3 E — evaluation / gating / salience
+The “selection pressure” side: what counts, what matters, what is reinforced.
+
+In learning terms: attention, reward, norming, preference, value, veto.
+
+3.4 P/C/E apply everywhere
+Any quadrant can be described in P/C/E terms.
+
+Any transition (V, S, R, I) can be decomposed into P/C/E contributions.
+
+4) Four quadrants: “parts” that are “the whole”
+The quadrants are not four separate substances.
+They are four faces of one state, carved by the two axes.
+
+4.1 The quadrants (state-space at a movement)
+Implicate + Outside
+
+latent structure describable from the outside (constraints, priors, generative order)
+
+Explicate + Outside
+
+manifested events and outputs (actions, measurements, records, objects-in-model)
+
+Implicate + Inside
+
+latent stance/readiness (attunement, orientation, “how I’m set”) - the pre-reflective background of the self.
+
+Explicate + Inside
+
+manifested experience/commitment (salience, “this one,” decision landing) - stream of consciousness / thoughts.
+
+4.2 “Parts as the whole”: the bundle Σ
+A system’s momentary condition is a bundle across all four quadrants:
+
+you never have “pure outside” without an inside correlate if the system is an agent or system capable of experience.
+
+and you never have “pure explicate” without an implicate background that sustains it.
+
+So the “whole” at time t is a 2×2 state Σₜ, not a single cell.
+
+5) How iVSR fits: operators acting on the whole 2×2 bundle
+I, V, S, R are phases/operations that transform Σₜ → Σₜ₊₁.
+Each phase touches all quadrants, but has a dominant footprint.
+
+5.1 I — Inertia (hold)
+Dominant: implicate quadrants (stability of constraints + stance)
+
+Role: preserve identity/continuity; slow the rate of rewrite
+
+5.2 V — Variation (fan-out)
+Dominant: implicate (new candidates first exist as potential)
+
+Role: generate alternative hypotheses/actions/framings
+
+5.3 S — Selection (hinge)
+Dominant: explicate (commitment becomes an outcome)
+
+Role: gate alternatives into a single enacted/experienced “this”
+
+5.4 R — Retention (write-back)
+Dominant: explicate → implicate conversion
+
+Role: fold outcomes into updated constraints + updated stance (learning)
+
+5.5 The closure that makes it learning
+Retention changes inertia.
+What gets retained becomes tomorrow’s “background”, reshaping future variation and selection.
+
+One substance evolves by inertial VSR; cut by two orthogonal aspects (implicate/explicate and inside/outside); we read it through three lenses (P/C/E); and we treat the four quadrants as the full state bundle—parts that are only meaningful as the whole.
+
+Stoic mapping onto the framework
+Below is a “translation layer” from one-process iVSR + 2×2 state bundle into Roman Stoic psychology and practice. It’s a mapping of roles, not a claim of strict equivalence.
+
+1) The 2×2 quadrants in Stoic terms
+Outside + Explicate — events (what happens)
+
+The stream of bodies, occurrences, circumstances: what befalls you and can be publicly described.
+
+Stoics treat these as “externals”: real, causally embedded, but not (by themselves) good/bad in the moral sense.
+
+Inside + Explicate — assent / impulse (the hinge)
+
+The moment an impression becomes your stance: you assent, withhold, or dissent; this yields impulse toward action.
+
+This is the Stoic “control point” (especially in Epictetus): we may not choose what appears, but we can choose how we use impressions.
+
+Outside + Implicate — causal order (fate as web of causes)
+
+The lawlike, interlocking structure that makes events intelligible as consequences of prior causes.
+
+Stoics are typically read as causal determinists who nonetheless defend a form of responsibility (compatibilism).
+
+Inside + Implicate — character / hexis (trained dispositions)
+
+The stable orientation of the ruling center: what you are disposed to assent to, what you find persuasive, what you habitually value.
+
+In Marcus Aurelius and Seneca this shows up as the long-game of practice: shaping the inner posture so that the next hinge-moment goes differently.
+
+2) iVSR as Stoic training dynamics (parts that are the whole)
+The “parts are the whole” idea fits Stoicism because each phase is a global operation on the entire 2×2 bundle (world + impressions + assent + character), not a local event in one square.
+
+V — Variation (impressions & candidate judgments)
+
+Impressions present multiple “takes” and action-tendencies.
+
+Variation is not “freedom from causality” for Stoics; it’s the practical plurality of options within finite cognition: many candidate assents can be entertained even if the world is causally ordered.
+
+S — Selection (assent as the gate)
+
+Selection is the act of assent/withholding: the hinge that turns mere appearance into commitment and impulse.
+
+This is the Stoic locus of agency: assent is a faculty of the ruling part (hêgemonikon).
+
+R — Retention (habit → character)
+
+What you repeatedly assent to gets “written back” as disposition: habits solidify into character (the explicate → implicate fold-in).
+
+This is why Stoicism is practice-forward: the point is not a single correct choice but the reshaping of the chooser.
+
+I — Inertia (steadiness of the ruling center)
+
+Inertia is the stability/continuity of that trained center—why it doesn’t get rewritten by every strong impression.
+
+This is exactly the Stoic ideal of inner firmness: not rigidity, but continuity under perturbation.
+
+3) Where P / C / E sit in Stoic language
+P (coherence/constraint): the intelligible structure of nature/causal order; also the “compositional” regularities of reasoning that let the mind keep stable form under load.
+
+C (contingency/branching): not metaphysical indeterminism in Stoicism, but epistemic openness: limited agents face uncertainty, complexity, and competing impressions, so variation is operationally real.
+
+E (evaluation/gating): the normative filter applied at assent—what counts as good/bad/indifferent, what is worth pursuing, what should be vetoed.
+
+4) The Roman payoff from the framework
+Stoicism becomes a worked example of a general claim:
+
+A single monistic process can be read as outside causal order and inside normative agency, cycling implicate dispositions into explicate assents and back again—i.e., a self as an inertial VSR learner.
+
+My own stoicism proved useful (see sidebar) but maybe just a bit frustrating for my family on our Rome tour: it let me explore and appreciate the city as a whole—then fragment it again and again, digging down through layers until I reached the ones that had meaning for me. That’s inertial VSR in action—wandering as variation, assent as selection, practice as retention.
+
+“Similarly, we propose that the ensemble of elements enfolded in the brain and nervous system that are going to constitute the next stage of development of a line of thought are likewise bound through a force of overall necessity, which brings them together to contribute to the common notion that emerges in the next moment of consciousness.” - David Bohm. Wholeness and the Implicate Order.
+
+
