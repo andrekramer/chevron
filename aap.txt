@@ -1,0 +1,446 @@
+The Attention-Attractor Protocol
+Or how to settle what a collective should attend to next.
+Andre Kramer
+Mar 16, 2026
+
+
+
+
+Attention–Attractor Protocol (AAP) is a leader-light coordination protocol for deciding what a collective should attend to next. It is designed for systems in which many candidate messages, tasks, alerts, or interpretations may compete for priority, and where the coordination problem is not only agreement, but selection of the next shared focus.
+
+AAP separates two functions:
+
+an attention layer, where candidates compete by salience
+
+an attractor layer, where one candidate is safely stabilized as the next collective focus
+
+This makes it different in spirit from plain atomic broadcast. Atomic broadcast ensures a common order. AAP adds an explicit mechanism for deciding which candidate most deserves the next slot of collective attention.
+
+1. Informal picture
+At any moment, different nodes may hold different views about what matters most next. One node may have an urgent warning, another a useful update, another a background refinement. AAP allows these candidates to circulate, gather salience, and compete for prominence.
+
+When the collective is ready to decide its next focus, any node may attempt to open a round. That round safely selects a single candidate, which becomes the next attractor: the temporary shared focus that shapes the next system step.
+
+The protocol therefore alternates between:
+
+open competition for attention
+
+safe stabilization into a shared attractor
+
+2. Main concepts
+Candidate
+A candidate is any message or proposal that might become the next collective focus.
+
+Examples:
+
+a sensor alarm
+
+a planning step
+
+an interpretation
+
+a command
+
+a request for action
+
+Bid
+A bid is a salience signal attached to a candidate. It expresses how strongly a node believes that candidate deserves collective attention.
+
+A bid may reflect:
+
+urgency
+
+relevance
+
+age
+
+novelty
+
+coherence with current context
+
+local value estimate
+
+The protocol does not require all nodes to use the same internal scoring method. Bids are treated as explicit proposal metadata, not hidden semantic truth.
+
+Attention mempool
+Each node maintains a local ranked pool of visible candidates. This is its attention mempool.
+
+The mempool is not yet agreement. It is the field of contenders.
+
+Attractor slot
+An attractor slot is the next point of collective stabilization. The protocol decides which candidate fills that slot.
+
+Ephemeral initiator
+AAP has no permanent leader. Any node may temporarily act as the ephemeral initiator for a round by trying to coordinate selection of the next attractor.
+
+3. State held by each node
+Each node i maintains:
+
+M_i: local attention mempool of known candidates
+
+promised_i: highest round number to which the node has committed
+
+accepted_i: highest-round proposal accepted so far, if any
+
+chosen_i: latest chosen attractor known to the node
+
+round_i: highest round number observed
+
+A candidate entry in the mempool may look like:
+
+proposal ID
+
+payload
+
+bid
+
+source node
+
+metadata
+
+timestamp or age
+
+4. Messages
+AAP can be described with six message types.
+
+CANDIDATE
+Advertises a candidate for attention.
+
+CANDIDATE(candidate_id, payload, bid, metadata)
+
+This is gossip-like. It enriches the attention mempool.
+
+OPEN
+Begins a new attractor-selection round.
+
+OPEN(round, initiator)
+
+This asks other nodes to reveal any prior accepted state before a new candidate is advanced.
+
+READY
+Response to an OPEN.
+
+READY(round, node, accepted_round, accepted_candidate)
+
+This means:
+
+the node acknowledges the round
+
+it will not consider lower rounds
+
+it reports the highest candidate it has already accepted, if any
+
+FOCUS
+The initiator nominates a candidate for the round.
+
+FOCUS(round, candidate_id, payload, bid, justification)
+
+ENDORSE
+A node endorses that focused candidate for the round.
+
+ENDORSE(round, node, candidate_id)
+
+ATTRACT
+Announcement that a quorum has endorsed the same candidate.
+
+ATTRACT(round, candidate_id, proof)
+
+This marks recognition of the next collective attractor.
+
+5. Protocol flow
+Phase A: attention formation
+Nodes continuously exchange CANDIDATE messages.
+
+Each node updates its attention mempool and ranks candidates locally.
+This stage is open-ended and asynchronous. Many candidates may coexist.
+
+No candidate is yet the collective focus.
+
+Phase B: round opening
+When a node judges that the collective should settle on the next focus, it chooses a fresh round number and broadcasts:
+
+OPEN(r, self)
+
+This node becomes the ephemeral initiator for that round.
+
+Phase C: readiness collection
+A node receiving OPEN(r, ...) replies with READY(r, ...) if r is higher than any round it has already promised.
+
+In doing so, it:
+
+advances its promise frontier to r
+
+reports any candidate it has already accepted
+
+The initiator waits for a quorum of READY messages.
+
+This stage establishes whether the next attractor is still open for fresh choice, or whether earlier accepted state must be respected.
+
+Phase D: focus nomination
+Once a quorum of READY messages arrives, the initiator chooses what to nominate.
+
+Two cases exist:
+
+Case 1: prior accepted state exists
+If one or more READY messages report a previously accepted candidate, the initiator must choose the candidate with the highest accepted round among them.
+
+Case 2: no prior accepted state exists
+If no accepted candidate is reported, the initiator may nominate the highest-ranked candidate from its local attention mempool.
+
+It then broadcasts:
+
+FOCUS(r, candidate, ...)
+
+This is the key place where attention ranking enters the design.
+
+Phase E: endorsement
+A node receiving FOCUS(r, candidate, ...) endorses it if:
+
+it has not promised a higher round
+
+the round is valid
+
+the proposal is consistent with its promise state
+
+It then records that candidate as accepted for round r and sends:
+
+ENDORSE(r, self, candidate)
+
+Phase F: attractor recognition
+If a quorum of ENDORSE messages for the same (round, candidate) is observed, the candidate becomes the chosen attractor for that slot.
+
+A node may then broadcast:
+
+ATTRACT(r, candidate, proof)
+
+At that point the collective has a shared next focus.
+
+6. Core rules
+Rule 1: rounds are monotonic
+Nodes only move upward in round number.
+
+Rule 2: one endorsement per round
+A node endorses at most one candidate per round.
+
+Rule 3: readiness precedes focus
+A node may nominate a new candidate only after collecting a quorum of READY messages for that round.
+
+Rule 4: accepted state carries forward
+If the quorum reveals prior accepted state, that state constrains what may be focused next.
+
+Rule 5: attractor recognition requires quorum
+A candidate becomes a collective attractor only after a quorum endorses it.
+
+Rule 6: bids guide choice, not safety
+Bids influence which fresh candidate is nominated when choice is open. They do not override round discipline or quorum rules.
+
+7. Why it is leader-light
+AAP does not rely on a fixed distinguished leader. Any node may open a new round and become the initiator for that round alone.
+
+Leadership is therefore:
+
+temporary
+
+opportunistic
+
+replaceable
+
+tied to the local act of opening a round
+
+This makes the protocol suitable for collectives where initiative should emerge dynamically rather than remain centralized.
+
+8. Why it is not just atomic broadcast
+Atomic broadcast asks for a consistent order of values.
+
+AAP asks a more selective question first:
+
+Which candidate should occupy the next slot of shared attention?
+
+That means:
+
+not every visible message is equally eligible
+
+candidates compete in advance
+
+salience matters
+
+the committed item is not just the next delivered item, but the next stabilized focus
+
+So AAP is about attention-mediated ordering, not just ordering alone.
+
+9. Minimal pseudocode
+state at node i:
+
+    M_i                  // attention mempool: ranked candidate set
+    promised_i[slot]     // highest round promised for each slot
+    accepted_i[slot]     // accepted pair (round, candidate) for each slot
+    chosen_i[slot]       // chosen attractor for each slot, if known
+    next_slot_i          // next slot this node expects to help fill
+
+message types:
+
+    CANDIDATE(candidate_id, payload, bid, metadata)
+    OPEN(slot, round, initiator)
+    READY(slot, round, node, accepted_round, accepted_candidate)
+    FOCUS(slot, round, candidate_id, payload, bid, justification)
+    ENDORSE(slot, round, node, candidate_id)
+    ATTRACT(slot, round, candidate_id, proof)
+
+initialization:
+
+    for all slots:
+        promised_i[slot] = null
+        accepted_i[slot] = null
+        chosen_i[slot] = null
+
+    next_slot_i = 1
+
+--------------------------------------------------
+Attention layer
+--------------------------------------------------
+
+on receive CANDIDATE(c):
+    M_i.add_or_update(c)
+    M_i.rank_by_local_policy()
+
+--------------------------------------------------
+Round opening
+--------------------------------------------------
+
+when node i wants to initiate attractor selection for slot s:
+    if chosen_i[s] is not null:
+        return
+
+    r = fresh_round_greater_than(promised_i[s])   // e.g. (local_counter, node_id)
+    broadcast OPEN(s, r, i)
+
+on receive OPEN(s, r, initiator):
+    if chosen_i[s] is not null:
+        // slot already decided, optionally reply with chosen value
+        // ATTRACT(s, chosen_i[s], proof)
+        return
+
+    if promised_i[s] is null or r > promised_i[s]:
+        promised_i[s] = r
+
+        if accepted_i[s] is null:
+            reply READY(s, r, i, null, null)
+        else:
+            reply READY(s, r, i, accepted_i[s].round, accepted_i[s].candidate)
+
+--------------------------------------------------
+Focus nomination
+--------------------------------------------------
+
+on initiator receive quorum of READY(s, r, ...):
+    if chosen_i[s] is not null:
+        return
+
+    let reported = all non-null accepted candidates from READY replies
+
+    if reported is not empty:
+        candidate = candidate_with_highest_accepted_round(reported)
+    else:
+        candidate = highest_ranked_candidate_for_slot(M_i, s)
+
+    if candidate is not null:
+        broadcast FOCUS(s, r, candidate.id, candidate.payload, candidate.bid, candidate.metadata)
+
+on receive FOCUS(s, r, candidate_id, payload, bid, justification):
+    if chosen_i[s] is not null:
+        return
+
+    if promised_i[s] is null or r >= promised_i[s]:
+        promised_i[s] = r
+        accepted_i[s] = (r, candidate_id)
+        reply ENDORSE(s, r, i, candidate_id)
+
+--------------------------------------------------
+Attractor recognition
+--------------------------------------------------
+
+on observe quorum of ENDORSE(s, r, candidate_id):
+    if chosen_i[s] is null:
+        chosen_i[s] = candidate_id
+        broadcast ATTRACT(s, r, candidate_id, quorum_proof)
+
+on receive ATTRACT(s, r, candidate_id, proof):
+    if not valid_quorum_proof(s, r, candidate_id, proof):
+        return
+
+    if chosen_i[s] is null:
+        chosen_i[s] = candidate_id
+        accepted_i[s] = (r, candidate_id)
+
+        if promised_i[s] is null or r > promised_i[s]:
+            promised_i[s] = r
+
+        // close this slot locally
+        close_slot(s)
+
+        // optional application step
+        apply_attractor(candidate_id)
+
+        // mempool maintenance
+        M_i.remove(candidate_id)
+        M_i.decay_stale_entries()
+        M_i.rerank()
+
+        // advance pointer if this was the current frontier
+        if s == next_slot_i:
+            while chosen_i[next_slot_i] is not null:
+                next_slot_i = next_slot_i + 1
+
+// Timeout details
+when node i initiates round r for slot s:
+    set timeout(T + random_jitter)
+    
+on timeout for round r, slot s:
+    if chosen_i[s] is null:
+        // round failed or stalled
+        trigger "when node i wants to initiate attractor selection" again
+10. What the protocol achieves
+AAP gives a collective a way to answer:
+
+What should we attend to next?
+
+It does so by combining:
+
+open competition among candidates
+
+local salience ranking
+
+safe quorum-based stabilization
+
+temporary rather than permanent initiative
+
+The result is a protocol in which the next shared focus is neither imposed by a permanent leader nor chosen by arbitrary arrival order. It is selected from a competitive attention field and then stabilized into a collective attractor.
+
+11. Summary
+Attention–Attractor Protocol is a leader-light distributed coordination scheme for selecting the next shared focus of a collective. Nodes continuously gossip candidate messages with bids expressing salience, forming local attention mempools. Any node may open a fresh round and, after collecting readiness acknowledgements from a quorum, nominate either the highest-priority fresh candidate or any previously accepted candidate that must be carried forward. Once a quorum endorses the same nomination, it becomes the next attractor: the temporary collective focus that guides the next system step. AAP therefore combines competitive attention with safe distributed stabilization.
+
+Of course, what to attend to is up to the collective. A Stoic control loop could use:
+
+
+
+
+bid = α⋅practical-relevance + β⋅virtue-relevance + γ⋅within-control − δ⋅agitation
+
+To move Attention–Attractor Protocol from a conceptual design to a deployable distributed protocol, three production rules should be made explicit.
+
+First, round numbers must be globally unique and totally ordered, best represented as lexicographic (counter, node_id) pairs.
+
+Second, competing initiators must use randomized backoff after failed or pre-empted rounds, so that progress remains likely under contention.
+
+Third, attractor selection must be indexed by slot, allowing the system to agree on a sequence of shared focuses rather than only one.
+
+Together, these additions preserve the protocol’s original character — a leader-light way for a collective to decide what to attend to next — while giving it the operational structure needed for practical asynchronous deployment.
+
+Andre and ChatGPT-5.4
+
+March 2026
+
+Paxos answers how a collective can agree safely despite disorder; Attention–Attractor Protocol asks what the collective should agree to attend to next.
+
+Thanks for reading Andre's Baccalaureus in Arte Ingeniaria! Subscribe for free to receive new posts and support my work.
+
